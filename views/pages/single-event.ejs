@@ -4,35 +4,35 @@
   <body class="<%= season %>-page">
     <%= include ../partials/nav.ejs %>
 
-<section class="full-page">
+    <section class="full-page">
       <div class="logo">
         <img src="assets/logo.png">
       </div>
       <div class="header">
         <%= include ../partials/add-this.ejs %>
-        <h1><%= title %></h1>
+        <h1><%= event.title %></h1>
       </div>
       <article>
-        <div class="race-image" style="background-image: url(<%= image %>);">
-          <img src="<%= logo %>">
+        <div class="race-image" style="background-image: url(<%= event.image %>);">
+          <img src="<%= event.logo %>">
         </div>
         <div class="race-details">
           <h5><i class="fa fa-calendar"></i> date</h5>
-          <p><%= date %></p>
+          <p><%= event.date %></p>
           <h5><i class="fa fa-map-marker"></i> address:</h5>
-          <p><%= address %></br>
-            <%= address2 %></br>
-            <%= city %>, <%= state %>
+          <p><%= event.address %></br>
+            <%= event.address2 %></br>
+            <%= event.city %>, <%= event.state %>
           </p>
 
           <h5><i class="fa fa-line-chart"></i> distance:</h5>
-          <p><%= distance %></p>
+          <p><%= event.distance %></p>
           <h5><i class="fa fa-clock-o"></i> start time:</h5>
-          <p><%= starttime %></p>
+          <p><%= event.starttime %></p>
           <h5><i class="fa fa-clock-o"></i> bib pick-up:</h5>
-          <p><%= bibtime %></p>
+          <p><%= event.bibtime %></p>
           <h5><i class="fa fa-usd"></i> cost:</h5>
-          <p><%= cost %></p>
+          <p><%= event.cost %></p>
         </div>
         <div class="button-wrapper reg-open">
           <p>Online Registration Open</p>
@@ -47,11 +47,11 @@
       </article>
       <article>
         <h5><i class="fa fa-users"></i> race director(s):</h5>
-        <p><%= directorname %></p>
+        <p><%= event.directorname %></p>
         <h5><i class="fa fa-envelope"></i> email</h5>
-        <p><%= directoremail %></p>
+        <p><%= event.directoremail %></p>
         <h5><i class="fa fa-user"></i> designer</h5>
-        <p><%= designer %></p>
+        <p><%= event.designer %></p>
       </article>
       <article>
         <h4>course details</h4>
