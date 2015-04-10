@@ -5,13 +5,15 @@ var fbRef = new Firebase('https://acidotic.firebaseio.com/');
 
 var defaultSeason = 'winter';
 
-/* GET home page. */
+// HOME PAGE
 router.get('/', function(req, res, next) {
-  res.render('index', {
-    title: 'acidotic Racing',
-    season: defaultSeason});
+  res.render('pages/seasons/winter', {
+    title: 'Winter Events - acidotic Racing',
+    season: 'winter'});
 });
 
+
+// SEASON PAGES
 router.get('/winter', function(req, res, next) {
   res.render('pages/seasons/winter', {
     title: 'Winter Events - acidotic Racing',
@@ -36,7 +38,7 @@ router.get('/fall', function(req, res, next) {
     season: 'fall'});
 });
 
-
+// ABOUT PAGE
 router.get('/about', function(req, res, next) {
   res.render('pages/about', {
     title: 'About - acidotic Racing',
@@ -44,6 +46,7 @@ router.get('/about', function(req, res, next) {
     page: 'about'});
 });
 
+// CONTACT PAGE
 router.get('/contact', function(req, res, next) {
   res.render('pages/contact', {
     title: 'Contact - acidotic Racing',
