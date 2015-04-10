@@ -9,21 +9,20 @@
     <section class="left-side animated fadeInLeftBig">
       <h1 class="main-header">spring<span>events</span></h1>
       <article class="brown-box">
-        <p>"As the snow recedes and our favorite trails emerge we get the fever just like you. Our two spring trail races will test your winter fitness while satisfying your need to get out in the woods."</p>
-        <p>-Chris J. Dunn, Owner</p>
+        <p>"<%= data.quotes.first.quote %>"</p>
+        <p>-<%= data.quotes.first.person %></p>
       </article>
       <article class="event-block exeter-trail">
         <img src="assets/logos/exeter-trail-race.jpg">
         <div class="event-info">
-          <h2>Exeter Trail Race</h2>
-          <h3>June 27, 2015</h3>
-          <h3>10:00am</h3>
-          <h4>6 Commerce Way</br>
-              Exeter, New Hampshire</h4>
-          <a href="exeter-trail/">
-            <button>click here for details</button>
-          </a>
-          <h5>Photo Courtesy of Gianina Lindsey</h5>
+          <h2><%= data.exeterTrail.title %></h2>
+          <h3><%= data.exeterTrail.date %></h3>
+          <h3><%= data.exeterTrail.starttime %></h3>
+          <h4><%= data.exeterTrail.address %></br>
+              <%= data.exeterTrail.address2 %></br>
+              <%= data.exeterTrail.city %>, <%= data.exeterTrail.state %></h4>
+          <a href="exeter-trail/"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.exeterTrail.photographer %></h5>
         </div>
       </article>
     </section>
@@ -31,21 +30,19 @@
       <article class="event-block ralph-waldo">
         <img src="assets/logos/ralph-waldo.png">
         <div class="event-info">
-          <h2>Ralph Waldo Emerson Trail Race</h2>
-          <h3>May 2nd, 2015</h3>
-          <h3>10:00am</h3>
-          <h4>Emerson School</br>
-              274 Pleasant Street</br>
-              Concord, New Hampshire</h4>
-          <a href="ralph-waldo/">
-            <button>click here for details</button>
-          </a>
-          <h5>Photo Courtesy of Gianina Lindsey</h5>
+          <h2><%= data.ralphWaldo.title %></h2>
+          <h3><%= data.ralphWaldo.date %></h3>
+          <h3><%= data.ralphWaldo.starttime %></h3>
+          <h4><%= data.ralphWaldo.address %></br>
+              <%= data.ralphWaldo.address2 %></br>
+              <%= data.ralphWaldo.city %>, <%= data.ralphWaldo.state %></h4>
+          <a href="ralph-waldo/"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.ralphWaldo.photographer %></h5>
         </div>
       </article>
       <article class="brown-box">
-        <p>"Love the vibe at all of the acidotic races and the fact that they all support great local charities. It's no wonder that all of your races sell out so quickly you guys do a great job giving the trail running community the chance to get together and indulge in our sport."</p>
-        <p>-Rick Pelkey</p>
+        <p>"<%= data.quotes.second.quote %>"</p>
+        <p>-<%= data.quotes.second.person %></p>
       </article>
       <article class="event-block suunto">
         <img src="assets/logos/sunnto.jpg">
@@ -55,10 +52,6 @@
         </div>
       </article>
     </section>
-
-
-
-
 
     <%= include ../../partials/footer.ejs %>
     <%= include ../../partials/scripts.ejs %>

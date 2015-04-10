@@ -25,21 +25,33 @@ router.get('/', function(req, res, next) {
   });
 
   router.get('/spring', function(req, res, next) {
-    res.render('pages/seasons/spring', {
-      title: 'Spring Events - acidotic Racing',
-      season: 'spring'});
+    fbRef.child('events/spring/').on('value', function(snapshot) {
+      var fbData = {};
+      fbData.title = 'Spring Events - acidotic Racing';
+      fbData.season = 'spring';
+      fbData.data = snapshot.val();
+      return res.render('pages/seasons/spring', fbData);
+    });
   });
 
   router.get('/summer', function(req, res, next) {
-    res.render('pages/seasons/summer', {
-      title: 'Summer Events - acidotic Racing',
-      season: 'summer'});
+    fbRef.child('events/summer/').on('value', function(snapshot) {
+      var fbData = {};
+      fbData.title = 'Summer Events - acidotic Racing';
+      fbData.season = 'summer';
+      fbData.data = snapshot.val();
+      return res.render('pages/seasons/summer', fbData);
+    });
   });
 
   router.get('/fall', function(req, res, next) {
-    res.render('pages/seasons/fall', {
-      title: 'Fall Events - acidotic Racing',
-      season: 'fall'});
+    fbRef.child('events/fall/').on('value', function(snapshot) {
+      var fbData = {};
+      fbData.title = 'Fall Events - acidotic Racing';
+      fbData.season = 'fall';
+      fbData.data = snapshot.val();
+      return res.render('pages/seasons/fall', fbData);
+    });
   });
 
 // ABOUT PAGE

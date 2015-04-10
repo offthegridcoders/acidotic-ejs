@@ -70,6 +70,16 @@
         "state" : "New Hampshire",
         "time" : "10:00am",
         "title" : "Roaring Falls Trail Race"
+      },
+      "quotes" : {
+        "first" : {
+          "quote": "Come with us to some of the most spectacular places New Hampshire has to offer. You'll earn every glimpse of foliage at these amazing locations.",
+          "person" : "Chris J. Dunn, Owner"
+        },
+        "second" : {
+          "quote": "Bretton Woods is one of my favorite races of all time. You never know what's going to happen, or when it's going to happen, but SOMETHINGS going to happen...",
+          "person" : "Douglas Grey"
+        }
       }
     },
     "spring" : {
@@ -119,6 +129,16 @@
         "state" : "New Hampshire",
         "time" : "10:00am",
         "title" : "Exeter Trail Race"
+      },
+      "quotes" : {
+        "first" : {
+          "quote": "As the snow recedes and our favorite trails emerge we get the fever just like you. Our two spring trail races will test your winter fitness while satisfying your need to get out in the woods.",
+          "person" : "Chris J. Dunn, Owner"
+        },
+        "second" : {
+          "quote": "Love the vibe at all of the acidotic races and the fact that they all support great local charities. It's no wonder that all of your races sell out so quickly you guys do a great job giving the trail running community the chance to get together and indulge in our sport.",
+          "person" : "Rick Pelkey"
+        }
       }
     },
     "summer" : {
@@ -192,6 +212,16 @@
         "state" : "New Hampshire",
         "time" : "TBD",
         "title" : "Harmony Hill Summer XC Series"
+      },
+      "quotes" : {
+        "first" : {
+          "quote": "This is our busiest and most diverse season of the year. No matter what your passion, if it involves breathtaking challenges look no further.",
+          "person" : "Chris J. Dunn, Owner"
+        },
+        "second" : {
+          "quote": "In my mind, there was nothing tougher to accomplish in the (USATF-NE) series than the dreaded 40% grade of Upper Walking Boss in the Loon Mountain Race. No matter how hard I imagined it would be, once I was actually there, it was insane! Being up there on UWB, sweating it out with everyone, taking in the view, proving to myself I could do it . .. priceless.",
+          "person" : "Katharine Jenkins"
+        }
       }
     },
     "winter" : {

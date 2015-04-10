@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Article">
     <%= include ../../partials/head.ejs %>
-  <body class="winter-page">
+  <body class="<%= season %>-page">
     <%= include ../../partials/nav.ejs %>
-    <header class="winter-header">
+    <header class="<%= season %>-header">
       <img class="logo" src="assets/logo.png">
     </header>    
     <section class="left-side animated fadeInLeftBig">
@@ -25,7 +25,6 @@
           <h5>Photo Courtesy of <%= data.kingmanFarm.photographer %></h5>
         </div>
       </article>
-      
       <article class="event-block snowshoe-hullaballo">
         <img src="assets/logos/hullaballo.png">
         <div class="event-info">
