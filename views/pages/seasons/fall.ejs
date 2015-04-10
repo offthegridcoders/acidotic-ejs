@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+    <%= include ../../partials/head.ejs %>
+  <body class="<%= season %>-page">
+    <%= include ../../partials/nav.ejs %>
+    <header class="<%= season %>-header">
+      <img class="logo" src="assets/logo.png">
+    </header>    
+    <section class="left-side wow animated fadeInLeftBig">
+      <h1 class="main-header">autumn<span>events</span></h1>
+      <article class="brown-box">
+        <p>"Come with us to some of the most spectacular places New Hampshire has to offer. You'll earn every glimpse of foliage at these amazing locations."</p>
+        <p>-Chris J. Dunn, Owner</p>
+      </article>
+      <article class="event-block vulcan-fury">
+        <img src="assets/logos/vulcans_logo.png">
+        <div class="event-info">
+          <h2>Vulcan's Fury Trail Race</h2>
+          <h3>October 17, 2015</h3>
+          <h3>10:00am</h3>
+          <h4>Pawtuckaway State Park
+              128 Mountain Road
+              Nottingham, New Hampshire</h4>
+          <a href="event/vulcans-fury/">
+            <button>click here for details</button>
+          </a>
+          <h5>Photo Courtesy of Gianina Lindsey</h5>
+        </div>
+      </article>
+      <article class="event-block roaring-falls">
+        <img src="assets/logos/roaring-falls.png">
+        <div class="event-info">
+          <h2>Roaring Falls Trail Race</h2>
+          <h3>November 7, 2015</h3>
+          <h3>10:00am</h3>
+          <h4>Castle In The Clouds</br>
+              Moultonborough, NH</h4>
+          <a href="event/roaring-falls/">
+            <button>click here for details</button>
+          </a>
+          <h5>Photo Courtesy of Gianina Lindsey</h5>
+        </div>
+      </article>
+    </section>
+
+    <section class="right-side wow animated fadeInRightBig">
+      <article class="event-block bretton-woods">
+        <img src="assets/logos/bretton-woods.png">
+        <div class="event-info">
+          <h2>Bretton Woods Fell Race</h2>
+          <h3>October 3, 2015</h3>
+          <h3>9:00am</h3>
+          <h4>Bretton Woods Ski Area
+              99 Ski Area Road
+              Bretton Woods, New Hampshire</h4>
+          <a href="event/bretton-woods/">
+            <button>click here for details</button>
+          </a>
+          <h5>Photo Courtesy of Gianina Lindsey</h5>
+        </div>
+      </article>
+      <article class="brown-box wow">
+        <p>"Bretton Woods is one of my favorite races of all time. You never know what's going to happen, or when it's going to happen, but SOMETHINGS going to happen..."</p>
+        <p>-Douglas Grey</p>
+      </article>
+      <article class="event-block suunto">
+        <img src="assets/logos/sunnto.jpg">
+        <div class="event-info">
+          <h2>RACE acidotic and Win!</h2>
+          <h3>We've partnered with Suunto to bring you a very special year long promotion. Every acidotic RACING event you do automatically enters you in a drawing to win a Suunto Ambit3 which we will randomly draw after the last race on our schedule. The more you race with us, the better your chances of winning. So come on out and RACE acidotic and win!</h3>
+        </div>
+      </article>
+    </section>
+
+
+
+
+    <%= include ../../partials/footer.ejs %>
+    <%= include ../../partials/scripts.ejs %>
+  </body>
+</html>

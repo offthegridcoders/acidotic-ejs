@@ -1,5 +1,5 @@
 {
-  "name": "foobar",
+  "name": "acidotic",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,5 +13,8 @@
     "express": "~4.12.2",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0"
+  },
+  "devDependencies": {
+    "firebase": "^2.2.3"
   }
 }

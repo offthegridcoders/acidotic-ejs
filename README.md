@@ -1,0 +1,1 @@
+DEBUG=acidotic:* ./bin/www
