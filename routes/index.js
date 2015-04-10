@@ -10,12 +10,13 @@ fbRef.child('events/').on('value', function(snapshot) {
 });
 
 // HOME PAGE
-router.get('/', function(req, res, next) {
-  res.render('pages/seasons/winter', {
-    title: 'Winter Events - acidotic Racing',
-    season: 'winter'});
-});
-
+  router.get('/', function(req, res, next) {
+    var fbData = {};
+    fbData.title = 'Winter Events - acidotic Racing';
+    fbData.season = 'winter';
+    fbData.data = allData;
+    return res.render('pages/seasons/winter', fbData);
+  });
 
 // SEASON PAGES
   router.get('/winter', function(req, res, next) {
@@ -67,7 +68,6 @@ router.get('/', function(req, res, next) {
   });
 
 // SINGLE EVENTS
-  // WINTER EVENTS
   router.get('/sidehiller-snowshoe', function(req, res, next) {
     var fbData = {};
     fbData.title = 'Winter Events - acidotic Racing';
@@ -104,7 +104,6 @@ router.get('/', function(req, res, next) {
     return res.render('pages/single-event', fbData);
   });
 
-  // SPRING EVENTS
   router.get('/ralph-waldo', function(req, res, next) {
     var fbData = {};
     fbData.title = 'Spring Events - acidotic Racing';
@@ -121,8 +120,6 @@ router.get('/', function(req, res, next) {
     fbData.data = allData;
     fbData.event = allData.spring.exeterTrail;
     return res.render('pages/single-event', fbData);  });
-
-  // SUMMER EVENTS
 
   router.get('/loon-mountain-race', function(req, res, next) {
     var fbData = {};
@@ -150,8 +147,6 @@ router.get('/', function(req, res, next) {
     fbData.event = allData.summer.harmonyHill;
     return res.render('pages/single-event', fbData);
   });
-
-  // FALL EVENTS
 
   router.get('/bretton-woods', function(req, res, next) {
     var fbData = {};
