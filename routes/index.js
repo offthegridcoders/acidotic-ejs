@@ -53,18 +53,22 @@ fbRef.child('events/').on('value', function(snapshot) {
 
 // ABOUT PAGE
   router.get('/about', function(req, res, next) {
-    res.render('pages/about', {
-      title: 'About - acidotic Racing',
-      season: 'fall',
-      page: 'about'});
+    var fbData = {};
+    fbData.title = 'About - acidotic Racing';
+    fbData.season = 'fall';
+    fbData.page = 'about';
+    fbData.data = allData;
+    return res.render('pages/about', fbData);
   });
 
 // CONTACT PAGE
   router.get('/contact', function(req, res, next) {
-    res.render('pages/contact', {
-      title: 'Contact - acidotic Racing',
-      season: 'fall',
-      page: 'contact'});
+    var fbData = {};
+    fbData.title = 'Contact - acidotic Racing';
+    fbData.season = 'fall';
+    fbData.page = 'contact';
+    fbData.data = allData;
+    return res.render('pages/contact', fbData);
   });
 
 // SINGLE EVENTS
