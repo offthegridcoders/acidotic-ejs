@@ -69,6 +69,22 @@
           </div>
         <% } %>
       </article>
+      <article class="event-links-footer">
+        <ul>
+          <li>
+            <p>Photo Gallery</p>
+            <a href="<%= event.galleryUrl %>" target="_blank">
+              <i class="fa fa-camera-retro"></i>
+            </a>
+          </li>
+          <li>
+            <p>2014 Results</p>
+            <a href="<%= event.resultsUrl %>" target="_blank">
+              <i class="fa fa-bar-chart"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
     </section>
 
         <%= include ../partials/footer.ejs %>
