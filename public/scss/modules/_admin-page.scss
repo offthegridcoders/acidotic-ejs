@@ -89,12 +89,6 @@
     width: 300px;
   }
 
-  p {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 10px;
-  }
-
   button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -116,7 +110,7 @@
 .hidden {
   display: none;
 }
-  
+
 .details-form {
   border-bottom: solid 1px #000;
   margin: 20px 0;
@@ -231,6 +225,8 @@
   }
 }
 
-.detail-forms-wrapper {
-
+.note {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
 }

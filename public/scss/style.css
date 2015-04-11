@@ -1082,10 +1082,6 @@ footer {
     padding-left: 5px;
     vertical-align: middle;
     width: 300px; }
-  .edit-form p, .login-form p {
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 10px; }
   .edit-form button, .login-form button {
     margin-top: 20px;
     padding: 10px 20px; }
@@ -1179,3 +1175,7 @@ footer {
       .remove-blurb-form button:hover i {
         color: #f00; }
 
+.note {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px; }

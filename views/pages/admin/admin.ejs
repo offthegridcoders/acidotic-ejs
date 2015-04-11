@@ -139,8 +139,8 @@
                  value="<%= event.season %>">
           <input type="text" class="hidden" name="key"
                  value="<%= event.key %>">
-          <p>Changes will not be saved until you click the save button</p>
-          <p>NOTE: Changes will be live instantly and there is no undo. Please
+          <p class="note">Changes will not be saved until you click the save button</p>
+          <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
             double check all values are correct before saving</p>
           <button type="submit">SAVE</button>
         </form>
@@ -186,6 +186,33 @@
               </form>
             </article>
           <% } %>
+
+          <h3>Add NEW Detail</h3>
+          <p class="note">For now, all new details added will be sent to the bottom of the list</p>
+          <hr>
+          <form class="details-form" action="/new-detail"
+            method="post" enctype="application/x-www-form-urlencoded">
+            <button type="submit"><i class="fa fa-check-circle"></i><span>SAVE</span></button>
+            <div>
+              <label>Title</label>
+              <input type="text" name="title">
+            </div>
+            <div>
+              <label>Copy</label>
+              <textarea name="copy"></textarea> 
+            </div>
+            <div>
+              <label>Image URL</label>
+              <input type="text" name="image">
+            </div>
+
+            <input type="text" class="hidden" name="season"
+                   value="<%= event.season %>">
+            <input type="text" class="hidden" name="eventKey"
+                   value="<%= event.key %>">
+            <input type="text" class="hidden" name="key"
+                   value="<%= event.details.length %>">
+          </form>
       <% } %>
     </section>
 

@@ -124,9 +124,7 @@ fbRef.child('events/').on('value', function(snapshot) {
     return res.render('pages/admin/admin', fbData);
   });
 
-
   router.post('/remove-detail', function(req, res){
-    console.log(req.body);
     var season = req.body.season;
     var curEvent = req.body.eventKey;
     var key = req.body.key;
@@ -142,6 +140,35 @@ fbRef.child('events/').on('value', function(snapshot) {
     return res.render('pages/admin/admin', fbData);
   });
 
+  router.post('/new-detail', function(req, res){
+    console.log(req.body);
+    var season = req.body.season;
+    var curEvent = req.body.eventKey;
+    var key = req.body.key;
+    key = parseInt(key) + 1;
+    var fbURL = "events/" + season + '/' + curEvent + '/details/' + key;
+    var usersRef = fbRef.child(fbURL);
+    var newData = {
+      copy: req.body.copy,
+      title: req.body.title,
+      image: req.body.image,
+    };
+
+    usersRef.set(newData, function(error) {
+      if (error) {
+        console.log("ADD NEW DETAIL FAIL: Data could not be saved." + error);
+      } else {
+        console.log("ADD NEW DETAIL: Data saved successfully.");
+      }
+    });
+
+    var fbData = {};
+    fbData.title = 'Admin Dashboard - acidotic Racing';
+    fbData.season = 'winter';
+    fbData.data = allData;
+    fbData.event = false;
+    return res.render('pages/admin/admin', fbData);
+  });
 
 // HOME PAGE
   router.get('/', function(req, res, next) {
