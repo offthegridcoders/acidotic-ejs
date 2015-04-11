@@ -74,7 +74,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 // SINGLE EVENTS
   router.get('/sidehiller-snowshoe', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
+    fbData.title = allData.winter.sidehillerSnowshoe.title + ' - acidotic Racing';
     fbData.season = 'winter';
     fbData.data = allData;
     fbData.event = allData.winter.sidehillerSnowshoe;
@@ -83,7 +83,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/kingman-farm', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
+    fbData.title = allData.winter.kingmanFarm.title + ' - acidotic Racing';
     fbData.season = 'winter';
     fbData.data = allData;
     fbData.event = allData.winter.kingmanFarm;
@@ -92,7 +92,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/snowshoe-hullabaloo', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
+    fbData.title = allData.winter.snowshoeHullabaloo.title + ' - acidotic Racing';
     fbData.season = 'winter';
     fbData.data = allData;
     fbData.event = allData.winter.snowshoeHullabaloo;
@@ -101,7 +101,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/snowshoe-championship', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
+    fbData.title = allData.winter.snowshoeChampionship.title + ' - acidotic Racing';
     fbData.season = 'winter';
     fbData.data = allData;
     fbData.event = allData.winter.snowshoeChampionship;
@@ -110,7 +110,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/ralph-waldo', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Spring Events - acidotic Racing';
+    fbData.title = allData.spring.ralphWaldo.title + ' - acidotic Racing';
     fbData.season = 'spring';
     fbData.data = allData;
     fbData.event = allData.spring.ralphWaldo;
@@ -119,7 +119,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/exeter-trail', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Spring Events - acidotic Racing';
+    fbData.title = allData.spring.exeterTrail.title + ' - acidotic Racing';
     fbData.season = 'spring';
     fbData.data = allData;
     fbData.event = allData.spring.exeterTrail;
@@ -127,7 +127,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/loon-mountain-race', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Summer Events - acidotic Racing';
+    fbData.title = allData.summer.loonMountainRace.title + ' - acidotic Racing';
     fbData.season = 'summer';
     fbData.data = allData;
     fbData.event = allData.summer.loonMountainRace;
@@ -136,7 +136,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/kingman-farm-trail-race', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Summer Events - acidotic Racing';
+    fbData.title = allData.summer.kingmanFarmTrailRace.title + ' - acidotic Racing';
     fbData.season = 'summer';
     fbData.data = allData;
     fbData.event = allData.summer.kingmanFarmTrailRace;
@@ -145,7 +145,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/harmony-hill', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Summer Events - acidotic Racing';
+    fbData.title = allData.summer.harmonyHill.title + ' - acidotic Racing';
     fbData.season = 'summer';
     fbData.data = allData;
     fbData.event = allData.summer.harmonyHill;
@@ -154,7 +154,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/bretton-woods', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Fall Events - acidotic Racing';
+    fbData.title = allData.fall.brettonWoods.title + ' - acidotic Racing';
     fbData.season = 'fall';
     fbData.data = allData;
     fbData.event = allData.fall.brettonWoods;
@@ -163,7 +163,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/vulcans-fury', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Fall Events - acidotic Racing';
+    fbData.title = allData.fall.vulcansFury.title + ' - acidotic Racing';
     fbData.season = 'fall';
     fbData.data = allData;
     fbData.event = allData.fall.vulcansFury;
@@ -172,7 +172,7 @@ fbRef.child('events/').on('value', function(snapshot) {
 
   router.get('/roaring-falls', function(req, res, next) {
     var fbData = {};
-    fbData.title = 'Fall Events - acidotic Racing';
+    fbData.title = allData.fall.roaringFalls.title + ' - acidotic Racing';
     fbData.season = 'fall';
     fbData.data = allData;
     fbData.event = allData.fall.roaringFalls;

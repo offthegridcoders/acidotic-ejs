@@ -20,7 +20,7 @@
           <h5><i class="fa fa-calendar"></i> date</h5>
           <p><%= event.date %></p>
           <h5><i class="fa fa-map-marker"></i> address:</h5>
-          <p><%= event.address %></br>
+          <p><% if(event.address) { %><%= event.address %></br><% } %>
             <%= event.address2 %></br>
             <%= event.city %>, <%= event.state %>
           </p>
@@ -55,8 +55,23 @@
       </article>
       <article>
         <h4>course details</h4>
-        <h5>description</h5>
-        <p class="no-extra-padding">lorem ipsum dolor sit emet</p>
+        <% event.details.forEach(function(content) { %>
+        <% if(content.image) {%>
+          <img class="sponsor-image" src="<%= content.image %>">
+        <% } %>
+            <h5><%= content.title %></h5>
+            <p class="no-extra-padding"><%= content.copy %></p>
+        <% }); %>
+        <% if(season == 'winter') { %>
+          <div class="winter-advisory">
+            <h5>Note:</h5>
+            <p class="no-extra-padding">*SPECIAL WINTER WEATHER ANNOUCEMENT*</p>
+
+            <p class="no-extra-padding">Updated 09/17/2009</p>
+
+            <p class="no-extra-padding">New Hampshire winter weather can be very unpredictable and occasionally make travel hazardous. For the safety of our volunteers, competitors, and family a final determination on the status of our races will be made the Thursday prior to each race. The status of the race ("ON" or "POSTPONED") will be detailed on each individual race webpage. You must check each race webpage prior to the race to assure the race will be held. Every attempt will be made to reschedule all postponed events. Pre-registered competitors will be given a refund or rain check. </p>
+          </div>
+        <% } %>
       </article>
     </section>
 

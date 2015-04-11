@@ -9,6 +9,121 @@
         "cost" : "$25 pre-registration; $30 day of event registration",
         "date" : "October 4, 2014",
         "designer" : "Chris J. Dunn",
+        "details" : [ {
+          "copy" : "In an effort to accommodate more competitors we are offering two different courses this year. The 'short course' will race the first three check points (CPs); A, B, & C. The total distance will be approximately TBA miles. This course will be marked with our traditional trail running course markings including survey flags and turn arrows. The short course markings will be referred to as the 'safe route'. It is not the most direct route from CP to CP but it is 'safe' in that you can follow the flags and arrows. If you choose to race the short course you may still take any route you prefer from CP to CP. Completing the short course will make you eligible for 'mountain goat status' but there are no overall finishers awards. Short course finishers will, however, still be entered into the prize drawing following the long course finish.",
+          "title" : "Description"
+        }, {
+          "copy" : "The 'long course' will include six (6) CPs placed throughout the Bretton Woods ski area. The first three CPs will have a 'safe route' marked. After CP-C however, all competitors must navigate from CP to CP on their own. Visit the event website for a Google Earth map and trail map. You must visit all checkpoints in order. Failure to do so will result in disqualification. Course marshals will monitor some of the CPs. Trail maps with the CPs and descriptions will be available on the morning of the race. Any and all outside maps as well as GPS are permitted.",
+          "title" : ""
+        }, {
+          "copy" : "Category: AM Course: Outer Bounds Distances: TBA miles (Long Course); TBA miles (Short Course) Climb: TBA feet (Long Course) Venue: Bretton Woods Ski Area in the County of Coos Grid reference: USGS Mount Washington quad Skills & experience: LK Minimum age: 16",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "title" : "Checkpoints"
+        }, {
+          "copy" : "Waumbek (mid-way)",
+          "title" : "CP-A:"
+        }, {
+          "copy" : "High Ridge-Upper Swoop intersection",
+          "title" : "CP-B:"
+        }, {
+          "copy" : "Base Lodge",
+          "title" : "CP-C:"
+        }, {
+          "copy" : "Bottom of Stickney Escape",
+          "title" : "CP-D:"
+        }, {
+          "copy" : "Chutters",
+          "title" : "CP-E:"
+        }, {
+          "copy" : "Bottom of White Mountain Express High Speed Quad",
+          "title" : "CP-F:"
+        }, {
+          "copy" : "Lat 44, Chutters on the Mountain, Base Lodge",
+          "title" : "Aid Stations"
+        }, {
+          "copy" : "Score will consist of the Top 3 overall runners from each team in men's open, women's open, men's master, and women's master.",
+          "title" : "Teams"
+        }, {
+          "copy" : "Teams are encouraged to bring and display a team banner. A special area will be reserved. Please see RD Chris J. Dunn on race morning for details.",
+          "title" : "Note"
+        }, {
+          "copy" : "A fell race is one run on fell, hill or mountain terrain and shall be categorized as follows:",
+          "title" : "FELL RUNNERS ASSOCIATION DEFINITIONS"
+        }, {
+          "copy" : "",
+          "title" : "RACE CATEGORIES"
+        }, {
+          "copy" : "",
+          "title" : "Category 'A'"
+        }, {
+          "copy" : "a. Should average not less than 250’ (76m) climb/mile (1.6k).",
+          "title" : ""
+        }, {
+          "copy" : "b. Should not have more than 20% of the race distance on road.",
+          "title" : ""
+        }, {
+          "copy" : "c. Should be at least one mile (1.6k) in length.",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "title" : "Category 'B'"
+        }, {
+          "copy" : "a. Should average not less than 125’ (38m) climb/mile (1.6k).",
+          "title" : ""
+        }, {
+          "copy" : "a. Should average not less than 125’ (38m) climb/mile (1.6k).",
+          "title" : ""
+        }, {
+          "copy" : "b. Should not have more than 30% of the race distance on road.",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "title" : "Category 'C'"
+        }, {
+          "copy" : "a. Should average not less than 100’ (30.4m) climb/mile (1.6k).",
+          "title" : ""
+        }, {
+          "copy" : "b. Should not have more than 40% of the race distance on road.",
+          "title" : ""
+        }, {
+          "copy" : "c. Should contain some genuine fell terrain.",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "title" : "RACE LENGTH CATEGORIES"
+        }, {
+          "copy" : "A category 'L' (long) race is twelve miles (19.3k) or over.",
+          "title" : ""
+        }, {
+          "copy" : "A category 'M' (medium) race is six miles (9.6k) and over but under twelve (19.3k).",
+          "title" : ""
+        }, {
+          "copy" : "A category 'S' (short) race is under six miles (9.6k).",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "title" : "Abbreviations"
+        }, {
+          "copy" : "ER - Experience required",
+          "title" : ""
+        }, {
+          "copy" : "NS - Navigational Skills Required",
+          "title" : ""
+        }, {
+          "copy" : "LK - Local Knowledge an advantage",
+          "title" : ""
+        }, {
+          "copy" : "PM - Course Partially Marked",
+          "title" : ""
+        }, {
+          "copy" : "Fell running, also known as mountain running and hill running, is the sport of running and racing off road, over upland country where the gradient climbed is a significant component of the difficulty. The name arises from the origins of the English sport on the fells of northern Britain. Fell races are organized on the premise that contenders possess mountain navigation skills and carry adequate survival equipment as prescribed by the organizer. Modern fell running has common characteristics with cross country running. Courses are often longer, steeper, unmarked when out on the hills (with a few exceptions) and these longer races can demand mountain navigational techniques. Nevertheless, cross country seems fast and furious to many fell runners. Fell running also overlaps with orienteering. Courses are again longer but demand different techniques from orienteering. However, fell running does require navigational skills in a wild, mountainous environment, particularly in determining and choosing between routes. [adapted from Wikipedia]",
+          "title" : "What Is Fell Running?"
+        }, {
+          "copy" : "No transfers or refunds after September 26, 2014.",
+          "title" : "Note"
+        } ],
         "directoremail" : "contact@acidoticRACING.com",
         "directorname" : "Chris J. Dunn",
         "distance" : "TBA",
@@ -21,6 +136,65 @@
         "state" : "New Hampshire",
         "time" : "10:00am",
         "title" : "Bretton Woods Fell Race"
+      },
+      "quotes" : {
+        "first" : {
+          "person" : "Chris J. Dunn, Owner",
+          "quote" : "Come with us to some of the most spectacular places New Hampshire has to offer. You'll earn every glimpse of foliage at these amazing locations."
+        },
+        "second" : {
+          "person" : "Douglas Grey",
+          "quote" : "Bretton Woods is one of my favorite races of all time. You never know what's going to happen, or when it's going to happen, but SOMETHINGS going to happen..."
+        }
+      },
+      "roaringFalls" : {
+        "address" : "Castle In The Clouds",
+        "address2" : "455 Ossipee Park Road",
+        "bibtime" : "08:30 am to 09:30 am",
+        "city" : "Moultonborough",
+        "cost" : "$25 (11 miles), $20 (4 miles) [$30 & $25 day of event] *LIMITED FIELDS*",
+        "date" : "November 8, 2014",
+        "designer" : "Robin Allen-Burke & Chris J. Dunn",
+        "details" : [ {
+          "copy" : "",
+          "title" : "Day Of Event Entry Will Be Available For Both Races!"
+        }, {
+          "copy" : "",
+          "title" : "The following information pertains to the Long Course"
+        }, {
+          "copy" : "The Castle in the Clouds, in beautiful Moultonborough, is one of New Hampshire's iconic landmarks. And while many people are familiar with the 1914 mountaintop estate known as Lucknow, very few are aware that the property sits on over 5200 acres of some of the most spectacular geologic features and mountain visitas in the state. The Lakes Region Conservation Trust has granted us access to the more than 28 miles of trails that crisscross the Ossipee Mountain Range. We have designed two courses that maximize the best of what this amazing landscape has to offer.",
+          "title" : "NOTE: We Will Offer Day Of Event Entry."
+        }, {
+          "copy" : "Due to some land use changes we will be changing both courses in 2015. More details to follow soon.",
+          "title" : ""
+        }, {
+          "copy" : "TBA",
+          "title" : "Aid Station"
+        }, {
+          "copy" : "",
+          "title" : "Trail Descriptions"
+        }, {
+          "copy" : "TBA",
+          "title" : "Long Course"
+        }, {
+          "copy" : "TBA",
+          "title" : "Short Course"
+        }, {
+          "copy" : "No transfers or refunds after October 31, 2015.",
+          "title" : "Note"
+        } ],
+        "directoremail" : "contact@acidoticRACING.com",
+        "directorname" : "Robin Allen-Burke & Chris J. Dunn",
+        "distance" : "Long Course (11 miles), Short Course (4 miles)",
+        "id" : "14",
+        "image" : "assets/events/event-roaring-falls.jpg",
+        "logo" : "assets/logos/roaring-falls.png",
+        "photographer" : "Ashley Lader",
+        "season" : "fall",
+        "starttime" : "10:00 am",
+        "state" : "New Hampshire",
+        "time" : "10:00am",
+        "title" : "Roaring Falls Trail Race"
       },
       "vulcansFury" : {
         "address" : "Pawtuckaway State Park",
@@ -37,6 +211,31 @@
         } ],
         "date" : "October 18, 2014",
         "designer" : "Geoff Cunningham",
+        "details" : [ {
+          "copy" : "",
+          "title" : "Day Of Event Entry Will Be Available For Both Races!"
+        }, {
+          "copy" : "",
+          "title" : "The following information pertains to the Long Course"
+        }, {
+          "copy" : "Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...'Pawtuck' was once a volcanic site. We think the race’s namesake – the Roman God of Fire – would be proud of a course that will have you traversing a massive boulder field, tearing through dense forest, hammering down single-track switchbacks, jumping streams, crossing bridges and heading up a rocky slope appropriately named the Devil’s Staircase. The lava making up the park has long cooled, but your legs will be burning. This particular area of Pawtuckaway has gone unraced for too long so join us in what will be one of the most talked about trail races of the year.",
+          "title" : ""
+        }, {
+          "copy" : "This is a rugged trail race who's distance and elevation profile combine for a very challenging test even for the fittest endurance athlete. Make no mistake about it, the course travels along hiking trails with sections that must be negotiated very carefully. Run at the peak of NH foliage make sure to steal a peek or two at the highest elevations...it'll be worth the effort.",
+          "title" : ""
+        }, {
+          "copy" : "There will be at least two manned aid stations with water along the long course. There is no aid on the short course.",
+          "title" : ""
+        }, {
+          "copy" : "11.4 miles (+/- 0.5 miles), 2021 feet gain, max slope 38.8%, average 5.3% gain",
+          "title" : "LONG COURSE STATS"
+        }, {
+          "copy" : "5.4 miles (+/- 0.5 miles), 745 feet gain, max slope 14.9%, average 4.2% gain",
+          "title" : "SHORT COURSE STATS"
+        }, {
+          "copy" : "No transfers or refunds after October 10, 2015.",
+          "title" : "Note"
+        } ],
         "directoremail" : "contact@acidoticRACING.com",
         "directorname" : "Chris J. Dunn",
         "distance" : "Long Course (11.4 miles), Short Course (5 miles)",
@@ -49,66 +248,9 @@
         "state" : "New Hampshire",
         "time" : "10:00am",
         "title" : "Vulcan's Fury Trail Race"
-      },
-      "roaringFalls" : {
-        "address" : "Castle In The Clouds",
-        "address2" : "455 Ossipee Park Road",
-        "bibtime" : "08:30 am to 09:30 am",
-        "city" : "Moultonborough",
-        "cost" : "$25 (11 miles), $20 (4 miles) [$30 & $25 day of event] *LIMITED FIELDS*",
-        "date" : "November 8, 2014",
-        "designer" : "Robin Allen-Burke & Chris J. Dunn",
-        "directoremail" : "contact@acidoticRACING.com",
-        "directorname" : "Robin Allen-Burke & Chris J. Dunn",
-        "distance" : "Long Course (11 miles), Short Course (4 miles)",
-        "id" : "14",
-        "image" : "assets/events/event-roaring-falls.jpg",
-        "logo" : "assets/logos/roaring-falls.png",
-        "photographer" : "Ashley Lader",
-        "season" : "fall",
-        "starttime" : "10:00 am",
-        "state" : "New Hampshire",
-        "time" : "10:00am",
-        "title" : "Roaring Falls Trail Race"
-      },
-      "quotes" : {
-        "first" : {
-          "quote": "Come with us to some of the most spectacular places New Hampshire has to offer. You'll earn every glimpse of foliage at these amazing locations.",
-          "person" : "Chris J. Dunn, Owner"
-        },
-        "second" : {
-          "quote": "Bretton Woods is one of my favorite races of all time. You never know what's going to happen, or when it's going to happen, but SOMETHINGS going to happen...",
-          "person" : "Douglas Grey"
-        }
       }
     },
     "spring" : {
-      "ralphWaldo" : {
-        "address" : "Emerson School",
-        "address2" : "274 Pleasant Street",
-        "bibtime" : "8:30am to 9:30am ",
-        "city" : "Concord",
-        "cost" : "$25 (9 miles), $20 (5 km) [$30 & $25 day of event]",
-        "coursemaps" : [ {
-          "image" : "assets/events/ralph-waldo-map01.jpg"
-        }, {
-          "image" : "assets/events/ralph-waldo-map02.jpg"
-        } ],
-        "date" : "April 26, 2014",
-        "designer" : "Rich Lavers",
-        "directoremail" : "laversjr@aol.com",
-        "directorname" : "Rich Lavers",
-        "distance" : "~9 miles & 5km",
-        "id" : "6",
-        "image" : "assets/events/event_ralphwaldo.jpg",
-        "logo" : "assets/logos/ralph-waldo.png",
-        "photographer" : "Gianina Lindsey",
-        "season" : "spring",
-        "starttime" : "10:00am",
-        "state" : "New Hampshire",
-        "time" : "10:00am",
-        "title" : "Ralph Waldo Emerson Trail Race"
-      },
       "exeterTrail" : {
         "address" : "",
         "address2" : "6 Commerce Way",
@@ -117,6 +259,25 @@
         "cost" : "$25 (10 miles), $20 (4.6 miles) [$30 & $25 day of event]",
         "date" : "June 28, 2014",
         "designer" : "Ri Fahnestock",
+        "details" : [ {
+          "copy" : "We will host a FREE product demo and course preview. Light refreshments and prizes after the run.",
+          "title" : ""
+        }, {
+          "copy" : "All competitors will start at the same time in the same location. At a predetermined spot the 10 mile & 4.6 mile races will split with competitors going in different directions. This a very technical trail race. There is arguably no better urban trail running and mountain biking network in the northeast than the Oaklands & Henderson-Swasey Town Forests. Located just minutes from downtown Exeter, NH these trails are better known as Fort Rock. If it's technical trail running you are looking for...search no further. This may be the most technical trail race anywhere in New England!",
+          "title" : ""
+        }, {
+          "copy" : "Prizes for Top 3 Men & Women in the 10 MILE Event",
+          "title" : "Cash Awards!"
+        }, {
+          "copy" : "1st Place: $100 (plus a FREE entry to the 2016 event)",
+          "title" : ""
+        }, {
+          "copy" : "2nd Place: $25 (plus a FREE entry to the 2016 event)",
+          "title" : ""
+        }, {
+          "copy" : "3rd Place: 603 Brewery 'prize' (must be 21 to be eligible or alternate prize awarded)",
+          "title" : ""
+        } ],
         "directoremail" : "sarah.silverberg@gmail.com",
         "directorname" : "Sarah Sallade & Ri Fahnestock",
         "distance" : "10 MILE and 4.6 MILE races!",
@@ -132,39 +293,79 @@
       },
       "quotes" : {
         "first" : {
-          "quote": "As the snow recedes and our favorite trails emerge we get the fever just like you. Our two spring trail races will test your winter fitness while satisfying your need to get out in the woods.",
-          "person" : "Chris J. Dunn, Owner"
+          "person" : "Chris J. Dunn, Owner",
+          "quote" : "As the snow recedes and our favorite trails emerge we get the fever just like you. Our two spring trail races will test your winter fitness while satisfying your need to get out in the woods."
         },
         "second" : {
-          "quote": "Love the vibe at all of the acidotic races and the fact that they all support great local charities. It's no wonder that all of your races sell out so quickly you guys do a great job giving the trail running community the chance to get together and indulge in our sport.",
-          "person" : "Rick Pelkey"
+          "person" : "Rick Pelkey",
+          "quote" : "Love the vibe at all of the acidotic races and the fact that they all support great local charities. It's no wonder that all of your races sell out so quickly you guys do a great job giving the trail running community the chance to get together and indulge in our sport."
         }
+      },
+      "ralphWaldo" : {
+        "address" : "Emerson School",
+        "address2" : "274 Pleasant Street",
+        "bibtime" : "8:30am to 9:30am ",
+        "city" : "Concord",
+        "cost" : "$25 (9 miles), $20 (5 km) [$30 & $25 day of event]",
+        "coursemaps" : [ {
+          "image" : "assets/events/ralph-waldo-map01.jpg"
+        }, {
+          "image" : "assets/events/ralph-waldo-map02.jpg"
+        } ],
+        "date" : "April 26, 2014",
+        "designer" : "Rich Lavers",
+        "details" : [ {
+          "copy" : "The race will take place on the City of Concord's Winant Park Trails. Located close to downtown Concord the trails offer a beautiful taste of windy singletrack, switchbacks with breathtaking views of the capital area and nordic-type paths. The approximately 9 mile long course will be more of the same! ",
+          "title" : ""
+        }, {
+          "copy" : "We are pleased to note this event will be a 100% fundraiser for the Ralph Waldo Emerson School for Preschoolers in Concord, NH Ralph Waldo Emerson School for Preschoolers is a nondenominational, nonprofit organization founded in 1966, offering morning and afternoon programs for three, four and five-year-old children. Emerson School is accredited by the National Academy of Early Childhood Programs. Emerson's classrooms and woodland playground create a beautiful space that is rich in potential. Their curriculum is shared and created by both teachers and children working together. They believe that children learn best through what they do best - through their play. Their teachers closely observe children's play and then offer further opportunities for children to reflect on and revisit their experiences. Emerson School's uniqueness results from relationships between families, teachers, and a parent volunteer Board of Directors. These partnerships have been the essence of Emerson for over 40 years and the key to their continued success.",
+          "title" : ""
+        }, {
+          "copy" : "We are happy to offer all active military, retired military, and military spouses a discount on registration. See the details on the online registration page.",
+          "title" : "Military Discounts"
+        }, {
+          "copy" : "No transfers or refunds after April 25, 2015.",
+          "title" : "Note"
+        } ],
+        "directoremail" : "laversjr@aol.com",
+        "directorname" : "Rich Lavers",
+        "distance" : "~9 miles & 5km",
+        "id" : "6",
+        "image" : "assets/events/event_ralphwaldo.jpg",
+        "logo" : "assets/logos/ralph-waldo.png",
+        "photographer" : "Gianina Lindsey",
+        "season" : "spring",
+        "starttime" : "10:00am",
+        "state" : "New Hampshire",
+        "time" : "10:00am",
+        "title" : "Ralph Waldo Emerson Trail Race"
       }
     },
     "summer" : {
-      "loonMountainRace" : {
-        "address" : "Loon Mountain Resort",
-        "address2" : "60 Loon Mountain Road",
-        "bibtime" : "6:30am to 9:00am ",
-        "city" : "Lincoln",
-        "cost" : "$20 pre-registration; $25 event day registration",
-        "coursemaps" : [ {
-          "image" : "assets/events/lmr-coursemap.jpg"
+      "harmonyHill" : {
+        "address" : "TBD",
+        "address2" : "TBD",
+        "bibtime" : "TBD",
+        "city" : "TBD",
+        "cost" : "TBD",
+        "date" : "TBD",
+        "designer" : "TBD",
+        "details" : [ {
+          "copy" : "to be written",
+          "title" : "tbd"
         } ],
-        "date" : "July 6, 2014",
-        "designer" : "Paul Kirsch, Rich Bolt, Dave Dunham",
-        "directoremail" : "contact@acidoticRACING.com",
-        "directorname" : "Chris J. Dunn and Paul Kirsch",
-        "distance" : "Men 7M & Women 4.8M",
-        "id" : "8",
-        "image" : "assets/events/event_lmr.jpg",
-        "logo" : "assets/logos/loonmountain.png",
-        "photographer" : "Scott Mason",
+        "directoremail" : "TBD",
+        "directorname" : "TBD",
+        "distance" : "TBD",
+        "id" : "11",
+        "image" : "assets/events/event_harmony-hill.jpg",
+        "logo" : "assets/logos/harmony_logo.jpg",
+        "photographer" : "TBD",
         "season" : "summer",
-        "starttime" : "Women: 8:00am & Men: 9:30am",
+        "starttime" : "TBD",
         "state" : "New Hampshire",
-        "time" : "Women: 8:00am  Men: 9:30am",
-        "title" : "Loon Mountain Race NE Mountain Running Championship"
+        "time" : "TBD",
+        "title" : "Harmony Hill Summer XC Series"
       },
       "kingmanFarmTrailRace" : {
         "address" : "Madbury Town Hall",
@@ -179,6 +380,16 @@
         } ],
         "date" : "August 2, 2014",
         "designer" : "Chris J. Dunn",
+        "details" : [ {
+          "copy" : "We're getting back to our roots a little (pun intended) with one of the newest editions to our renowned event schedule. The Kingman Farm Trail Race will be an old-school show up, lace up, and race sort of event. We've designed a course that's both beginner friendly and challenging at the same time. Packed into roughly 3.6 miles you'll encounter nordic-type paths, switchback single-track, and corn fields. Follow it up with some killer prizes from our generous sponsors and a homemade baked good or two and we promise you'll put this event on your schedule every year.",
+          "title" : "THERE IS NO DAY OF EVENT ENTRY DUE TO THE LIMITED PARKING."
+        }, {
+          "copy" : "We are happy to offer all active military, retired military, and military spouses a discount on registration. See the details on the online registration page.",
+          "title" : "Military Discounts"
+        }, {
+          "copy" : "No transfers or discounts after July 25, 2015.",
+          "title" : "Note"
+        } ],
         "directoremail" : "runkingmanfarm@gmail.com",
         "directorname" : "Tim Lindsey",
         "distance" : "3.6 miles",
@@ -192,39 +403,145 @@
         "time" : "10:00am",
         "title" : "Kingman Farm Trail Race"
       },
-      "harmonyHill" : {
-        "address" : "TBD",
-        "address2" : "TBD",
-        "bibtime" : "TBD",
-        "city" : "TBD",
-        "cost" : "TBD",
-        "date" : "TBD",
-        "designer" : "TBD",
-        "directoremail" : "TBD",
-        "directorname" : "TBD",
-        "distance" : "TBD",
-        "id" : "11",
-        "image" : "assets/events/event_harmony-hill.jpg",
-        "logo" : "assets/logos/harmony_logo.jpg",
-        "photographer" : "TBD",
+      "loonMountainRace" : {
+        "address" : "Loon Mountain Resort",
+        "address2" : "60 Loon Mountain Road",
+        "bibtime" : "6:30am to 9:00am ",
+        "city" : "Lincoln",
+        "cost" : "$20 pre-registration; $25 event day registration",
+        "coursemaps" : [ {
+          "image" : "assets/events/lmr-coursemap.jpg"
+        } ],
+        "date" : "July 6, 2014",
+        "designer" : "Paul Kirsch, Rich Bolt, Dave Dunham",
+        "details" : [ {
+          "copy" : "Over the years our Loon Mountain Race has developed quite a following here in the northeast. The reputation as one of the region’s toughest races is due in large part to the kilometer ascent of North Peak via the black diamond trail known as Upper Walking Boss. 'The Boss', as it’s affectionately known, is roughly a kilometer of grassy slope with angles that exceed a dizzying 40% grade! And recently the word has spread outside of the region as well. Our race has received a number of national accolades as well. Here they are:",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "image" : "assets/logos/USATF.png",
+          "title" : "Off-Road Race of the Year 2014"
+        }, {
+          "copy" : "This race up Loon Mountain is an annual benchmark on one of the country’s most competitive trail running circuits. Among the most dastardly hill climb races in the country, the course of this five-miler has an average grade of 10 percent—but in some places it ascends at an unthinkable 40 percent—as it meanders upward on a combination of dirt trails, gravel service roads, and grassy ski slopes. -RW",
+          "image" : "assets/logos/rw_logo.png",
+          "title" : "Most Competitive Hillclimb"
+        }, {
+          "copy" : "Widely considered the New England Trail Running series’ most difficult event, the Loon Mountain Race in Lincoln, New Hampshire, packs a whopping 2,200-vertical gain in just 5.5 miles. Racers literally run up a mountain—the average grade is 10 percent, with some sections as steep as 40 percent. The trail winds up the ski resort’s runs, including the black-diamond pitch Upper Walking Boss, before finishing at the top gondola station on Loon peak. -OM",
+          "image" : "assets/logos/outside.jpg",
+          "title" : "Trail Runners Bucket List"
+        }, {
+          "copy" : "Running 5.5 miles with 2,200 feet of vertical gain will definitely make you question the sanity of running up Loon Peak instead of skiing down it — especially on the black-diamond ski run portion, where racers navigate a 40-percent incline. Front-runners dance up the grass ski slopes, dirt trails and service roads like mountain goats. The race has been selected as the 2014 USATF Mountain Running Championship, so you can expect to see some of the best mountain runners in the country pushing the pace.",
+          "image" : "assets/logos/competitor.png",
+          "title" : "Dirty Dozen - America’s Best Trail Races"
+        }, {
+          "copy" : "Because we're starting a little earlier on Sunday morning we will offer Saturday afternoon bib pickup at Loon Mountain from 4:00-5:30 pm for any pre-registered athlete in the Governor Adams Lodge (look for the LMR Registration signs). You can still pick up your bib Sunday morning.",
+          "title" : "Saturday Bib Pick-Up"
+        }, {
+          "copy" : "6:30 am - 8:00 am (Governor Adams Lodge...again, look for the LMR registration signs)",
+          "title" : "Sunday Bib Pick-Up"
+        }, {
+          "copy" : "After a great deal of positive feedback we have decided to keep the 2014 'mens course' and adopt it as the official course for everyone in 2015. The race will begin behind the Governor Adams Lodge and travel along the service trails heading up Loon Mountain before veering into the Nordic Ski trail network. After this new section of course it follows a traditional combination of dirt trail, service roads, and ski trails to the Summit Lodge at the top of the Gondola. The course works its way over and up to the summit of North Peak via the infamous Upper Walking Boss black diamond trail where the race will finish. The course averages approximately a 14% grade with some sections of more than 40%!",
+          "title" : ""
+        }, {
+          "copy" : "Hiking poles are prohibited at this USATF sanctioned event.",
+          "title" : "Note"
+        }, {
+          "copy" : "When you pick up your race bib, you will need to sign an additional waiver that is provided by Loon Mountain.",
+          "title" : "Loon Mountain Waiver"
+        }, {
+          "copy" : "You will be able to ride the Gondola, free of charge, back to the bottom after the race.",
+          "title" : ""
+        }, {
+          "copy" : "If you have a bag you would like at the top of the mountain, leave it in the pile near the Gondola. They will then be transported to the top of the Gondola.",
+          "title" : "Clothing Drop"
+        }, {
+          "copy" : "The course will feature three fluid aid stations. The average temperature in July is 77F so make sure you run with fluids if you think you will need more than three hydration stops. We will provide fluids at the finish area and back at the Governor Adams Lodge.",
+          "title" : ""
+        }, {
+          "copy" : "Spectators & Family members can purchase discounted Gondola tickets to ride to the top of the mountain. Tickets will be on sale at the Main Lodge.",
+          "title" : ""
+        }, {
+          "copy" : "Awards and Food will be back in the Governor Adams Lodge after the race",
+          "title" : ""
+        }, {
+          "copy" : "No transfers or refunds after June 28, 2015.",
+          "title" : "Note"
+        } ],
+        "directoremail" : "contact@acidoticRACING.com",
+        "directorname" : "Chris J. Dunn and Paul Kirsch",
+        "distance" : "Men 7M & Women 4.8M",
+        "id" : "8",
+        "image" : "assets/events/event_lmr.jpg",
+        "logo" : "assets/logos/loonmountain.png",
+        "photographer" : "Scott Mason",
         "season" : "summer",
-        "starttime" : "TBD",
+        "starttime" : "Women: 8:00am & Men: 9:30am",
         "state" : "New Hampshire",
-        "time" : "TBD",
-        "title" : "Harmony Hill Summer XC Series"
+        "time" : "Women: 8:00am  Men: 9:30am",
+        "title" : "Loon Mountain Race NE Mountain Running Championship"
       },
       "quotes" : {
         "first" : {
-          "quote": "This is our busiest and most diverse season of the year. No matter what your passion, if it involves breathtaking challenges look no further.",
-          "person" : "Chris J. Dunn, Owner"
+          "person" : "Chris J. Dunn, Owner",
+          "quote" : "This is our busiest and most diverse season of the year. No matter what your passion, if it involves breathtaking challenges look no further."
         },
         "second" : {
-          "quote": "In my mind, there was nothing tougher to accomplish in the (USATF-NE) series than the dreaded 40% grade of Upper Walking Boss in the Loon Mountain Race. No matter how hard I imagined it would be, once I was actually there, it was insane! Being up there on UWB, sweating it out with everyone, taking in the view, proving to myself I could do it . .. priceless.",
-          "person" : "Katharine Jenkins"
+          "person" : "Katharine Jenkins",
+          "quote" : "In my mind, there was nothing tougher to accomplish in the (USATF-NE) series than the dreaded 40% grade of Upper Walking Boss in the Loon Mountain Race. No matter how hard I imagined it would be, once I was actually there, it was insane! Being up there on UWB, sweating it out with everyone, taking in the view, proving to myself I could do it . .. priceless."
         }
       }
     },
     "winter" : {
+      "kingmanFarm" : {
+        "address" : "Madbury Town Hall",
+        "address2" : "13 Town Hall Road",
+        "bibtime" : "4:30pm to 5:30pm ",
+        "city" : "Madbury",
+        "cost" : "$25 pre-registration only *LIMITED FIELD*",
+        "date" : "February 15, 2014",
+        "designer" : "Chris J. Dunn",
+        "details" : [ {
+          "copy" : "This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race. Once again we’re excited to announce that Petzl is back as a sponsor and they’ve sent us some of their amazing headlamps to give-away! And thanks to our friends at DION Snowshoes, a limited number of DION snowshoes will be available to rent for the evening. Please e-mail the RD (Chris J. Dunn) at contact@acidoticRACING.com to reserve a pair.",
+          "title" : ""
+        }, {
+          "copy" : "Please plan to park at Moharimet Elementary School (11 Lee Road, Madbury, NH 03823). Volunteers will direct you where to go and how to get to registration at the Madbury Town Hall. Parking at the Madbury Town Hall is limited to officials and volunteers.",
+          "title" : "Parking"
+        }, {
+          "copy" : "A working headlamp (HINT: with new batteries) is mandatory. Kingman Farm is a very, very dark confusing place to be without a headlamp.",
+          "title" : "Headlamps"
+        }, {
+          "copy" : "Minimum snowshoe size 120 square inches; you must show a working headlamp at registration and wear it at all times while on course",
+          "title" : "Rules"
+        }, {
+          "copy" : "We will also continue the tradition helping the less fortunate in our community and will do so by collecting gently used and clean warm hats at all of our winter events in 2015. These hat are collected through our One Warm Hat program and donated directly to New Horizons of New Hampshire in Manchester. Thank you in advance for your support.",
+          "title" : "One Warm Hat"
+        }, {
+          "copy" : "The mission of Cocheco Valley Humane Society (CVHS) is to make possible a better world for all animals by providing shelter, educating the community about humane care and treatment, advocating animal welfare, and promoting the human animal bond.",
+          "title" : "A Portion Of The Proceeds To Benefit"
+        } ],
+        "directoremail" : "contact@acidoticRACING.com",
+        "directorname" : "Chris J. Dunn",
+        "distance" : "4.5 miles",
+        "id" : "2",
+        "image" : "assets/events/event_kingman-moonlight.jpg",
+        "logo" : "assets/logos/kingman-moonlight.png",
+        "photographer" : "Scott Mason",
+        "season" : "winter",
+        "starttime" : "6:00 pm",
+        "state" : "New Hampshire",
+        "time" : "6:00pm",
+        "title" : "Kingman Farm Moonlight Snowshoe Race"
+      },
+      "quotes" : {
+        "first" : {
+          "person" : "Chris J. Dunn, Owner",
+          "quote" : "When our favorite trails get covered in a blanket of snow we see opportunities where others might see obstacles. Spend a winter racing with us and it just might become your favorite thirteen weeks of the year."
+        },
+        "second" : {
+          "person" : "Melinda Bubier",
+          "quote" : "I love hearing the cow bell ringing at the top of the Kingman Farm 'mountain' and knowing I am a few switchbacks away from the finish."
+        }
+      },
       "sidehillerSnowshoe" : {
         "address" : "Sandwich Library Parking Area",
         "address2" : "Route 109",
@@ -233,6 +550,34 @@
         "cost" : "Ages 65-75: $5 // Ages 76+: FREE (ie. The Busa Advantage) // WMM, WMAC, Sidehiller, and acidotic members: $10",
         "date" : "January 26, 2014",
         "designer" : "Paul Kirsch",
+        "details" : [ {
+          "copy" : "The race has been cancelled due to the lack of snow and abundance of ice on the Fairgrounds. We will work with the US Snowshoe Association to move the qualifier to another NH-based race. Visit the series website at http://www.granitestatesnowshoeseries.org for the details on a new qualifier.",
+          "title" : ""
+        }, {
+          "copy" : "9:30-10:30am at the Sandwich Library parking area, Route 109 Center Sandwich, NH",
+          "title" : "Parking & Race Day Registration"
+        }, {
+          "copy" : "We may be no frills but we are still at the epicenter of the snowshoe racing universe. This is the only race that is part of the both the famed and internationally acclaimed Western Mass Athletic Club (WMAC) Snowshoe Series and the quickly growing and frighteningly successful Granite State Snowshoe Series. We dare call it The Crossroads of snowshoe racing. Its also a qualifying race for the 2015 National Championships in Eau Claire, WI. Its all brought to you by the Sandwich Sidehillers, Dion Snowshoes, and Hammer Nutrition.",
+          "title" : "About The Race"
+        }, {
+          "copy" : "I-93 to exit 23, rte 104 East to rte 25 East to Center Harbor. Turn onto Bean Rd go 8 Miles.  Turn Right at blinking light at Route 113.  Library Entrance just past Post Office.",
+          "title" : "Directions"
+        }, {
+          "copy" : "MINIMUM SNOWSHOE SIZE = 120 SQUARE INCH SURFACE.",
+          "title" : "Snowshoe Requirements"
+        }, {
+          "copy" : "Water & Heed Sports Drink Available at Start/Finish Only",
+          "title" : "Aid Stations"
+        }, {
+          "copy" : "A limited number of DION Snowshoes will be available to rent the day of the event. Please contact us at contact@acidoticRACING.com to reserve your pair.",
+          "title" : "Dion Snowshoe Rentals"
+        }, {
+          "copy" : "We will also continue the tradition helping the less fortunate in our community and will do so by collecting gently used and clean warm hats at all of our winter events in 2015. These hat are collected through our One Warm Hat program and donated directly to New Horizons of New Hampshire in Manchester. Thank you in advance for your support.",
+          "title" : "One Warm Hat"
+        }, {
+          "copy" : "Sandwich Sidehillers Winter Trails Club, Hammer Nutrition Products, & Dion Snowshoes.",
+          "title" : "Sponsored By"
+        } ],
         "directoremail" : "pkirsch2@gmail.com",
         "directorname" : "Paul Kirsch",
         "distance" : "4 miles",
@@ -246,28 +591,50 @@
         "time" : "11:00am",
         "title" : "Sidehiller Snowshoe Race"
       },
-      "kingmanFarm" : {
-        "address" : "Madbury Town Hall",
-        "address2" : "13 Town Hall Road",
-        "bibtime" : "4:30pm to 5:30pm ",
-        "city" : "Madbury",
-        "cost" : "$25 pre-registration only *LIMITED FIELD*",
-        "date" : "February 15, 2014",
-        "designer" : "Chris J. Dunn",
-        "directoremail" : "contact@acidoticRACING.com",
-        "directorname" : "Chris J. Dunn",
-        "distance" : "4.5 miles",
-        "id" : "2",
-        "image" : "assets/events/event_kingman-moonlight.jpg",
-        "logo" : "assets/logos/kingman-moonlight.png",
-        "photographer" : "Scott Mason",
+      "snowshoeChampionship" : {
+        "address" : "",
+        "address2" : "157 Deerfield Road",
+        "bibtime" : "",
+        "city" : "Allenstown",
+        "cost" : "",
+        "date" : "March 8, 2014",
+        "designer" : "",
+        "details" : [ {
+          "copy" : "These championships are open to all. You do not need to qualify to race this event. Everyone is welcome!",
+          "title" : ""
+        }, {
+          "copy" : "Snowshoe racing is a uniquely regional sport and in our opinion there is NO region with a more vibrant and competitive scene than the northeast! That's why the Northeast Snowshoe Federation was formed. It's mission is to promote and the grow the sport of snowshoe racing here in the northeast and host a regional championship every winter. This winter, we here in New Hampshire are THRILLED to host the event! Next winter it'll rotate to another location in the region. And to increase the competitiveness (and the fun) we will combine the New Hampshire championship with this regional finale. So, the Granite State Snowshoe Series participants have a championship of their own and the regional snowshoe racing family gets a chance to come together in one grand race!",
+          "title" : ""
+        }, {
+          "copy" : "The course is being finalized but expect the distance to be about 10k with a good deal of climbing, breathtaking views, wide carriage roads, and some amazing singletrack.",
+          "title" : ""
+        }, {
+          "copy" : "Thanks to our series sponsor, DION Snowshoes, one lucky snowshoer will win a pair of the model 121's.",
+          "title" : "Prizes"
+        }, {
+          "copy" : "Minimum snowshoe size 120 square inches",
+          "title" : "Rules"
+        }, {
+          "copy" : "A limited number of DION Snowshoes will be available to rent the day of the event. Please contact us at contact@acidoticRACING.com to reserve your pair.",
+          "title" : "Dion Snowshoe Rentals"
+        }, {
+          "copy" : "We will also continue the tradition helping the less fortunate in our community and will do so by collecting gently used and clean warm hats at all of our winter events in 2015. These hat are collected through our One Warm Hat program and donated directly to New Horizons of New Hampshire in Manchester. Thank you in advance for your support.",
+          "title" : "One Warm Hat"
+        } ],
+        "directoremail" : "",
+        "directorname" : "",
+        "distance" : "",
+        "id" : "4",
+        "image" : "assets/events/event_granitestate.jpg",
+        "logo" : "assets/logos/gssc.jpg",
+        "photographer" : "Gianina Lindsey",
         "season" : "winter",
-        "starttime" : "6:00 pm",
+        "starttime" : "",
         "state" : "New Hampshire",
-        "time" : "6:00pm",
-        "title" : "Kingman Farm Moonlight Snowshoe Race"
-      }, 
-      "snowshoeHullabaloo": {
+        "time" : "10:00am",
+        "title" : "NH Snowshoe Championship"
+      },
+      "snowshoeHullabaloo" : {
         "address" : "",
         "address2" : "6 Commerce Way",
         "bibtime" : "09:30 am to 10:30 am",
@@ -275,6 +642,23 @@
         "cost" : "$22 event day registration (no online pre-registration due to the uncertainty of snow conditions)",
         "date" : "February 22, 2014",
         "designer" : "Ri Fahnestock",
+        "details" : [ {
+          "copy" : "Due to the early northeast snowshoe race postponements, reschedules, and cancellations the United States Snowshoe Association has just announced that they are adding our Exeter Snowshoe Hullabaloo as a regional qualifier for the US Snowshoe Championships. You must be a member of the USSA to qualify. Day of event USSA membership applications will be available. Payment is due onsite. For more information visit the USSA at http://www.snowshoeracing.com/",
+          "image" : "assets/logos/usssa.png",
+          "title" : "United States Snowshoe Association"
+        }, {
+          "copy" : "The Snowshoe Hullabaloo is run over almost 4 miles of tight and twisted, packed single track in the Henderson-Swazey (aka Ft. Rock) Woods in Exeter, NH. The course is a pulse-raising roller coaster of ups, downs and hair-pin turns. Every hill is runnable, guaranteeing fast times, but there are enough of them to make sure that even the front runners will be breathing hard by the finish. The narrow rails keep it fun, but you'll have to break tracks if you want to pass. Sure to please everyone, whether racing or running, the sheer beauty of the trails will keep you occupied whether you're out for 30 minutes or an hour.",
+          "title" : ""
+        }, {
+          "copy" : "A limited number of DION Snowshoes will be available to rent the day of the event. Please contact us at contact@acidoticRACING.com to reserve your pair.",
+          "title" : "Dion Snowshoe Rentals"
+        }, {
+          "copy" : "We will also continue the tradition helping the less fortunate in our community and will do so by collecting gently used and clean warm hats at all of our winter events in 2015. These hat are collected through our One Warm Hat program and donated directly to New Horizons of New Hampshire in Manchester. Thank you in advance for your support.",
+          "title" : "One Warm Hat"
+        }, {
+          "copy" : "The mission of Cocheco Valley Humane Society (CVHS) is to make possible a better world for all animals by providing shelter, educating the community about humane care and treatment, advocating animal welfare, and promoting the human animal bond.",
+          "title" : "A Portion Of The Proceeds To Benefit"
+        } ],
         "directoremail" : "exetertrailrace@gmail.com",
         "directorname" : "Sarah Sallade & Ri Fahnestock",
         "distance" : "4 miles",
@@ -287,37 +671,6 @@
         "state" : "New Hampshire",
         "time" : "11:00am",
         "title" : "Exeter Snowshoe Hullabaloo"
-      },
-      "snowshoeChampionship": {
-        "address" : "",
-        "address2" : "157 Deerfield Road",
-        "bibtime" : "",
-        "city" : "Allenstown",
-        "cost" : "",
-        "date" : "March 8, 2014",
-        "designer" : "",
-        "directoremail" : "",
-        "directorname" : "",
-        "distance" : "",
-        "id" : "4",
-        "image" : "assets/events/event_granitestate.jpg",
-        "logo" : "assets/logos/gssc.jpg",
-        "photographer" : "Gianina Lindsey",
-        "season" : "winter",
-        "starttime" : "",
-        "state" : "New Hampshire",
-        "time" : "10:00am",
-        "title" : "Granite State Snowshoe Championship"
-      },
-      "quotes" : {
-        "first" : {
-          "quote": "When our favorite trails get covered in a blanket of snow we see opportunities where others might see obstacles. Spend a winter racing with us and it just might become your favorite thirteen weeks of the year.",
-          "person" : "Chris J. Dunn, Owner"
-        },
-        "second" : {
-          "quote": "I love hearing the cow bell ringing at the top of the Kingman Farm 'mountain' and knowing I am a few switchbacks away from the finish.",
-          "person" : "Melinda Bubier"
-        }
       }
     }
   }
