@@ -23,6 +23,7 @@ var defaults = {};
     fbData.data = AllData;
     // starting event edit data (false or value)
     fbData.event = eventData;
+    fbData.Session = SessionAuth;
     return fbData;
   };
 
@@ -155,6 +156,7 @@ var defaults = {};
     fbData.title = defaults.title;
     fbData.season = defaults.season;
     fbData.data = AllData;
+    fbData.Session = SessionAuth;
     return fbData;
   };
 
@@ -168,6 +170,7 @@ var defaults = {};
     fbData.title = title + ' - acidotic Racing';
     fbData.season = season;
     fbData.data = AllData;
+    fbData.Session = SessionAuth;
     return fbData
   };
 
@@ -199,6 +202,7 @@ var defaults = {};
     fbData.season = season;
     fbData.page = page;
     fbData.data = AllData;
+    fbData.Session = SessionAuth;
     return fbData
   };
   // ABOUT PAGE
@@ -219,6 +223,7 @@ var defaults = {};
     fbData.season = season;
     fbData.data = data;
     fbData.event = eventName;
+    fbData.Session = SessionAuth;
     return fbData;
   };
 

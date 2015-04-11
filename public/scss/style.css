@@ -1074,7 +1074,8 @@ footer {
       color: #aeaeae;
       margin-bottom: 10px;
       margin-left: 184px;
-      margin-top: 0; }
+      margin-top: 0;
+      font-size: 12px; }
       @media screen and (max-width: 525px) {
         .edit-form div p, .login-form div p {
           margin-left: 0; } }

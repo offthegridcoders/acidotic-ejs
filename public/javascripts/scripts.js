@@ -1,10 +1,8 @@
 var changeSeasonIcon = function() {
   var image = $('.season-icon').attr('src');
   if (image.indexOf('_orange') > 0) {
-    console.log('bang');
     return image.replace('_orange.jpg', '.jpg');
   }
-    console.log('bang2');
   return image.replace('.jpg', '_orange.jpg');
 };
 

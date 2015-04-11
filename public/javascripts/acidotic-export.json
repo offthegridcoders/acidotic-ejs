@@ -7,7 +7,7 @@
         "bibtime" : "08:30 am to 09:30 am",
         "city" : "Bretton Woods",
         "cost" : "$25 pre-registration; $30 day of event registration",
-        "date" : "October 4, 2014",
+        "date" : "October 3, 2015",
         "designer" : "Chris J. Dunn",
         "details" : [ {
           "copy" : "In an effort to accommodate more competitors we are offering two different courses this year. The 'short course' will race the first three check points (CPs); A, B, & C. The total distance will be approximately TBA miles. This course will be marked with our traditional trail running course markings including survey flags and turn arrows. The short course markings will be referred to as the 'safe route'. It is not the most direct route from CP to CP but it is 'safe' in that you can follow the flags and arrows. If you choose to race the short course you may still take any route you prefer from CP to CP. Completing the short course will make you eligible for 'mountain goat status' but there are no overall finishers awards. Short course finishers will, however, still be entered into the prize drawing following the long course finish.",
@@ -158,7 +158,7 @@
         "bibtime" : "08:30 am to 09:30 am",
         "city" : "Moultonborough",
         "cost" : "$25 (11 miles), $20 (4 miles) [$30 & $25 day of event] *LIMITED FIELDS*",
-        "date" : "November 8, 2014",
+        "date" : "November 7, 2015",
         "designer" : "Robin Allen-Burke & Chris J. Dunn",
         "details" : [ {
           "copy" : "",
@@ -219,7 +219,7 @@
         }, {
           "image" : "assets/events/vulcans-fury-map03.jpg"
         } ],
-        "date" : "October 18, 2014",
+        "date" : "October 17, 2015",
         "designer" : "Geoff Cunningham",
         "details" : [ {
           "copy" : "",
@@ -272,7 +272,7 @@
         "bibtime" : "08:30 am to 09:30 am",
         "city" : "Exeter",
         "cost" : "$25 (10 miles), $20 (4.6 miles) [$30 & $25 day of event]",
-        "date" : "June 28, 2014",
+        "date" : "June 27th, 2015",
         "designer" : "Ri Fahnestock",
         "details" : [ {
           "copy" : "We will host a FREE product demo and course preview. Light refreshments and prizes after the run.",
@@ -332,7 +332,7 @@
         }, {
           "image" : "assets/events/ralph-waldo-map02.jpg"
         } ],
-        "date" : "April 26, 2014",
+        "date" : "May 2nd, 2015",
         "designer" : "Rich Lavers",
         "details" : [ {
           "copy" : "The race will take place on the City of Concord's Winant Park Trails. Located close to downtown Concord the trails offer a beautiful taste of windy singletrack, switchbacks with breathtaking views of the capital area and nordic-type paths. The approximately 9 mile long course will be more of the same! ",
@@ -408,7 +408,7 @@
         }, {
           "image" : "assets/events/kingman-farm-trail-map01.jpg"
         } ],
-        "date" : "August 2, 2014",
+        "date" : "August 1, 2015",
         "designer" : "Chris J. Dunn",
         "details" : [ {
           "copy" : "We're getting back to our roots a little (pun intended) with one of the newest editions to our renowned event schedule. The Kingman Farm Trail Race will be an old-school show up, lace up, and race sort of event. We've designed a course that's both beginner friendly and challenging at the same time. Packed into roughly 3.6 miles you'll encounter nordic-type paths, switchback single-track, and corn fields. Follow it up with some killer prizes from our generous sponsors and a homemade baked good or two and we promise you'll put this event on your schedule every year.",
@@ -447,7 +447,7 @@
         "coursemaps" : [ {
           "image" : "assets/events/lmr-coursemap.jpg"
         } ],
-        "date" : "July 6, 2014",
+        "date" : "July 5, 2015",
         "designer" : "Paul Kirsch, Rich Bolt, Dave Dunham",
         "details" : [ {
           "copy" : "Over the years our Loon Mountain Race has developed quite a following here in the northeast. The reputation as one of the region’s toughest races is due in large part to the kilometer ascent of North Peak via the black diamond trail known as Upper Walking Boss. 'The Boss', as it’s affectionately known, is roughly a kilometer of grassy slope with angles that exceed a dizzying 40% grade! And recently the word has spread outside of the region as well. Our race has received a number of national accolades as well. Here they are:",
@@ -542,7 +542,7 @@
         "bibtime" : "4:30pm to 5:30pm ",
         "city" : "Madbury",
         "cost" : "$25 pre-registration only *LIMITED FIELD*",
-        "date" : "February 15, 2014",
+        "date" : "February 28, 2015",
         "designer" : "Chris J. Dunn",
         "details" : [ {
           "copy" : "This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race. Once again we’re excited to announce that Petzl is back as a sponsor and they’ve sent us some of their amazing headlamps to give-away! And thanks to our friends at DION Snowshoes, a limited number of DION snowshoes will be available to rent for the evening. Please e-mail the RD (Chris J. Dunn) at contact@acidoticRACING.com to reserve a pair.",
@@ -597,11 +597,11 @@
         "bibtime" : "9:30am to 10:30am",
         "city" : "Center Sandwich",
         "cost" : "Ages 65-75: $5 // Ages 76+: FREE (ie. The Busa Advantage) // WMM, WMAC, Sidehiller, and acidotic members: $10",
-        "date" : "January 26, 2014",
+        "date" : "January 25, 2015",
         "designer" : "Paul Kirsch",
         "details" : [ {
-          "copy": "The race has been cancelled due to the lack of snow and abundance of ice on the Fairgrounds.  We will work with the US Snowshoe Association to move the qualifier to another NH-based race.  Visit the series website at http://www.granitestatesnowshoeseries.org for the details on a new qualifier.",
-          "title": ""
+          "copy" : "The race has been cancelled due to the lack of snow and abundance of ice on the Fairgrounds.  We will work with the US Snowshoe Association to move the qualifier to another NH-based race.  Visit the series website at http://www.granitestatesnowshoeseries.org for the details on a new qualifier.",
+          "title" : ""
         }, {
           "copy" : "9:30-10:30am at the Sandwich Library parking area, Route 109 Center Sandwich, NH",
           "title" : "Parking & Race Day Registration"
@@ -651,7 +651,7 @@
         "bibtime" : "TBD",
         "city" : "Allenstown",
         "cost" : "TBD",
-        "date" : "March 8, 2014",
+        "date" : "March 7, 2015",
         "designer" : "TBD",
         "details" : [ {
           "copy" : "These championships are open to all. You do not need to qualify to race this event. Everyone is welcome!",
@@ -699,7 +699,7 @@
         "bibtime" : "09:30 am to 10:30 am",
         "city" : "Exeter",
         "cost" : "$22 event day registration (no online pre-registration due to the uncertainty of snow conditions)",
-        "date" : "February 22, 2014",
+        "date" : "February 21, 2015",
         "designer" : "Ri Fahnestock",
         "details" : [ {
           "copy" : "Due to the early northeast snowshoe race postponements, reschedules, and cancellations the United States Snowshoe Association has just announced that they are adding our Exeter Snowshoe Hullabaloo as a regional qualifier for the US Snowshoe Championships. You must be a member of the USSA to qualify. Day of event USSA membership applications will be available. Payment is due onsite. For more information visit the USSA at http://www.snowshoeracing.com/",
