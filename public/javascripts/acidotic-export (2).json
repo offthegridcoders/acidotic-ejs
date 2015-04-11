@@ -2,6 +2,7 @@
   "events" : {
     "fall" : {
       "brettonWoods" : {
+        "key" : "brettonWoods",
         "address" : "Bretton Woods Ski Area",
         "address2" : "99 Ski Area Road",
         "bibtime" : "08:30 am to 09:30 am",
@@ -133,10 +134,8 @@
         "image" : "assets/events/event_brettonwoods.jpg",
         "logo" : "assets/logos/bretton-woods.png",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "fall",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -154,6 +153,7 @@
         }
       },
       "roaringFalls" : {
+        "key" : "roaringFalls",
         "address" : "Castle In The Clouds",
         "address2" : "455 Ossipee Park Road",
         "resultsUrl" : "http://www.coolrunning.com/results/15/nh/Feb21_Exeter_set1.shtml",
@@ -198,10 +198,8 @@
         "image" : "assets/events/event-roaring-falls.jpg",
         "logo" : "assets/logos/roaring-falls.png",
         "photographer" : "Ashley Lader",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "fall",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -209,6 +207,7 @@
         "title" : "Roaring Falls Trail Race"
       },
       "vulcansFury" : {
+        "key" : "vulcansFury",
         "address" : "Pawtuckaway State Park",
         "address2" : "128 Mountain Road",
         "bibtime" : "08:30 am to 09:30 am",
@@ -257,10 +256,8 @@
         "image" : "assets/events/event_vulcansfury.jpg",
         "logo" : "assets/logos/vulcans_logo.png",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "fall",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -270,6 +267,7 @@
     },
     "spring" : {
       "exeterTrail" : {
+        "key" : "exeterTrail",
         "address" : "",
         "address2" : "6 Commerce Way",
         "bibtime" : "08:30 am to 09:30 am",
@@ -305,10 +303,8 @@
         "image" : "assets/events/event_exetertrail.jpg",
         "logo" : "assets/logos/exeter-trail-race.jpg",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "spring",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -326,6 +322,7 @@
         }
       },
       "ralphWaldo" : {
+        "key" : "ralphWaldo",
         "address" : "Emerson School",
         "address2" : "274 Pleasant Street",
         "resultsUrl" : "http://www.coolrunning.com/results/15/nh/Feb21_Exeter_set1.shtml",
@@ -360,10 +357,8 @@
         "image" : "assets/events/event_ralphwaldo.jpg",
         "logo" : "assets/logos/ralph-waldo.png",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "spring",
         "starttime" : "10:00am",
         "state" : "New Hampshire",
@@ -373,6 +368,7 @@
     },
     "summer" : {
       "harmonyHill" : {
+        "key" : "harmonyHill",
         "address" : "TBD",
         "address2" : "TBD",
         "bibtime" : "TBD",
@@ -393,10 +389,8 @@
         "image" : "assets/events/event_harmony-hill.jpg",
         "logo" : "assets/logos/harmony_logo.jpg",
         "photographer" : "TBD",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "summer",
         "starttime" : "TBD",
         "state" : "New Hampshire",
@@ -404,6 +398,7 @@
         "title" : "Harmony Hill Summer XC Series"
       },
       "kingmanFarmTrailRace" : {
+        "key" : "kingmanFarmTrailRace",
         "address" : "Madbury Town Hall",
         "address2" : "13 Town Hall Road",
         "bibtime" : "07:30 am to 08:30 am",
@@ -435,10 +430,8 @@
         "image" : "assets/events/event_kingmanfarm.jpg",
         "logo" : "assets/logos/kingmanfarm.jpg",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "summer",
         "starttime" : "09:00 am",
         "state" : "New Hampshire",
@@ -446,6 +439,7 @@
         "title" : "Kingman Farm Trail Race"
       },
       "loonMountainRace" : {
+        "key" : "loonMountainRace",
         "address" : "Loon Mountain Resort",
         "address2" : "60 Loon Mountain Road",
         "resultsUrl" : "http://www.coolrunning.com/results/15/nh/Feb21_Exeter_set1.shtml",
@@ -518,10 +512,8 @@
         "image" : "assets/events/event_lmr.jpg",
         "logo" : "assets/logos/loonmountain.png",
         "photographer" : "Scott Mason",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "summer",
         "starttime" : "Women: 8:00am & Men: 9:30am",
         "state" : "New Hampshire",
@@ -541,6 +533,7 @@
     },
     "winter" : {
       "kingmanFarm" : {
+        "key" : "kingmanFarm",
         "address" : "Madbury Town Hall",
         "address2" : "13 Town Hall Road",
         "bibtime" : "4:30pm to 5:30pm ",
@@ -576,10 +569,8 @@
         "image" : "assets/events/event_kingman-moonlight.jpg",
         "logo" : "assets/logos/kingman-moonlight.png",
         "photographer" : "Scott Mason",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "winter",
         "starttime" : "6:00 pm",
         "state" : "New Hampshire",
@@ -597,6 +588,7 @@
         }
       },
       "sidehillerSnowshoe" : {
+        "key" : "sidehillerSnowshoe",
         "address" : "Sandwich Library Parking Area",
         "address2" : "Route 109",
         "bibtime" : "9:30am to 10:30am",
@@ -641,10 +633,8 @@
         "image" : "assets/events/event_sidehiller.jpg",
         "logo" : "assets/logos/sidehiller.jpg",
         "photographer" : "Scott Mason",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "winter",
         "starttime" : "11:00am",
         "state" : "New Hampshire",
@@ -652,6 +642,7 @@
         "title" : "Sidehiller Snowshoe Race"
       },
       "snowshoeChampionship" : {
+        "key" : "snowshoeChampionship",
         "address" : "",
         "address2" : "157 Deerfield Road",
         "bibtime" : "",
@@ -690,10 +681,8 @@
         "image" : "assets/events/event_granitestate.jpg",
         "logo" : "assets/logos/gssc.jpg",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "winter",
         "starttime" : "",
         "state" : "New Hampshire",
@@ -701,6 +690,7 @@
         "title" : "NH Snowshoe Championship"
       },
       "snowshoeHullabaloo" : {
+        "key" : "snowshoeHullabaloo",
         "address" : "",
         "address2" : "6 Commerce Way",
         "bibtime" : "09:30 am to 10:30 am",
@@ -734,16 +724,18 @@
         "image" : "assets/events/event_hullaballo.jpg",
         "logo" : "assets/logos/hullaballo.png",
         "photographer" : "Gianina Lindsey",
-        "registration" : {
-          "link" : "http://www.google.com",
-          "status" : "open"
-        },
+        "registrationStatus" : "open",
+        "registrationLink" : "http://www.google.com",
         "season" : "winter",
         "starttime" : "11:00 am",
         "state" : "New Hampshire",
         "time" : "11:00am",
         "title" : "Exeter Snowshoe Hullabaloo"
       }
+    },
+    "suunto" : {
+      "title" : "RACE acidotic and WIN!",
+      "copy" : "We've partnered with Suunto to bring you a very special year long promotion. Every acidotic RACING event you do automatically enters you in a drawing to win a Suunto Ambit3 which we will randomly draw after the last race on our schedule. The more you race with us, the better your chances of winning. So come on out and RACE acidotic and win!"
     }
   }
 }

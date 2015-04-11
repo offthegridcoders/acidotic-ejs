@@ -34,10 +34,14 @@
           <h5><i class="fa fa-usd"></i> cost:</h5>
           <p><%= event.cost %></p>
         </div>
-        <div class="button-wrapper reg-open">
-          <p>Online Registration <%= event.registration.status %></p>
+        <div class="button-wrapper reg-<%= event.registrationStatus %>">
+          <p>Online Registration <%= event.registrationStatus %></p>
+          <% if(event.registrationStatus != 'closed') { %>
           <i class="fa fa-chevron-right"></i>
-          <a href="<%= event.registration.link %>" target="_new"><img src="assets/logos/runreg.png"></a>
+          <a href="<%= event.registrationLink %>" target="_new">
+            <img src="assets/logos/runreg.png">
+          </a>
+          <% } %>
         </div>
         <% include ../partials/mailchimp.ejs %>
       </article>

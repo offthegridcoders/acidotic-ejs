@@ -4,10 +4,102 @@ var Firebase = require('firebase');
 var fbRef = new Firebase('https://acidotic.firebaseio.com/');
 var allData = {};
 var defaultSeason = 'winter';
+var SessionAuth;
 
 fbRef.child('events/').on('value', function(snapshot) {
   allData = snapshot.val();
 });
+
+// ADMIN and LOGIN PAGE
+  router.get('/login', function(req, res, next) {
+      var fbData = {};
+      fbData.title = 'Login - acidotic Racing';
+      fbData.season = 'winter';
+      fbData.data = allData;
+      return res.render('pages/admin/login', fbData);
+  });
+
+  router.post('/login', function(req,res) {
+    // email    : "admin@acidoticracing.com",
+    // password : "RACEacidotic2015!"
+    fbRef.authWithPassword({
+      email    : req.body.email,
+      password : req.body.password
+    }, function(error, authData) {
+      if (error) {
+        console.log("Login Failed!", error);
+      } else {
+        SessionAuth = authData;
+        console.log("Authenticated successfully with payload:", authData);
+        var fbData = {};
+        fbData.title = 'Admin Dashboard - acidotic Racing';
+        fbData.season = 'winter';
+        fbData.data = allData;
+        fbData.event = false;
+        return res.render('pages/admin/admin', fbData);
+      }
+    }, {
+      // expires after browser shutdown
+      remember: "sessionOnly"
+    });
+  });
+
+  router.post('/logout', function(req,res) {
+    fbRef.unauth();
+    SessionAuth = null;
+    var fbData = {};
+    fbData.title = 'Winter Events - acidotic Racing';
+    fbData.season = 'winter';
+    fbData.data = allData;
+    return res.render('pages/seasons/winter', fbData);
+  });
+
+  router.get('/admin', function(req, res, next) {
+    if (SessionAuth) {
+      var fbData = {};
+      fbData.title = 'Admin Dashboard - acidotic Racing';
+      fbData.season = 'winter';
+      fbData.data = allData;
+      fbData.event = false;
+      return res.render('pages/admin/admin', fbData);
+    } else {
+      var fbData = {};
+      fbData.title = 'Winter Events - acidotic Racing';
+      fbData.season = 'winter';
+      fbData.data = allData;
+      return res.render('pages/seasons/winter', fbData);
+    }
+  });
+
+  router.post('/admin', function(req, res){
+    var fbData = {};
+    fbData.title = 'Admin Dashboard - acidotic Racing';
+    fbData.season = 'winter';
+    fbData.data = allData;
+    fbData.event = JSON.parse(req.body.eventChoice);
+    return res.render('pages/admin/admin', fbData);
+  });
+
+  router.post('/update-event', function(req, res){
+    var season = req.body.season;
+    var curEvent = req.body.key;
+    var usersRef = fbRef.child("events/" + season + '/' + curEvent);
+    usersRef.update(req.body, function(error) {
+      if (error) {
+        console.log("UPDATE DATA FAIL: Data could not be saved." + error);
+      } else {
+        console.log("UPDATE DATA: Data saved successfully.");
+      }
+    });
+
+    var fbData = {};
+    fbData.title = 'Admin Dashboard - acidotic Racing';
+    fbData.season = 'winter';
+    fbData.data = allData;
+    fbData.event = false;
+    return res.render('pages/admin/admin', fbData);
+  });
+
 
 // HOME PAGE
   router.get('/', function(req, res, next) {
