@@ -74,10 +74,6 @@
     }
   }
 
-  .hidden {
-    display: none;
-  }
-
   label {
     display: inline-block;
     margin-right: 10px;
@@ -117,6 +113,10 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+  
 .details-form {
   border-bottom: solid 1px #000;
   margin: 20px 0;

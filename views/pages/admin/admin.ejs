@@ -148,12 +148,20 @@
         
           <h3>Event Details</h3>
           <hr>
-          <% for(var i=0; i<event.details.length; i++) {%>
+          <% for(var i=0; i<event.details.length; i++) {
+            if (!event.details[i]) {continue;}%>
             <article class="detail-forms-wrapper">
-              <form class="remove-blurb-form">
+              <form class="remove-blurb-form" action="/remove-detail"
+                method="post" enctype="application/x-www-form-urlencoded">
+                <input type="text" class="hidden" name="season"
+                       value="<%= event.season %>">
+                <input type="text" class="hidden" name="eventKey"
+                       value="<%= event.key %>">
+                <input type="text" class="hidden" name="key"
+                       value="<%= i %>">
                 <button type="submit"><i class="fa fa-times-circle"></i><span>DELETE</span></button>
               </form>
-              <form class="details-form" action="/update-event"
+              <form class="details-form" action="/update-details"
                 method="post" enctype="application/x-www-form-urlencoded">
                 <button type="submit"><i class="fa fa-check-circle"></i><span>SAVE</span></button>
                 <div>
@@ -168,6 +176,13 @@
                   <label>Image URL</label>
                   <input type="text" name="image" value="<%= event.details[i].image %>">
                 </div>
+
+                <input type="text" class="hidden" name="season"
+                       value="<%= event.season %>">
+                <input type="text" class="hidden" name="eventKey"
+                       value="<%= event.key %>">
+                <input type="text" class="hidden" name="key"
+                       value="<%= i %>">
               </form>
             </article>
           <% } %>

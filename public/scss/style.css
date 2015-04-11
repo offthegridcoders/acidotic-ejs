@@ -1071,8 +1071,6 @@ footer {
       @media screen and (max-width: 525px) {
         .edit-form div p, .login-form div p {
           margin-left: 0; } }
-  .edit-form .hidden, .login-form .hidden {
-    display: none; }
   .edit-form label, .login-form label {
     display: inline-block;
     margin-right: 10px;
@@ -1098,6 +1096,9 @@ footer {
   text-transform: uppercase; }
 .logout i {
   font-size: 18px; }
+
+.hidden {
+  display: none; }
 
 .details-form {
   border-bottom: solid 1px #000;
