@@ -131,6 +131,10 @@
         "image" : "assets/events/event_brettonwoods.jpg",
         "logo" : "assets/logos/bretton-woods.png",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "fall",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -190,6 +194,10 @@
         "image" : "assets/events/event-roaring-falls.jpg",
         "logo" : "assets/logos/roaring-falls.png",
         "photographer" : "Ashley Lader",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "fall",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -243,6 +251,10 @@
         "image" : "assets/events/event_vulcansfury.jpg",
         "logo" : "assets/logos/vulcans_logo.png",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "fall",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -285,6 +297,10 @@
         "image" : "assets/events/event_exetertrail.jpg",
         "logo" : "assets/logos/exeter-trail-race.jpg",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "spring",
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
@@ -334,6 +350,10 @@
         "image" : "assets/events/event_ralphwaldo.jpg",
         "logo" : "assets/logos/ralph-waldo.png",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "spring",
         "starttime" : "10:00am",
         "state" : "New Hampshire",
@@ -361,6 +381,10 @@
         "image" : "assets/events/event_harmony-hill.jpg",
         "logo" : "assets/logos/harmony_logo.jpg",
         "photographer" : "TBD",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "summer",
         "starttime" : "TBD",
         "state" : "New Hampshire",
@@ -397,6 +421,10 @@
         "image" : "assets/events/event_kingmanfarm.jpg",
         "logo" : "assets/logos/kingmanfarm.jpg",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "summer",
         "starttime" : "09:00 am",
         "state" : "New Hampshire",
@@ -474,6 +502,10 @@
         "image" : "assets/events/event_lmr.jpg",
         "logo" : "assets/logos/loonmountain.png",
         "photographer" : "Scott Mason",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "summer",
         "starttime" : "Women: 8:00am & Men: 9:30am",
         "state" : "New Hampshire",
@@ -526,6 +558,10 @@
         "image" : "assets/events/event_kingman-moonlight.jpg",
         "logo" : "assets/logos/kingman-moonlight.png",
         "photographer" : "Scott Mason",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "winter",
         "starttime" : "6:00 pm",
         "state" : "New Hampshire",
@@ -585,6 +621,10 @@
         "image" : "assets/events/event_sidehiller.jpg",
         "logo" : "assets/logos/sidehiller.jpg",
         "photographer" : "Scott Mason",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "winter",
         "starttime" : "11:00am",
         "state" : "New Hampshire",
@@ -628,6 +668,10 @@
         "image" : "assets/events/event_granitestate.jpg",
         "logo" : "assets/logos/gssc.jpg",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "winter",
         "starttime" : "",
         "state" : "New Hampshire",
@@ -666,6 +710,10 @@
         "image" : "assets/events/event_hullaballo.jpg",
         "logo" : "assets/logos/hullaballo.png",
         "photographer" : "Gianina Lindsey",
+        "registration" : {
+          "link" : "http://www.google.com",
+          "status" : "open"
+        },
         "season" : "winter",
         "starttime" : "11:00 am",
         "state" : "New Hampshire",

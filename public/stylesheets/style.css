@@ -1006,3 +1006,7 @@ footer {
     .contact-form input[type='submit']:hover {
       background-color: rgba(84, 110, 32, 0.83);
       border-color: transparent; }
+
+.response {
+  margin-top: 5px;
+}

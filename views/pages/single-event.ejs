@@ -35,15 +35,11 @@
           <p><%= event.cost %></p>
         </div>
         <div class="button-wrapper reg-open">
-          <p>Online Registration Open</p>
+          <p>Online Registration <%= event.registration.status %></p>
           <i class="fa fa-chevron-right"></i>
-          <img src="assets/logos/runreg.png">
+          <a href="<%= event.registration.link %>" target="_new"><img src="assets/logos/runreg.png"></a>
         </div>
-        <form class="frm-email-notification">
-          <label>Enter your email to recieve a notification for updates on our events:</label>
-          <input type="text">
-          <button>Get Notifications</button>
-        </form>
+        <% include ../partials/mailchimp.ejs %>
       </article>
       <article>
         <h5><i class="fa fa-users"></i> race director(s):</h5>
