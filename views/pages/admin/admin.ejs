@@ -144,6 +144,33 @@
             double check all values are correct before saving</p>
           <button type="submit">SAVE</button>
         </form>
+
+        
+          <h3>Event Details</h3>
+          <hr>
+          <% for(var i=0; i<event.details.length; i++) {%>
+            <article class="detail-forms-wrapper">
+              <form class="remove-blurb-form">
+                <button type="submit"><i class="fa fa-times-circle"></i><span>DELETE</span></button>
+              </form>
+              <form class="details-form" action="/update-event"
+                method="post" enctype="application/x-www-form-urlencoded">
+                <button type="submit"><i class="fa fa-check-circle"></i><span>SAVE</span></button>
+                <div>
+                  <label>Title</label>
+                  <input type="text" name="title" value="<%= event.details[i].title %>">
+                </div>
+                <div>
+                  <label>Copy</label>
+                  <textarea name="copy"><%= event.details[i].copy %></textarea> 
+                </div>
+                <div>
+                  <label>Image URL</label>
+                  <input type="text" name="image" value="<%= event.details[i].image %>">
+                </div>
+              </form>
+            </article>
+          <% } %>
       <% } %>
     </section>
 

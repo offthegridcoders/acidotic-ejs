@@ -1026,6 +1026,7 @@ footer {
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
+  min-width: 900px;
   max-width: 900px;
   padding: 40px 70px; }
   @media screen and (max-width: 700px) {
@@ -1057,41 +1058,123 @@ footer {
     .admin-full-page .submit-btn i {
       font-size: 18px; }
 
-.edit-form div, .login-form div {
-  display: block;
-  margin-bottom: 10px; }
-  .edit-form div p, .login-form div p {
-    color: #aeaeae;
-    margin-bottom: 10px;
-    margin-left: 184px;
-    margin-top: 0; }
-    @media screen and (max-width: 525px) {
-      .edit-form div p, .login-form div p {
-        margin-left: 0; } }
-.edit-form .hidden, .login-form .hidden {
-  display: none; }
-.edit-form label, .login-form label {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: middle;
-  width: 170px; }
-.edit-form input, .login-form input {
-  height: 30px;
-  max-width: 100%;
-  padding-left: 5px;
-  vertical-align: middle;
-  width: 300px; }
-.edit-form p, .login-form p {
-  font-size: 12px;
-  font-style: italic;
-  margin-top: 10px; }
-.edit-form button, .login-form button {
-  margin-top: 20px;
-  padding: 10px 20px; }
+.edit-form, .login-form {
+  margin-bottom: 35px; }
+  .edit-form div, .login-form div {
+    display: block;
+    margin-bottom: 10px; }
+    .edit-form div p, .login-form div p {
+      color: #aeaeae;
+      margin-bottom: 10px;
+      margin-left: 184px;
+      margin-top: 0; }
+      @media screen and (max-width: 525px) {
+        .edit-form div p, .login-form div p {
+          margin-left: 0; } }
+  .edit-form .hidden, .login-form .hidden {
+    display: none; }
+  .edit-form label, .login-form label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 170px; }
+  .edit-form input, .login-form input {
+    height: 30px;
+    max-width: 100%;
+    padding-left: 5px;
+    vertical-align: middle;
+    width: 300px; }
+  .edit-form p, .login-form p {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px; }
+  .edit-form button, .login-form button {
+    margin-top: 20px;
+    padding: 10px 20px; }
 
 .logout button {
-  padding: 10px;
   font-size: 14px;
+  padding: 10px;
   text-transform: uppercase; }
 .logout i {
   font-size: 18px; }
+
+.details-form {
+  border-bottom: solid 1px #000;
+  margin: 20px 0; }
+  .details-form div {
+    display: block;
+    margin-bottom: 10px; }
+    .details-form div p {
+      color: #aeaeae;
+      margin-bottom: 10px;
+      margin-left: 184px;
+      margin-top: 0; }
+      @media screen and (max-width: 525px) {
+        .details-form div p {
+          margin-left: 0; } }
+  .details-form label {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 90px; }
+  .details-form input {
+    height: 30px;
+    max-width: 100%;
+    padding-left: 5px;
+    vertical-align: middle;
+    width: 300px; }
+  .details-form textarea {
+    border-color: rgba(0, 0, 0, 0.23);
+    height: 100px;
+    resize: none;
+    width: 500px; }
+  .details-form p {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 10px; }
+  .details-form i {
+    font-size: 16px;
+    padding: 5px;
+    vertical-align: middle; }
+  .details-form span {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle; }
+  .details-form button {
+    border: solid 1px;
+    float: right;
+    clear: right;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: transparent; }
+    .details-form button:hover {
+      background-color: #CCDDC4;
+      border-color: #409117; }
+      .details-form button:hover i {
+        color: #409117; }
+
+.remove-blurb-form {
+  clear: right;
+  float: right; }
+  .remove-blurb-form i {
+    font-size: 16px;
+    padding: 5px;
+    vertical-align: middle; }
+  .remove-blurb-form span {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: middle; }
+  .remove-blurb-form button {
+    border: solid 1px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: transparent; }
+    .remove-blurb-form button:hover {
+      background-color: rgba(255, 0, 0, 0.09);
+      border-color: #f00; }
+      .remove-blurb-form button:hover i {
+        color: #f00; }
+
