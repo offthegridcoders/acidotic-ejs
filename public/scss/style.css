@@ -774,19 +774,23 @@ footer {
 .full-page .no-extra-padding {
   margin-left: 0; }
 .full-page .logo {
-  text-align: right; }
+  text-align: center;
+  /* float: right; */
+  display: block;
+  clear: right;
+  margin-top: 20px; }
   @media screen and (max-width: 550px) {
     .full-page .logo {
       text-align: center; } }
   .full-page .logo img {
-    margin: 10px;
-    width: 100px; }
+    margin: 10px 10px 40px;
+    width: 180px; }
 .full-page .header {
   border-bottom: solid 1px #000;
   padding: 0 0 10px;
   position: relative; }
   .full-page .header h1 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 200;
     text-transform: uppercase; }
     @media screen and (max-width: 650px) {
@@ -986,8 +990,11 @@ footer {
     color: #fff; }
 
 .addthis-toolbox {
-  float: right;
-  margin-top: 8px; }
+  margin: 10px 0;
+  width: 194px; }
+
+.addthis_counter {
+  display: none !important; }
 
 .contact-form {
   text-align: left;

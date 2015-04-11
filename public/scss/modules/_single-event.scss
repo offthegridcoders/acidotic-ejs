@@ -44,15 +44,19 @@
   }
 
   .logo {
-    text-align: right;
+    text-align: center;
+    /* float: right; */
+    display: block;
+    clear: right;
+    margin-top: 20px;
 
     @media screen and (max-width: 550px) {
       text-align: center;
     }
 
     img {
-      margin: 10px;
-      width: 100px;
+      margin: 10px 10px 40px;
+      width: 180px;
     }
   }
 
@@ -62,7 +66,7 @@
     position: relative;
 
     h1 {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 200;
       text-transform: uppercase;
 
