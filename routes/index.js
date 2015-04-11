@@ -4,6 +4,11 @@ var Firebase = require('firebase');
 var FireBaseRef = new Firebase('https://acidotic.firebaseio.com/');
 var AllData = {};
 var SessionAuth;
+var defaults = {};
+
+// DEFAULTS
+  defaults.title = 'Winter Events - acidotic Racing';
+  defaults.season = 'winter';
 
 // INITIALLY loads all event data into global variable
   FireBaseRef.child('events/').on('value', function(snapshot) {
@@ -14,7 +19,7 @@ var SessionAuth;
   function getAdminPageData(eventData) {
     var fbData = {};
     fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = 'winter';
+    fbData.season = defaults.season;
     fbData.data = AllData;
     // starting event edit data (false or value)
     fbData.event = eventData;
@@ -147,8 +152,8 @@ var SessionAuth;
 // HOME PAGE
   function getHomePageData() {
     var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
-    fbData.season = 'winter';
+    fbData.title = defaults.title;
+    fbData.season = defaults.season;
     fbData.data = AllData;
     return fbData;
   };
