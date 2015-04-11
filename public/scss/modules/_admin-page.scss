@@ -52,6 +52,19 @@
       font-size: 18px; 
     }
   }
+
+  details {
+    margin-bottom: 20px;
+  }
+
+  summary {
+    outline: none;
+    
+    h3 {
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
 }
 
 .edit-form,

@@ -51,10 +51,14 @@
           <button class="submit-btn" type="submit"><i class="fa fa-pencil"></i></button>
         </form>
       </article>
-      <hr>
       <% if(event) { %>
-        <form class="edit-form" action="/update-event"
-              method="post" enctype="application/x-www-form-urlencoded">
+
+      <details>
+        <summary>
+          <h3><i class="fa fa-pencil-square-o"></i> Edit General Event Details</h3>
+        </summary>
+        <hr>
+        <form class="edit-form" action="/update-event" method="post" enctype="application/x-www-form-urlencoded">
           <div>
             <label>Title</label>
             <input type="text" name="title" value="<%= event.title %>">
@@ -139,14 +143,17 @@
                  value="<%= event.season %>">
           <input type="text" class="hidden" name="key"
                  value="<%= event.key %>">
-          <p class="note">Changes will not be saved until you click the save button</p>
+          <p class="note">Changes above will not be saved until you click the save button</p>
           <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
             double check all values are correct before saving</p>
           <button type="submit">SAVE</button>
         </form>
-
+      </details>
         
-          <h3>Event Details</h3>
+      <details>
+        <summary>
+          <h3><i class="fa fa-pencil-square-o"></i> Edit Event Details</h3>
+        </summary>
           <hr>
           <% for(var i=0; i<event.details.length; i++) {
             if (!event.details[i]) {continue;}%>
@@ -186,8 +193,11 @@
               </form>
             </article>
           <% } %>
-
-          <h3>Add NEW Detail</h3>
+      </details>
+      <details>
+          <summary>
+            <h3><i class="fa fa-plus-circle"></i> Add NEW Detail</h3>
+          </summary>
           <p class="note">For now, all new details added will be sent to the bottom of the list</p>
           <hr>
           <form class="details-form" action="/new-detail"
@@ -213,7 +223,10 @@
             <input type="text" class="hidden" name="key"
                    value="<%= event.details.length %>">
           </form>
+          <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
+            double check all values are correct before saving</p>
       <% } %>
+    </details>
     </section>
 
     <%= include ../../partials/footer.ejs %>

@@ -1,42 +1,68 @@
-var express = require('express');
-var router = express.Router();
+var Express = require('Express');
+var Router = Express.Router();
 var Firebase = require('firebase');
-var fbRef = new Firebase('https://acidotic.firebaseio.com/');
-var allData = {};
-var defaultSeason = 'winter';
+var FireBaseRef = new Firebase('https://acidotic.firebaseio.com/');
+var AllData = {};
 var SessionAuth;
 
-fbRef.child('events/').on('value', function(snapshot) {
-  allData = snapshot.val();
-});
-
-// ADMIN and LOGIN PAGE
-  router.get('/login', function(req, res, next) {
-      var fbData = {};
-      fbData.title = 'Login - acidotic Racing';
-      fbData.season = 'winter';
-      fbData.data = allData;
-      return res.render('pages/admin/login', fbData);
+// INITIALLY loads all event data into global variable
+  FireBaseRef.child('events/').on('value', function(snapshot) {
+    AllData = snapshot.val();
   });
 
-  router.post('/login', function(req,res) {
+// ADMIN and LOGIN PAGE
+  function getAdminPageData(eventData) {
+    var fbData = {};
+    fbData.title = 'Admin Dashboard - acidotic Racing';
+    fbData.season = 'winter';
+    fbData.data = AllData;
+    // starting event edit data (false or value)
+    fbData.event = eventData;
+    return fbData;
+  };
+
+  function goToAdminHome(res, startingData) {
+    var data = getAdminPageData(startingData);
+    return res.render('pages/admin/admin', data);
+  };
+
+  function errorReport(error) {
+    if (error) {
+      console.log("Data could not be saved." + error);
+    } else {
+      console.log("Data saved successfully.");
+    }
+  };
+
+  // logout function (takes in res)
+  function logout(res) {
+    FireBaseRef.unauth();
+    SessionAuth = null;
+    // navigate to homepage
+    var data = getHomePageData();
+    return res.render('pages/seasons/winter', data);
+  };
+
+  Router.get('/login', function(req, res, next) {
+    return res.render('pages/admin/login', getAdminPageData(false));
+  });
+
+  Router.post('/login', function(req,res) {
     // email    : "admin@acidoticracing.com",
     // password : "RACEacidotic2015!"
-    fbRef.authWithPassword({
+    FireBaseRef.authWithPassword({
       email    : req.body.email,
       password : req.body.password
     }, function(error, authData) {
       if (error) {
+        // failed authenication
         console.log("Login Failed!", error);
       } else {
+        // saves auth data in global var
         SessionAuth = authData;
         console.log("Authenticated successfully with payload:", authData);
-        var fbData = {};
-        fbData.title = 'Admin Dashboard - acidotic Racing';
-        fbData.season = 'winter';
-        fbData.data = allData;
-        fbData.event = false;
-        return res.render('pages/admin/admin', fbData);
+        // goes to admin homepage
+        goToAdminHome(res, false);
       }
     }, {
       // expires after browser shutdown
@@ -44,300 +70,235 @@ fbRef.child('events/').on('value', function(snapshot) {
     });
   });
 
-  router.post('/logout', function(req,res) {
-    fbRef.unauth();
-    SessionAuth = null;
-    var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    return res.render('pages/seasons/winter', fbData);
+  Router.get('/logout', function(req,res) {
+    logout(res);
   });
 
-  router.get('/admin', function(req, res, next) {
+  Router.post('/logout', function(req,res) {
+    logout(res);
+  });
+
+  Router.get('/admin', function(req, res, next) {
     if (SessionAuth) {
-      var fbData = {};
-      fbData.title = 'Admin Dashboard - acidotic Racing';
-      fbData.season = 'winter';
-      fbData.data = allData;
-      fbData.event = false;
-      return res.render('pages/admin/admin', fbData);
+      // if authenticated - go to admin homepage
+      goToAdminHome(res, false);
     } else {
-      var fbData = {};
-      fbData.title = 'Winter Events - acidotic Racing';
-      fbData.season = 'winter';
-      fbData.data = allData;
-      return res.render('pages/seasons/winter', fbData);
+      // navigate to regular homepage
+      return res.render('pages/seasons/winter', getHomePageData());
     }
   });
 
-  router.post('/admin', function(req, res){
-    var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = JSON.parse(req.body.eventChoice);
-    return res.render('pages/admin/admin', fbData);
+  Router.post('/admin', function(req, res){
+    return res.render('pages/admin/admin', getAdminPageData(JSON.parse(req.body.eventChoice)));
   });
 
-  router.post('/update-event', function(req, res){
+  Router.post('/update-event', function(req, res){
     var season = req.body.season;
     var curEvent = req.body.key;
-    var usersRef = fbRef.child("events/" + season + '/' + curEvent);
-    usersRef.update(req.body, function(error) {
-      if (error) {
-        console.log("UPDATE DATA FAIL: Data could not be saved." + error);
-      } else {
-        console.log("UPDATE DATA: Data saved successfully.");
-      }
-    });
-
-    var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = false;
-    return res.render('pages/admin/admin', fbData);
+    var fbRef = FireBaseRef.child("events/" + season + '/' + curEvent);
+    fbRef.update(req.body, function(error) {errorReport(error)});
+    goToAdminHome(res, false);
   });
 
 
-  router.post('/update-details', function(req, res){
-    console.log(req.body);
+  Router.post('/update-details', function(req, res){
     var season = req.body.season;
     var curEvent = req.body.eventKey;
     var key = req.body.key;
     var fbURL = "events/" + season + '/' + curEvent + '/details/' + key;
-    var usersRef = fbRef.child(fbURL);
-    usersRef.update(req.body, function(error) {
-      if (error) {
-        console.log("UPDATE DETAILS FAIL: Data could not be saved." + error);
-      } else {
-        console.log("UPDATE DETAILS: Data saved successfully.");
-      }
+    var fbRef = FireBaseRef.child(fbURL);
+    fbRef.update(req.body, function(error) {
+      errorReport(error)
     });
 
-    var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = false;
-    return res.render('pages/admin/admin', fbData);
+    goToAdminHome(res, false);
   });
 
-  router.post('/remove-detail', function(req, res){
+  Router.post('/remove-detail', function(req, res){
     var season = req.body.season;
     var curEvent = req.body.eventKey;
     var key = req.body.key;
     var fbURL = "events/" + season + '/' + curEvent + '/details/' + key;
-    var usersRef = fbRef.child(fbURL);
-    usersRef.remove();
-    
-    var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = false;
-    return res.render('pages/admin/admin', fbData);
+    var fbRef = FireBaseRef.child(fbURL);
+    fbRef.remove();
+    goToAdminHome(res, false);
   });
 
-  router.post('/new-detail', function(req, res){
-    console.log(req.body);
+  Router.post('/new-detail', function(req, res){
     var season = req.body.season;
     var curEvent = req.body.eventKey;
     var key = req.body.key;
     key = parseInt(key) + 1;
     var fbURL = "events/" + season + '/' + curEvent + '/details/' + key;
-    var usersRef = fbRef.child(fbURL);
+    var fbRef = FireBaseRef.child(fbURL);
     var newData = {
       copy: req.body.copy,
       title: req.body.title,
       image: req.body.image,
     };
 
-    usersRef.set(newData, function(error) {
-      if (error) {
-        console.log("ADD NEW DETAIL FAIL: Data could not be saved." + error);
-      } else {
-        console.log("ADD NEW DETAIL: Data saved successfully.");
-      }
+    fbRef.set(newData, function(error) {
+      errorReport(error)
     });
 
-    var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = false;
-    return res.render('pages/admin/admin', fbData);
+    goToAdminHome(res, false);
   });
 
 // HOME PAGE
-  router.get('/', function(req, res, next) {
+  function getHomePageData() {
     var fbData = {};
     fbData.title = 'Winter Events - acidotic Racing';
     fbData.season = 'winter';
-    fbData.data = allData;
-    return res.render('pages/seasons/winter', fbData);
+    fbData.data = AllData;
+    return fbData;
+  };
+
+  Router.get('/', function(req, res, next) {
+    return res.render('pages/seasons/winter', getHomePageData());
   });
 
 // SEASON PAGES
-  router.get('/winter', function(req, res, next) {
+  function setSeasonData(title, season) {
     var fbData = {};
-    fbData.title = 'Winter Events - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    return res.render('pages/seasons/winter', fbData);
+    fbData.title = title + ' - acidotic Racing';
+    fbData.season = season;
+    fbData.data = AllData;
+    return fbData
+  };
+
+  // WINTER
+  Router.get('/winter', function(req, res, next) {
+    return res.render('pages/seasons/winter', setSeasonData('Winter Events', 'winter'));
   });
 
-  router.get('/spring', function(req, res, next) {
-    var fbData = {};
-    fbData.title = 'Spring Events - acidotic Racing';
-    fbData.season = 'spring';
-    fbData.data = allData;
-    return res.render('pages/seasons/spring', fbData);
+  // SPRING
+  Router.get('/spring', function(req, res, next) {
+    return res.render('pages/seasons/spring', setSeasonData('Spring Events', 'spring'));
   });
 
-  router.get('/summer', function(req, res, next) {
-    var fbData = {};
-    fbData.title = 'Summer Events - acidotic Racing';
-    fbData.season = 'summer';
-    fbData.data = allData;
-    return res.render('pages/seasons/summer', fbData);
+  // SUMMER
+  Router.get('/summer', function(req, res, next) {
+    return res.render('pages/seasons/summer', setSeasonData('Summer Events', 'summer'));
   });
 
-  router.get('/fall', function(req, res, next) {
-    var fbData = {};
-    fbData.title = 'Fall Events - acidotic Racing';
-    fbData.season = 'fall';
-    fbData.data = allData;
-    return res.render('pages/seasons/fall', fbData);
+  // FALL
+  Router.get('/fall', function(req, res, next) {
+    return res.render('pages/seasons/fall', setSeasonData('Fall Events', 'fall'));
   });
 
-// ABOUT PAGE
-  router.get('/about', function(req, res, next) {
+
+// REGULAR PAGES
+  function setRegPageData(title, season, page) {
     var fbData = {};
-    fbData.title = 'About - acidotic Racing';
-    fbData.season = 'fall';
-    fbData.page = 'about';
-    fbData.data = allData;
-    return res.render('pages/about', fbData);
+    fbData.title = title + ' - acidotic Racing';
+    fbData.season = season;
+    fbData.page = page;
+    fbData.data = AllData;
+    return fbData
+  };
+  // ABOUT PAGE
+  Router.get('/about', function(req, res, next) {
+    return res.render('pages/about', setRegPageData('About', 'fall', 'about'));
   });
 
-// CONTACT PAGE
-  router.get('/contact', function(req, res, next) {
-    var fbData = {};
-    fbData.title = 'Contact - acidotic Racing';
-    fbData.season = 'fall';
-    fbData.page = 'contact';
-    fbData.data = allData;
-    return res.render('pages/contact', fbData);
+  // CONTACT PAGE
+  Router.get('/contact', function(req, res, next) {
+    return res.render('pages/contact', setRegPageData('Contact', 'fall', 'contact'));
   });
+
 
 // SINGLE EVENTS
-  router.get('/sidehiller-snowshoe', function(req, res, next) {
+  function setSingleEventData(title, season, data, eventName) {
     var fbData = {};
-    fbData.title = allData.winter.sidehillerSnowshoe.title + ' - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = allData.winter.sidehillerSnowshoe;
-    return res.render('pages/single-event', fbData);
+    fbData.title = title + ' - acidotic Racing';
+    fbData.season = season;
+    fbData.data = data;
+    fbData.event = eventName;
+    return fbData;
+  };
+
+  // SIDEHILLER SNOWSHOE
+  Router.get('/sidehiller-snowshoe', function(req, res, next) {
+    var data = setSingleEventData(AllData.winter.sidehillerSnowshoe.title,
+      'winter', AllData, AllData.winter.sidehillerSnowshoe);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/kingman-farm', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.winter.kingmanFarm.title + ' - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = allData.winter.kingmanFarm;
-    return res.render('pages/single-event', fbData);
+  // KINGMAN FARM
+  Router.get('/kingman-farm', function(req, res, next) {
+    var data = setSingleEventData(AllData.winter.kingmanFarm.title,
+      'winter', AllData, AllData.winter.kingmanFarm);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/snowshoe-hullabaloo', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.winter.snowshoeHullabaloo.title + ' - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = allData.winter.snowshoeHullabaloo;
-    return res.render('pages/single-event', fbData);
+  // SNOWSHOE HULLABALOO
+  Router.get('/snowshoe-hullabaloo', function(req, res, next) {
+    var data = setSingleEventData(AllData.winter.snowshoeHullabaloo.title,
+      'winter', AllData, AllData.winter.snowshoeHullabaloo);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/snowshoe-championship', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.winter.snowshoeChampionship.title + ' - acidotic Racing';
-    fbData.season = 'winter';
-    fbData.data = allData;
-    fbData.event = allData.winter.snowshoeChampionship;
-    return res.render('pages/single-event', fbData);
+  // SNOWSHOE CHAMPIONSHIP
+  Router.get('/snowshoe-championship', function(req, res, next) {
+    var data = setSingleEventData(AllData.winter.snowshoeChampionship.title,
+      'winter', AllData, AllData.winter.snowshoeChampionship);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/ralph-waldo', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.spring.ralphWaldo.title + ' - acidotic Racing';
-    fbData.season = 'spring';
-    fbData.data = allData;
-    fbData.event = allData.spring.ralphWaldo;
-    return res.render('pages/single-event', fbData);
+  // RALPH WALDO
+  Router.get('/ralph-waldo', function(req, res, next) {
+    var data = setSingleEventData(AllData.spring.ralphWaldo.title,
+      'spring', AllData, AllData.spring.ralphWaldo);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/exeter-trail', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.spring.exeterTrail.title + ' - acidotic Racing';
-    fbData.season = 'spring';
-    fbData.data = allData;
-    fbData.event = allData.spring.exeterTrail;
-    return res.render('pages/single-event', fbData);  });
-
-  router.get('/loon-mountain-race', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.summer.loonMountainRace.title + ' - acidotic Racing';
-    fbData.season = 'summer';
-    fbData.data = allData;
-    fbData.event = allData.summer.loonMountainRace;
-    return res.render('pages/single-event', fbData);
+  // EXETER TRAIL RACE
+  Router.get('/exeter-trail', function(req, res, next) {
+    var data = setSingleEventData(AllData.spring.exeterTrail.title,
+      'spring', AllData, AllData.spring.exeterTrail);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/kingman-farm-trail-race', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.summer.kingmanFarmTrailRace.title + ' - acidotic Racing';
-    fbData.season = 'summer';
-    fbData.data = allData;
-    fbData.event = allData.summer.kingmanFarmTrailRace;
-    return res.render('pages/single-event', fbData);
+  // LOON MOUNTAIN RACE
+  Router.get('/loon-mountain-race', function(req, res, next) {
+    var data = setSingleEventData(AllData.summer.loonMountainRace.title,
+      'summer', AllData, AllData.summer.loonMountainRace);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/harmony-hill', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.summer.harmonyHill.title + ' - acidotic Racing';
-    fbData.season = 'summer';
-    fbData.data = allData;
-    fbData.event = allData.summer.harmonyHill;
-    return res.render('pages/single-event', fbData);
+  // KINGMAN FARM TRAIL RACE
+  Router.get('/kingman-farm-trail-race', function(req, res, next) {
+    var data = setSingleEventData(AllData.summer.kingmanFarmTrailRace.title,
+      'summer', AllData, AllData.summer.kingmanFarmTrailRace);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/bretton-woods', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.fall.brettonWoods.title + ' - acidotic Racing';
-    fbData.season = 'fall';
-    fbData.data = allData;
-    fbData.event = allData.fall.brettonWoods;
-    return res.render('pages/single-event', fbData);
+  // HARMONY HILL SUMMER XC SERIES
+  Router.get('/harmony-hill', function(req, res, next) {
+    var data = setSingleEventData(AllData.summer.harmonyHill.title,
+      'summer', AllData, AllData.summer.harmonyHill);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/vulcans-fury', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.fall.vulcansFury.title + ' - acidotic Racing';
-    fbData.season = 'fall';
-    fbData.data = allData;
-    fbData.event = allData.fall.vulcansFury;
-    return res.render('pages/single-event', fbData);
+  // BRETTON WOODS FELL RACE
+  Router.get('/bretton-woods', function(req, res, next) {
+    var data = setSingleEventData(AllData.fall.brettonWoods.title,
+      'fall', AllData, AllData.fall.brettonWoods);
+    return res.render('pages/single-event', data);
   });
 
-  router.get('/roaring-falls', function(req, res, next) {
-    var fbData = {};
-    fbData.title = allData.fall.roaringFalls.title + ' - acidotic Racing';
-    fbData.season = 'fall';
-    fbData.data = allData;
-    fbData.event = allData.fall.roaringFalls;
-    return res.render('pages/single-event', fbData);
+  // VULCANS FURY
+  Router.get('/vulcans-fury', function(req, res, next) {
+    var data = setSingleEventData(AllData.fall.vulcansFury.title,
+      'fall', AllData, AllData.fall.vulcansFury);
+    return res.render('pages/single-event', data);
   });
 
-module.exports = router;
+  // ROARING FALLS
+  Router.get('/roaring-falls', function(req, res, next) {
+    var data = setSingleEventData(AllData.fall.roaringFalls.title,
+      'fall', AllData, AllData.fall.roaringFalls);
+    return res.render('pages/single-event', data);
+  });
+
+module.exports = Router;

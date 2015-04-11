@@ -1057,6 +1057,13 @@ footer {
     vertical-align: middle; }
     .admin-full-page .submit-btn i {
       font-size: 18px; }
+  .admin-full-page details {
+    margin-bottom: 20px; }
+  .admin-full-page summary {
+    outline: none; }
+    .admin-full-page summary h3 {
+      cursor: pointer;
+      display: inline-block; }
 
 .edit-form, .login-form {
   margin-bottom: 35px; }
