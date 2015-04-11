@@ -1,0 +1,61 @@
+.left-side,
+.right-side {
+  display: inline-block;
+  margin: 500px 1% 50px;
+  padding: 20px 0;
+  position: relative;
+  vertical-align: top;
+  width: 47%;
+
+  @media screen and (max-width: 800px) {
+    margin: 430px auto 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.left-side {
+  text-align: right;
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 500px) {
+    margin-top: 400px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-top: 350px;
+    text-align: center;
+  }
+}
+
+.right-side {
+  padding-top: 20px;
+  text-align: left;
+
+  @media screen and (max-width: 800px) {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.full-page {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 3px 3px 20px #000;
+  margin: 100px auto 50px;
+  max-width: 900px;
+  padding: 40px 70px;
+
+  @media screen and (max-width: 700px) {
+    padding: 20px;
+  }
+}
+
+article {
+  margin: 20px 0;
+}

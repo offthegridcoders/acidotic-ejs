@@ -1,0 +1,80 @@
+.event-links {
+  background-image: url('../assets/tiles/black-screen.png');
+  border: 5px groove $orange;
+  border-left: 0;
+  border-right: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+
+  span {
+    color: #999;
+    font-size: 12px;
+  }
+
+  p {
+    a {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 230px;
+
+    @media screen and (max-width: 1000px) {
+      width: 220px;
+    }
+
+    @media screen and (max-width: 950px) {
+      width: 200px;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 185px;
+    }
+
+    @media screen and (max-width: 800px) {
+      text-align: center;
+      width: 400px;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 95%;
+    }
+  }
+
+  li {
+    background-color: transparent;
+    display: block;
+    margin: 8px 5px;
+    padding: 5px;
+    transition: background-color .3s ease;
+  }
+
+  li:hover {
+    background-color: #000;
+    transition: background-color .3s ease;
+
+    a {
+      color: $orange;
+    }
+  }
+
+  .event-season-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    
+    a {
+      color: $orange;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

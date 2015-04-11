@@ -15,6 +15,13 @@
     "serve-favicon": "~2.2.0"
   },
   "devDependencies": {
-    "firebase": "^2.2.3"
+    "firebase": "^2.2.3",
+    "gulp": "*",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-concat-css": "^2.1.0",
+    "gulp-minify-css": "^0.3.13",
+    "gulp-sass": "^1.3.3",
+    "gulp-scss-lint": "*",
+    "gulp-watch": "^4.1.1"
   }
 }

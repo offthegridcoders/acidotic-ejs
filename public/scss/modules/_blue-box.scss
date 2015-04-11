@@ -1,0 +1,40 @@
+.left-side {
+  .blue-box {
+    margin-left: 20%;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+}
+
+.right-side {
+  .blue-box {
+    margin-right: 20%;
+    
+    @media screen and (max-width: 800px) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+}
+
+.blue-box {
+  background-image: url('../assets/tiles/blue-box.jpg');
+  box-shadow: 3px 3px 20px #000;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 20px;
+  padding: 35px;
+
+  p {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

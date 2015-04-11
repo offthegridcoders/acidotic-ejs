@@ -1,0 +1,275 @@
+.full-page {
+  @media screen and (max-width: 550px) {
+    text-align: center;
+  }
+
+  i {
+    width: 25px;
+
+    @media screen and (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+    @media screen and (max-width: 550px) {
+      margin-bottom: 7px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    margin-left: 29px;
+
+    @media screen and (max-width: 550px) {
+      margin-left: 0;
+    }
+  }
+
+  .no-extra-padding {
+    margin-left: 0;
+  }
+
+  .logo {
+    text-align: right;
+
+    @media screen and (max-width: 550px) {
+      text-align: center;
+    }
+
+    img {
+      margin: 10px;
+      width: 100px;
+    }
+  }
+
+  .header {
+    border-bottom: solid 1px #000;
+    padding: 0 0 10px;
+    position: relative;
+
+    h1 {
+      font-size: 26px;
+      font-weight: 200;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 650px) {
+        font-size: 22px;
+      }
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 200;
+      text-transform: uppercase;
+    }
+
+    img {
+      bottom: 10px;
+      position: absolute;
+      right: 0;
+      width: 270px;
+    }
+  }
+
+  .race-image {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 436px;
+
+    @media screen and (max-width: 800px) {
+      width: 330px;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+    
+    @media screen and (max-width: 550px) {
+      text-align: left;
+    }
+
+    img {
+      margin: 10px;
+      width: 100px;
+    
+      @media screen and (max-width: 550px) {
+        width: 100px;
+      }
+    }
+
+    i {
+      background-color: #000;
+      bottom: 0;
+      color: #f1b723;
+      cursor: pointer;
+      font-size: 32px;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      width: auto;
+    }
+  }
+
+  .race-details {
+    display: inline-block;
+    margin-left: 20px;
+    width: 200px;
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 15px;
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    p {
+      @media screen and (max-width: 550px) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .button-wrapper {
+    img {
+      cursor: pointer;
+      margin-left: 10px;
+      vertical-align: middle;
+      width: 125px;
+    }
+
+    p {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-left: 0;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+
+    i {
+      padding-top: 4px;
+      vertical-align: middle;
+
+      @media screen and (max-width: 550px) {
+        display: none;
+      }
+    }
+  }
+
+  .frm-email-notification {
+    border-bottom: solid 1px #000;
+    margin-top: 20px;
+    padding-bottom: 15px;
+
+    label {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    input {
+      display: inline-block;
+      height: 35px;
+      padding-left: 10px;
+      width: 250px;
+
+      @media screen and (max-width: 550px) {
+        width: 200px;
+      }
+
+      @media screen and (max-width: 500px) {
+        margin: 10px auto;
+      }
+    }
+
+    button {
+      background: transparent;
+      border: solid 1px $orange;
+      color: $orange;
+      padding: 10px 15px;
+      text-transform: uppercase;
+    }
+  }
+
+  .reg-open {
+    color: $green;
+  }
+
+  .reg-closed {
+    color: $red;
+  }
+
+  .sponsor-image {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 150px;
+  }
+
+  .accolades-article {
+    margin: 40px 0 0;
+
+    div {
+      margin: 20px 0;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      display: inline-block;
+      font-size: 20px;
+      margin-bottom: 15px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    p {
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 0;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    img {
+      float: left;
+      margin: 20px 30px 20px 0;
+      max-width: 150px;
+      vertical-align: middle;
+      width: 200px;
+
+      @media screen and (max-width: 550px) {
+        float: none;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  .course-map {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+}
+
+.winter-advisory {
+  h5,
+  p {
+    color: #f00;
+  }
+}

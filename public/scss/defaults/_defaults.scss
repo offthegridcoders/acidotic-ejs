@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-attachment: fixed;
+  font-family: $primary-font;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  span {
+    color: $primary-color;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.winter-page,
+.spring-page,
+.summer-page,
+.fall-page {
+  background-position: 0 0;
+  background-size: 40%;
+  transition: background-position .15s ease;
+}
+
+.winter-page {
+  background-image: url('../assets/tiles/body_wallpaper_snow.jpg');
+}
+
+.spring-page {
+  background-image: url('../assets/tiles/grass.jpg');
+}
+
+.summer-page {
+  background-image: url('../assets/tiles/body_wallpaper_sand.jpg');
+  background-size: 200px;
+}
+
+.fall-page {
+  background-image: url('../assets/tiles/body_wallpaper.jpg');
+}
