@@ -1,4 +1,4 @@
-var Express = require('Express');
+var Express = require('express');
 var Router = Express.Router();
 var Firebase = require('firebase');
 var FireBaseRef = new Firebase('https://acidotic.firebaseio.com/');
