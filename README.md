@@ -15,22 +15,17 @@ Node.js / Express / EJS
 >App should be listening on port 3000
 
 #### Structure
-+ /src
++ /bin
++ /node_modules
++ /public
   - /assets
-  - /css (built for compression - need to use gulp to auto delete this after)
-  - /js
+  - /javascripts
   - /scss
-  - /contact
-  - /event
-    - (single events)
-  - /events
-    - (seasons)
+  - /stylesheets
++ /routes
++ /views
+  - /pages
   - /partials
-    - (head,header,footer,etc...)
-  - /photos
-  - /results
-  - /why-acidotic
-+ /dist (minified and built with gulp)
 
 #### About
 
