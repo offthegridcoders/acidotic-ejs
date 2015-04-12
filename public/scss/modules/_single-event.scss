@@ -44,11 +44,10 @@
   }
 
   .logo {
-    text-align: center;
-    /* float: right; */
-    display: block;
     clear: right;
+    display: block;
     margin-top: 20px;
+    text-align: center;
 
     @media screen and (max-width: 550px) {
       text-align: center;
@@ -270,10 +269,10 @@
   display: block;
 
   ul {
+    list-style: none;
     margin: 70px auto 0;
     text-align: center;
     width: auto;
-    list-style: none;
   }
 
   li {
@@ -291,7 +290,7 @@
     cursor: pointer;
     font-size: 26px;
     padding: 15px;
-    text-shadow: 0px 0px 5px #E8D9C1;
+    text-shadow: 0 0 5px #e8d9c1;
     width: auto;
 
     @media screen and (max-width: 550px) {

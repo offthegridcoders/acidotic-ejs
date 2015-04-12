@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+    <%= include ../partials/head.ejs %>
+  <body class="<%= season %>-page">
+    <%= include ../partials/nav.ejs %>
+
+    <section class="loon-mountain-race-page">
+      <article class="logo-holder">
+        <img src="assets/logo.png">
+      </article>
+      <h1 class="main-head"><%= event.title %></h1>
+      <article class="header">
+        <img class="lmr-logo" src="assets/logos/loonmountain.png">
+      </article>
+      <h5><i class="fa fa-calendar"></i> date</h5>
+      <p><%= event.date %></p>
+      <h5><i class="fa fa-map-marker"></i> address:</h5>
+      <p><% if(event.address) { %><%= event.address %></br><% } %>
+        <%= event.address2 %></br>
+        <%= event.city %>, <%= event.state %>
+      </p>
+
+      <h5><i class="fa fa-line-chart"></i> distance:</h5>
+      <p><%= event.distance %></p>
+      <h5><i class="fa fa-clock-o"></i> start time:</h5>
+      <p><%= event.starttime %></p>
+      <h5><i class="fa fa-clock-o"></i> bib pick-up:</h5>
+      <p><%= event.bibtime %></p>
+      <h5><i class="fa fa-usd"></i> cost:</h5>
+      <p><%= event.cost %></p>
+    </section>
+        <%= include ../partials/footer.ejs %>
+    <%= include ../partials/scripts.ejs %>
+  </body>
+</html>

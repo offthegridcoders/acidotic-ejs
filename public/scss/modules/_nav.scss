@@ -24,11 +24,11 @@ nav {
   }
 
   .season-label {
-    color: #fff;
-    text-transform: capitalize;
+    color: rgba(255, 255, 255, .48);
     display: inline-block;
     position: absolute;
     right: 69px;
+    text-transform: capitalize;
     top: 25px;
 
     @media screen and (max-width: 700px) {

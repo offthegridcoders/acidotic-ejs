@@ -7,7 +7,7 @@ var SessionAuth;
 var Defaults = {};
 
 // Defaults
-  Defaults.season = 'winter';
+  Defaults.season = 'spring';
 
 // INITIALLY loads all event data into global variable
   FireBaseRef.child('events/').on('value', function(snapshot) {
@@ -20,6 +20,7 @@ var Defaults = {};
     fbData.title = 'Admin Dashboard - acidotic Racing';
     fbData.season = Defaults.season;
     fbData.data = AllData;
+    fbData.page = 'Admin';
     // starting event edit data (false or value)
     fbData.event = eventData;
     fbData.Session = SessionAuth;
@@ -222,6 +223,7 @@ var Defaults = {};
     var fbData = {};
     fbData.title = title + ' - acidotic Racing';
     fbData.season = season;
+    fbData.page = season;
     fbData.data = data;
     fbData.event = eventName;
     fbData.Session = SessionAuth;
@@ -274,6 +276,7 @@ var Defaults = {};
   Router.get('/loon-mountain-race', function(req, res, next) {
     var data = setSingleEventData(AllData.summer.loonMountainRace.title,
       'summer', AllData, AllData.summer.loonMountainRace);
+    // return res.render('pages/loon-mountain-race', data);
     return res.render('pages/single-event', data);
   });
 

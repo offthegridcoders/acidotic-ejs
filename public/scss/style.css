@@ -6,9 +6,9 @@ html, body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   max-width: 100%;
+  overflow-x: hidden;
   padding: 0;
-  width: 100%;
-  overflow-x: hidden; }
+  width: 100%; }
 
 ul, li, p, h1, h2, h3, h4, h5, h6, form {
   margin: 0;
@@ -86,7 +86,7 @@ a {
       padding: 0;
       text-align: center; } }
 
-.full-page {
+.full-page, .loon-mountain-race-page {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
@@ -94,7 +94,7 @@ a {
   max-width: 900px;
   padding: 40px 70px; }
   @media screen and (max-width: 700px) {
-    .full-page {
+    .full-page, .loon-mountain-race-page {
       padding: 20px; } }
 
 article {
@@ -163,11 +163,11 @@ nav {
     right: 0;
     z-index: +1; }
   nav .season-label {
-    color: #fff;
-    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.48);
     display: inline-block;
     position: absolute;
     right: 69px;
+    text-transform: capitalize;
     top: 25px; }
     @media screen and (max-width: 700px) {
       nav .season-label {
@@ -239,7 +239,7 @@ nav {
     display: none; }
 
 header {
-  background-position: 50%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -476,6 +476,9 @@ footer {
     margin-bottom: 0; }
   .brown-box a {
     color: #fcb034; }
+  .brown-box .header-img {
+    margin-bottom: 25px;
+    max-width: 100%; }
 
 .official-sponsor {
   margin-left: 40%; }
@@ -785,11 +788,10 @@ footer {
 .full-page .no-extra-padding {
   margin-left: 0; }
 .full-page .logo {
-  text-align: center;
-  /* float: right; */
-  display: block;
   clear: right;
-  margin-top: 20px; }
+  display: block;
+  margin-top: 20px;
+  text-align: center; }
   @media screen and (max-width: 550px) {
     .full-page .logo {
       text-align: center; } }
@@ -940,10 +942,10 @@ footer {
 .event-links-footer {
   display: block; }
   .event-links-footer ul {
+    list-style: none;
     margin: 70px auto 0;
     text-align: center;
-    width: auto;
-    list-style: none; }
+    width: auto; }
   .event-links-footer li {
     display: inline-block;
     margin: 0 20px; }
@@ -955,7 +957,7 @@ footer {
     cursor: pointer;
     font-size: 26px;
     padding: 15px;
-    text-shadow: 0px 0px 5px #E8D9C1;
+    text-shadow: 0 0 5px #e8d9c1;
     width: auto; }
     @media screen and (max-width: 550px) {
       .event-links-footer i {
@@ -1044,8 +1046,8 @@ footer {
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
-  min-width: 900px;
   max-width: 900px;
+  min-width: 900px;
   padding: 40px 70px; }
   @media screen and (max-width: 700px) {
     .admin-full-page {
@@ -1090,10 +1092,10 @@ footer {
     margin-bottom: 10px; }
     .edit-form div p, .login-form div p {
       color: #aeaeae;
+      font-size: 12px;
       margin-bottom: 10px;
       margin-left: 184px;
-      margin-top: 0;
-      font-size: 12px; }
+      margin-top: 0; }
       @media screen and (max-width: 525px) {
         .edit-form div p, .login-form div p {
           margin-left: 0; } }
@@ -1164,19 +1166,20 @@ footer {
     display: inline-block;
     font-size: 12px;
     vertical-align: middle; }
-  .details-form button {
-    border: solid 1px;
-    float: right;
-    clear: right;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: transparent; }
-    .details-form button:hover {
-      background-color: #CCDDC4;
-      border-color: #409117; }
-      .details-form button:hover i {
-        color: #409117; }
+
+.details-form-btn {
+  background-color: transparent;
+  border: solid 1px;
+  clear: right;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+  padding: 10px 20px; }
+  .details-form-btn:hover {
+    background-color: #ccddc4;
+    border-color: #409117; }
+    .details-form-btn:hover i {
+      color: #409117; }
 
 .remove-blurb-form {
   clear: right;
@@ -1189,19 +1192,49 @@ footer {
     display: inline-block;
     font-size: 12px;
     vertical-align: middle; }
-  .remove-blurb-form button {
-    border: solid 1px;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: transparent; }
-    .remove-blurb-form button:hover {
-      background-color: rgba(255, 0, 0, 0.09);
-      border-color: #f00; }
-      .remove-blurb-form button:hover i {
-        color: #f00; }
+
+.remove-blurb-btn {
+  background-color: transparent;
+  border: solid 1px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px; }
+  .remove-blurb-btn:hover {
+    background-color: rgba(255, 0, 0, 0.09);
+    border-color: #f00; }
+    .remove-blurb-btn:hover i {
+      color: #f00; }
 
 .note {
   font-size: 12px;
   font-style: italic;
   margin-top: 10px; }
+
+.loon-mountain-race-page {
+  padding: 0; }
+  .loon-mountain-race-page .main-head {
+    font-size: 24px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize; }
+  .loon-mountain-race-page .header {
+    background-image: url('../assets/headers/lmr-header.jpg');
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 10px #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.61);
+    height: 450px;
+    margin: 0 auto;
+    width: 90%; }
+  .loon-mountain-race-page .lmr-logo {
+    display: block;
+    padding: 20px;
+    width: 200px; }
+  .loon-mountain-race-page .logo-holder {
+    padding: 30px;
+    text-align: center;
+    width: 100%; }
+    .loon-mountain-race-page .logo-holder img {
+      width: 150px; }

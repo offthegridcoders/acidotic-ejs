@@ -3,8 +3,8 @@
   border-radius: 4px;
   box-shadow: 3px 3px 20px #000;
   margin: 100px auto 50px;
-  min-width: 900px;
   max-width: 900px;
+  min-width: 900px;
   padding: 40px 70px;
 
   @media screen and (max-width: 700px) {
@@ -77,10 +77,10 @@
 
     p {
       color: #aeaeae;
+      font-size: 12px;
       margin-bottom: 10px;
       margin-left: 184px;
       margin-top: 0;
-      font-size: 12px;
 
       @media screen and (max-width: 525px) {
         margin-left: 0;
@@ -161,7 +161,7 @@
   }
 
   textarea {
-    border-color: rgba(0, 0, 0, 0.23);
+    border-color: rgba(0, 0, 0, .23);
     height: 100px;
     resize: none;
     width: 500px;
@@ -184,23 +184,23 @@
     font-size: 12px;
     vertical-align: middle;
   }
+}
 
-  button {
-    border: solid 1px;
-    float: right;
-    clear: right;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: transparent;
+.details-form-btn {
+  background-color: transparent;
+  border: solid 1px;
+  clear: right;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+  padding: 10px 20px;
 
-    &:hover {
-      background-color: #CCDDC4;
-      border-color: $green;
+  &:hover {
+    background-color: #ccddc4;
+    border-color: $green;
 
-      i {
-        color: $green;
-      }
+    i {
+      color: $green;
     }
   }
 }
@@ -220,21 +220,21 @@
     font-size: 12px;
     vertical-align: middle;
   }
+}
 
-  button {
-    border: solid 1px;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: transparent;
+.remove-blurb-btn {
+  background-color: transparent;
+  border: solid 1px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
 
-    &:hover {
-      background-color: rgba(255, 0, 0, 0.09);
-      border-color: $red;
+  &:hover {
+    background-color: rgba(255, 0, 0, .09);
+    border-color: $red;
 
-      i {
-        color: $red;
-      }
+    i {
+      color: $red;
     }
   }
 }
