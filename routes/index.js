@@ -7,7 +7,6 @@ var SessionAuth;
 var Defaults = {};
 
 // Defaults
-  Defaults.title = 'Winter Events - acidotic Racing';
   Defaults.season = 'winter';
 
 // INITIALLY loads all event data into global variable
@@ -153,15 +152,16 @@ var Defaults = {};
 // HOME PAGE
   function getHomePageData() {
     var fbData = {};
-    fbData.title = Defaults.title;
+    fbData.title = 'Events - acidotic Racing';
     fbData.season = Defaults.season;
+    fbData.page = Defaults.season;
     fbData.data = AllData;
     fbData.Session = SessionAuth;
     return fbData;
   };
 
   Router.get('/', function(req, res, next) {
-    return res.render('pages/seasons/winter', getHomePageData());
+    return res.render('pages/seasons/' + Defaults.season, getHomePageData());
   });
 
 // SEASON PAGES
