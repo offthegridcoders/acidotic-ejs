@@ -12,7 +12,7 @@ var paths = {
   vendor: 'public/scss/vendor/*.css'
 };
 
-gulp.task('default', ['sass', 'compress-js'], function() {
+gulp.task('default', ['sass'], function() {
   return gulp.watch([
       paths.scss,
       paths.assets,
