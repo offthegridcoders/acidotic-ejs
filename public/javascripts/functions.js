@@ -4,7 +4,6 @@ function headerIsOffScreen() {
   return $(window).scrollTop() > (parseInt($('header').css('height'), 10) - 300)
 };
 
-
 // Image Hover Changes in About Page
 function changeBackgroundImage(id, img) {
   $('#' + id).css("background-image", img);
