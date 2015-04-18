@@ -248,6 +248,9 @@
                       </button>
                       <%= event.coursemaps[i].image %>
                     </li>
+                    <li>
+                      <img src="<%= event.coursemaps[i].thumb %>">
+                    </li>
                     <input type="text" class="hidden" name="season"
                            value="<%= event.season %>">
                     <input type="text" class="hidden" name="eventKey"
@@ -261,14 +264,14 @@
           </div>
           <form class="edit-form" action="/add-map" method="post" enctype="application/x-www-form-urlencoded">
             <hr>
-            <p class="note">* Adding new maps is not recommended for general admin. Please contact the developer at this time to add new maps</p><br>
+            <p class="note">* ADDING new maps is not recommended for general admin. Please contact the developer at this time to add new maps. Otherwise, you may experience bugs.</p><br>
             <div>
               <label>New Map Url</label>
-              <input type="text" name="image" value="">
+              <input type="url" name="image" value="" required>
             </div>
             <div>
               <label>New Map Thumb Url</label>
-              <input type="text" name="thumb" value="">
+              <input type="url" name="thumb" value="" required>
             </div>
             <input type="text" class="hidden" name="season"
                    value="<%= event.season %>">

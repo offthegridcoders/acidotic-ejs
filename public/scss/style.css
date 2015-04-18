@@ -1270,7 +1270,8 @@ footer {
     cursor: pointer; }
   .admin-maps-list button {
     background-color: transparent;
-    border: 0; }
+    border: 0;
+    font-size: 18px; }
   .admin-maps-list .fa-times-circle {
     color: #f00; }
 
