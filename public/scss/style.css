@@ -618,6 +618,56 @@ footer {
     text-align: center;
     width: 100%; }
 
+.thumbnail-holder {
+  width: 450px; }
+  @media screen and (max-width: 950px) {
+    .thumbnail-holder {
+      width: 400px; } }
+  @media screen and (max-width: 850px) {
+    .thumbnail-holder {
+      width: 370px; } }
+  @media screen and (max-width: 800px) {
+    .thumbnail-holder {
+      margin: 0 auto 25px;
+      width: 450px; } }
+  @media screen and (max-width: 800px) {
+    .thumbnail-holder {
+      max-width: 450px;
+      width: 95%; } }
+  .thumbnail-holder div {
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 90px;
+    margin: 0;
+    opacity: .7;
+    width: 20%; }
+    .thumbnail-holder div:hover {
+      opacity: 1; }
+  .thumbnail-holder .pic01 {
+    background-image: url('../assets/athletes/image1.jpg'); }
+  .thumbnail-holder .pic02 {
+    background-image: url('../assets/athletes/image2.jpg'); }
+  .thumbnail-holder .pic03 {
+    background-image: url('../assets/athletes/image3.jpg'); }
+  .thumbnail-holder .pic04 {
+    background-image: url('../assets/athletes/image4.jpg'); }
+  .thumbnail-holder .pic05 {
+    background-image: url('../assets/athletes/image5.jpg'); }
+  .thumbnail-holder .pic06 {
+    background-image: url('../assets/athletes/image6.jpg'); }
+  .thumbnail-holder .pic07 {
+    background-image: url('../assets/athletes/image7.jpg'); }
+  .thumbnail-holder .pic08 {
+    background-image: url('../assets/athletes/image8.jpg'); }
+  .thumbnail-holder .pic09 {
+    background-image: url('../assets/athletes/image9.jpg'); }
+  .thumbnail-holder .pic10 {
+    background-image: url('../assets/athletes/image10.jpg'); }
+
 .sidehiller-event {
   background-image: url('../assets/events/event_sidehiller.jpg'); }
 
@@ -654,7 +704,9 @@ footer {
   background-image: url('../assets/events/contact_event.jpg'); }
 
 .why-event {
-  background-image: url('../assets/events/why-acidotic-01.jpg'); }
+  background-image: url('../assets/events/why-acidotic-01.jpg');
+  background-position: 50% 0%;
+  margin-bottom: 0; }
 
 .ralph-waldo {
   background-image: url('../assets/events/event_ralphwaldo.jpg'); }
