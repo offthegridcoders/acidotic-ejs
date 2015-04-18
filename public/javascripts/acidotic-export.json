@@ -140,7 +140,8 @@
         "starttime" : "10:00 am",
         "state" : "New Hampshire",
         "time" : "10:00am",
-        "title" : "Bretton Woods Fell Race"
+        "title" : "Bretton Woods Fell Race",
+        "video" : "https://www.youtube.com/embed/yn2x8-ohz2w"
       },
       "quotes" : {
         "first" : {
@@ -213,11 +214,14 @@
         "city" : "Nottingham",
         "cost" : "$25 (11.4 miles), $20 (5 miles) [$30 & $25 day of event] *LIMITED FIELDS*",
         "coursemaps" : [ {
-          "image" : "assets/events/vulcans-fury-map01.jpg"
+          "image" : "assets/maps/vulcans-fury-map01.jpg",
+          "thumb" : "assets/maps/vulcans-fury-map01-thumb.jpg"
         }, {
-          "image" : "assets/events/vulcans-fury-map02.jpg"
+          "image" : "assets/maps/vulcans-fury-map02.jpg",
+          "thumb" : "assets/maps/vulcans-fury-map02-thumb.jpg"
         }, {
-          "image" : "assets/events/vulcans-fury-map03.jpg"
+          "image" : "assets/maps/vulcans-fury-map03.jpg",
+          "thumb" : "assets/maps/vulcans-fury-map03-thumb.jpg"
         } ],
         "date" : "October 17, 2015",
         "designer" : "Geoff Cunningham",
@@ -328,9 +332,11 @@
         "city" : "Concord",
         "cost" : "$25 (9 miles), $20 (5 km) [$30 & $25 day of event]",
         "coursemaps" : [ {
-          "image" : "assets/events/ralph-waldo-map01.jpg"
+          "image" : "assets/maps/ralph-waldo-map01.jpg",
+          "thumb" : "assets/maps/ralph-waldo-map01-thumb.jpg"
         }, {
-          "image" : "assets/events/ralph-waldo-map02.jpg"
+          "image" : "assets/maps/ralph-waldo-map02.jpg",
+          "thumb" : "assets/maps/ralph-waldo-map02-thumb.jpg"
         } ],
         "date" : "May 2nd, 2015",
         "designer" : "Rich Lavers",
@@ -404,9 +410,11 @@
         "city" : "Madbury",
         "cost" : "$20 pre-registration *LIMITED FIELD*",
         "coursemaps" : [ {
-          "image" : "assets/events/kingman-farm-course-map.jpeg"
+          "image" : "assets/maps/kingman-farm-course-map.jpeg",
+          "thumb" : "assets/maps/kingman-farm-course-map-thumb.jpeg"
         }, {
-          "image" : "assets/events/kingman-farm-trail-map01.jpg"
+          "image" : "assets/maps/kingman-farm-trail-map01.jpg",
+          "thumb" : "assets/maps/kingman-farm-trail-map01-thumb.jpg"
         } ],
         "date" : "August 1, 2015",
         "designer" : "Chris J. Dunn",
@@ -445,7 +453,8 @@
         "city" : "Lincoln",
         "cost" : "$20 pre-registration; $25 event day registration",
         "coursemaps" : [ {
-          "image" : "assets/events/lmr-coursemap.jpg"
+          "image" : "assets/maps/lmr-coursemap.jpg",
+          "thumb" : "assets/maps/lmr-coursemap-thumb.jpg"
         } ],
         "date" : "July 5, 2015",
         "designer" : "Paul Kirsch, Rich Bolt, Dave Dunham",
@@ -643,7 +652,8 @@
         "starttime" : "11:00am",
         "state" : "New Hampshire",
         "time" : "11:00am",
-        "title" : "Sidehiller Snowshoe Race"
+        "title" : "Sidehiller Snowshoe Race",
+        "video" : ""
       },
       "snowshoeChampionship" : {
         "address" : "TBD",

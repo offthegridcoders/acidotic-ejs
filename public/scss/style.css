@@ -1262,6 +1262,17 @@ footer {
   font-style: italic;
   margin-top: 10px; }
 
+.admin-maps-list {
+  margin: 10px; }
+  .admin-maps-list li {
+    margin-bottom: 10px; }
+  .admin-maps-list .fa {
+    cursor: pointer; }
+  .admin-maps-list .fa-times-circle {
+    color: #f00;
+    width: 40px;
+    text-align: left; }
+
 .loon-mountain-race-page {
   padding: 0; }
   .loon-mountain-race-page .main-head {

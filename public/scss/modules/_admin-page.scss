@@ -244,3 +244,21 @@
   font-style: italic;
   margin-top: 10px;
 }
+
+.admin-maps-list {
+  margin: 10px;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .fa {
+    cursor: pointer;
+  }
+  
+  .fa-times-circle {
+    color: $red;
+    width: 40px;
+    text-align: left;
+  }
+}

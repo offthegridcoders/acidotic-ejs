@@ -72,6 +72,20 @@
           </div>
         <% } %>
       </article>
+      <% if(event.video) { %>
+      <article>
+        <h4>Video</h4>
+        <iframe width="100%" height="350" src="<%= event.video %>" frameborder="0" allowfullscreen></iframe>
+      </article>
+      <% }; %>
+      <% if(event.coursemaps) { %>
+        <article>
+          <h4>Course Map(s)</h4>
+          <% event.coursemaps.forEach(function(map) { %>
+            <img src="<%= map.image %>">
+          <% }); %>
+        </article>
+      <% }; %>
       <article class="event-links-footer">
         <ul>
           <li>
