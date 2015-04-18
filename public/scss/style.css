@@ -1268,10 +1268,11 @@ footer {
     margin-bottom: 10px; }
   .admin-maps-list .fa {
     cursor: pointer; }
+  .admin-maps-list button {
+    background-color: transparent;
+    border: 0; }
   .admin-maps-list .fa-times-circle {
-    color: #f00;
-    width: 40px;
-    text-align: left; }
+    color: #f00; }
 
 .loon-mountain-race-page {
   padding: 0; }

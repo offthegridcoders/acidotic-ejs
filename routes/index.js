@@ -150,6 +150,34 @@ var Defaults = {};
     goToAdminHome(res, false);
   });
 
+  Router.post('/add-map', function(req, res){
+    var season = req.body.season;
+    var curEvent = req.body.eventKey;
+    var key = req.body.key;
+    var fbURL = "events/" + season + '/' + curEvent + '/coursemaps/' + key;
+    var fbRef = FireBaseRef.child(fbURL);
+    var newData = {
+      image: req.body.image,
+      thumb: req.body.thumb,
+    };
+
+    fbRef.set(newData, function(error) {
+      errorReport(error)
+    });
+
+    goToAdminHome(res, false);
+  });
+
+  Router.post('/remove-map', function(req, res){
+    var season = req.body.season;
+    var curEvent = req.body.eventKey;
+    var key = req.body.key;
+    var fbURL = "events/" + season + '/' + curEvent + '/coursemaps/' + key;
+    var fbRef = FireBaseRef.child(fbURL);
+    fbRef.remove();
+    goToAdminHome(res, false);
+  });
+
 // HOME PAGE
   function getHomePageData() {
     var fbData = {};

@@ -255,10 +255,13 @@
   .fa {
     cursor: pointer;
   }
+
+  button {
+    background-color: transparent;
+    border: 0;
+  }
   
   .fa-times-circle {
     color: $red;
-    width: 40px;
-    text-align: left;
   }
 }

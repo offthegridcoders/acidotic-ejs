@@ -233,20 +233,51 @@
           <summary>
             <h3><i class="fa fa-map-marker"></i> Edit Course Maps</h3>
           </summary>
-          <form class="edit-form" action="/update-map" method="post" enctype="application/x-www-form-urlencoded">
-            <div>
-              <% if(event.coursemaps) { %>
-                <ul class="admin-maps-list">
-                  <% for(var i=0; i<event.coursemaps.length; i++) {
-                    if (!event.coursemaps[i]) {continue;}%>
-                    <li><i class="fa fa-times-circle"></i><%= event.coursemaps[i].image %></li>
-                  <% }; %>
-                </ul>
-              <% }; %>
-            </div>
+          <p class="note">Click the X to remove old maps</p>
+          <hr>  
+          <div>
+            <% if(event.coursemaps) { %>
+              <ul class="admin-maps-list">
+                <% for(var i=0; i<event.coursemaps.length; i++) {
+                  if (!event.coursemaps[i]) {continue;}%>
+                  <form action="/remove-map" method="post"
+                        enctype="application/x-www-form-urlencoded">
+                    <li>
+                      <button type="submit">
+                        <i class="fa fa-times-circle"></i>
+                      </button>
+                      <%= event.coursemaps[i].image %>
+                    </li>
+                    <input type="text" class="hidden" name="season"
+                           value="<%= event.season %>">
+                    <input type="text" class="hidden" name="eventKey"
+                           value="<%= event.key %>">
+                    <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  </form>
+                <% }; %>
+              </ul>
+            <% }; %>
+          </div>
+          <form class="edit-form" action="/add-map" method="post" enctype="application/x-www-form-urlencoded">
+            <hr>
+            <p class="note">* Adding new maps is not recommended for general admin. Please contact the developer at this time to add new maps</p><br>
             <div>
               <label>New Map Url</label>
-              <input type="text" name="newMap" value="">
+              <input type="text" name="image" value="">
+            </div>
+            <div>
+              <label>New Map Thumb Url</label>
+              <input type="text" name="thumb" value="">
+            </div>
+            <input type="text" class="hidden" name="season"
+                   value="<%= event.season %>">
+            <input type="text" class="hidden" name="eventKey"
+                   value="<%= event.key %>">
+            <input type="text" class="hidden" name="key"
+                 value="<%= event.coursemaps.length %>">
+            <div>
+              <button type="submit">Add Map</button>
             </div>
           </form>
         </details>
