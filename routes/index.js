@@ -269,6 +269,7 @@ var Sponsors;
       if (error) {
         // failed authenication
         console.log("Login Failed!", error);
+        return res.render('pages/seasons/' + Defaults.season, getHomePageData());
       } else {
         // saves auth data in global var
         SessionAuth = authData;
