@@ -7,10 +7,11 @@ var SessionAuth;
 var Defaults = {};
 var Sponsors;
 
-// Defaults
-  Defaults.season = 'spring';
+// INITIALLY loads data into global variable
+  FireBaseRef.child('defaultseason/').on('value', function(snapshot) {
+    Defaults.season = snapshot.val();
+  });
 
-// INITIALLY loads all event data into global variable
   FireBaseRef.child('events/').on('value', function(snapshot) {
     AllData = snapshot.val();
   });
@@ -225,6 +226,18 @@ var Sponsors;
     fbRef.remove();
     goToAdminHome(res, false);
   });
+
+  Router.post('/update-default-season', function(req, res){
+    var fbURL = "/";
+    var fbRef = FireBaseRef.child(fbURL);
+    var data = {defaultseason: req.body.defaultSeason};
+    fbRef.update(data, function(error) {
+      errorReport(error)
+    });
+
+    goToAdminHome(res, false);
+  });
+
 
 // LOGIN/LOGOUT
   function logout(res) {

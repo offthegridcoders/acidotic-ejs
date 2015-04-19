@@ -12,49 +12,6 @@
         </article>
       <% }; %>
 
-      <!-- SPONSORS -->
-      <% if(!event) { %>
-        <!-- EDIT SPONSORS -->
-        <details>
-          <summary>
-            <h3><i class="fa fa-pencil-edit"></i> Edit Sponsor List</h3>
-          </summary>
-          <p class="note">*NOTE - Editing sponsor links is acceptable; However, editing sponsor images is not reccomended - it could produce bugs. You are able to delete sponsors without a problem though.</p>
-            <hr>
-            <% for(var i=0; i<sponsors.length; i++) {
-              if (!sponsors[i]) {continue;}%>
-              <article class="detail-forms-wrapper clearfix">
-                <!-- DELETE DETAIL -->
-                <form class="remove-blurb-form" action="/remove-sponsor"
-                  method="post" enctype="application/x-www-form-urlencoded">
-                  <input type="text" class="hidden" name="key"
-                         value="<%= i %>">
-                  <button type="submit" class="remove-blurb-btn">
-                    <i class="fa fa-times-circle"></i>
-                  </button>
-                </form>
-                <!-- EDIT DETAIL -->
-                <form class="details-form" action="/update-sponsor"
-                  method="post" enctype="application/x-www-form-urlencoded">
-                  <div>
-                    <label>Link</label>
-                    <input type="text" name="link" value="<%= sponsors[i].link %>">
-                  </div>
-                  <div>
-                    <label>Image URL</label>
-                    <input type="text" name="image" value="<%= sponsors[i].image %>">
-                  </div>
-                  <input type="text" class="hidden" name="key"
-                         value="<%= i %>">
-                  <button type="submit">
-                    <i class="fa fa-check-circle"></i><span>SAVE</span>
-                  </button>
-                </form>
-              </article>
-            <% } %>
-        </details>
-      <% } %>
-
       <!-- EVENTS -->
       <% if(!event) { %>
         <article>
@@ -96,7 +53,6 @@
           <hr>
         </article>
       <% } %>
-
       <% if(event) { %>
         <!-- EDIT GENERAL DETAILS -->
         <details>
@@ -386,9 +342,71 @@
           <hr>
         </details>
       <% } %>
-
+      <% if(!event) { %>
+        <!-- DEFAULT SEASON -->
+        <article>
+          <details>
+            <summary>
+              <h3><i class="fa fa-pencil-edit"></i> Set Default Season</h3>
+            </summary>
+            <p class="note">Please select the current season to display on the home page.</p>
+            <hr>
+            <form action="/update-default-season"
+              method="post" enctype="application/x-www-form-urlencoded">
+              <select name="defaultSeason">
+                <option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+              </select>
+              <button type="submit">Save</button>
+            </form>
+            <hr>
+          </details>
+        </article>
+        <!-- EDIT SPONSORS -->
+        <article>
+          <details>
+            <summary>
+              <h3><i class="fa fa-pencil-edit"></i> Edit Sponsor List</h3>
+            </summary>
+            <p class="note">*NOTE - Editing sponsor links is acceptable; However, editing sponsor images is not reccomended - it could produce bugs. You are able to delete sponsors without a problem though.</p>
+            <hr>
+            <% for(var i=0; i<sponsors.length; i++) {
+              if (!sponsors[i]) {continue;}%>
+              <article class="detail-forms-wrapper clearfix">
+                <!-- DELETE DETAIL -->
+                <form class="remove-blurb-form" action="/remove-sponsor"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit" class="remove-blurb-btn">
+                    <i class="fa fa-times-circle"></i>
+                  </button>
+                </form>
+                <!-- EDIT DETAIL -->
+                <form class="details-form" action="/update-sponsor"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <div>
+                    <label>Link</label>
+                    <input type="text" name="link" value="<%= sponsors[i].link %>">
+                  </div>
+                  <div>
+                    <label>Image URL</label>
+                    <input type="text" name="image" value="<%= sponsors[i].image %>">
+                  </div>
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit">
+                    <i class="fa fa-check-circle"></i><span>SAVE</span>
+                  </button>
+                </form>
+              </article>
+            <% } %>
+          </details>
+        </article>
+      <% } %>
     </section>
-
     <%= include ../../partials/footer.ejs %>
     <%= include ../../partials/scripts.ejs %>
   </body>
