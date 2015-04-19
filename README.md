@@ -5,6 +5,7 @@
 You can see the progress here: [LINK](https://acidotic.herokuapp.com/)
 
 Node.js / Express / EJS
+Heroku / Firebase
 
 #### Dependancies
 `sudo npm install`

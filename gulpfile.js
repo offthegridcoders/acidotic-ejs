@@ -44,3 +44,6 @@ gulp.task('default', ['sass'], function() {
       .pipe(minifyCSS())
       .pipe(gulp.dest('./public/stylesheets/'))
   });
+
+
+// e2e tests

@@ -238,7 +238,6 @@ var Sponsors;
     goToAdminHome(res, false);
   });
 
-
 // LOGIN/LOGOUT
   function logout(res) {
     FireBaseRef.unauth();
@@ -273,7 +272,7 @@ var Sponsors;
       } else {
         // saves auth data in global var
         SessionAuth = authData;
-        console.log("Authenticated successfully with payload:", authData);
+        console.log("Authenticated successfully with payload:");
         // goes to admin homepage
         goToAdminHome(res, false);
       }
