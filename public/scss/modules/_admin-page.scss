@@ -125,8 +125,15 @@
   display: none;
 }
 
-.details-form {
+.detail-forms-wrapper {
   border-bottom: solid 1px #000;
+}
+
+.move-form {
+  display: inline-block;
+}
+
+.details-form {
   margin: 20px 0;
 
   div {
@@ -222,6 +229,22 @@
   }
 }
 
+.move-blurb-btn {
+  background-color: transparent;
+  border: solid 1px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: rgba(215, 150, 64, .3);;
+    border-color: $orange;
+
+    i {
+      color: $orange;
+    }
+  }
+}
 .remove-blurb-btn {
   background-color: transparent;
   border: solid 1px;

@@ -1176,8 +1176,13 @@ footer {
 .hidden {
   display: none; }
 
+.detail-forms-wrapper {
+  border-bottom: solid 1px #000; }
+
+.move-form {
+  display: inline-block; }
+
 .details-form {
-  border-bottom: solid 1px #000;
   margin: 20px 0; }
   .details-form div {
     display: block;
@@ -1244,6 +1249,18 @@ footer {
     display: inline-block;
     font-size: 12px;
     vertical-align: middle; }
+
+.move-blurb-btn {
+  background-color: transparent;
+  border: solid 1px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px; }
+  .move-blurb-btn:hover {
+    background-color: rgba(215, 150, 64, 0.3);
+    border-color: #fcb034; }
+    .move-blurb-btn:hover i {
+      color: #fcb034; }
 
 .remove-blurb-btn {
   background-color: transparent;

@@ -178,6 +178,70 @@ var Defaults = {};
     goToAdminHome(res, false);
   });
 
+  Router.post('/move-blurb-down-form', function(req, res){
+    var season = req.body.season;
+    var curEvent = req.body.eventKey;
+    var key = req.body.key;
+    var key2 = parseInt(key) + 1;
+
+    var firstVal, secondVal;
+
+    var fbURLFirst = "events/" + season + '/' + curEvent + '/details/' + key;
+    var fbRef = FireBaseRef.child(fbURLFirst);
+    fbRef.once('value', function(snapshot) {
+      firstVal  = snapshot.val();
+    });
+
+    var fbURLSecond = "events/" + season + '/' + curEvent + '/details/' + key2;
+    var fbRef2 = FireBaseRef.child(fbURLSecond);
+    fbRef2.once('value', function(snapshot) {
+      secondVal  = snapshot.val();
+    });
+
+    fbRef.update(secondVal, function(error) {
+      errorReport(error)
+    });
+
+    fbRef2.update(firstVal, function(error) {
+      errorReport(error)
+    });
+
+    goToAdminHome(res, false);
+  });
+
+  Router.post('/move-blurb-up-form', function(req, res){
+    var season = req.body.season;
+    var curEvent = req.body.eventKey;
+    var key = req.body.key;
+    var key2 = parseInt(key) - 1;
+
+    var firstVal, secondVal;
+
+    var fbURLFirst = "events/" + season + '/' + curEvent + '/details/' + key;
+    var fbRef = FireBaseRef.child(fbURLFirst);
+    fbRef.once('value', function(snapshot) {
+      firstVal  = snapshot.val();
+    });
+
+    var fbURLSecond = "events/" + season + '/' + curEvent + '/details/' + key2;
+    var fbRef2 = FireBaseRef.child(fbURLSecond);
+    fbRef2.once('value', function(snapshot) {
+      secondVal  = snapshot.val();
+    });
+
+    fbRef.update(secondVal, function(error) {
+      errorReport(error)
+    });
+
+    fbRef2.update(firstVal, function(error) {
+      errorReport(error)
+    });
+
+    goToAdminHome(res, false);
+  });
+
+
+
 // HOME PAGE
   function getHomePageData() {
     var fbData = {};

@@ -52,6 +52,9 @@
         </form>
       </article>
       <% if(event) { %>
+
+
+        <!-- EDIT GENERAL DETAILS -->
         <details>
           <summary>
             <h3><i class="fa fa-pencil-square-o"></i> Edit General Event Details</h3>
@@ -153,14 +156,18 @@
             <button type="submit">SAVE</button>
           </form>
         </details>
+
+        <!-- EDIT EVENT DETAILS -->
         <details>
           <summary>
             <h3><i class="fa fa-pencil-square-o"></i> Edit Event Details</h3>
           </summary>
+            <p class="note">You are only able to change ONE blurb at a time. Meaning, whichever blurb you click 'save' on will be the only one that gets updated. Even if you have changed others.</p>
             <hr>
             <% for(var i=0; i<event.details.length; i++) {
               if (!event.details[i]) {continue;}%>
               <article class="detail-forms-wrapper">
+                <!-- DELETE DETAIL -->
                 <form class="remove-blurb-form" action="/remove-detail"
                   method="post" enctype="application/x-www-form-urlencoded">
                   <input type="text" class="hidden" name="season"
@@ -171,6 +178,7 @@
                          value="<%= i %>">
                   <button type="submit" class="remove-blurb-btn"><i class="fa fa-times-circle"></i><span>DELETE</span></button>
                 </form>
+                <!-- EDIT DETAIL -->
                 <form class="details-form" action="/update-details"
                   method="post" enctype="application/x-www-form-urlencoded">
                   <button class="details-form-btn" type="submit"><i class="fa fa-check-circle"></i><span>SAVE</span></button>
@@ -194,9 +202,47 @@
                   <input type="text" class="hidden" name="key"
                          value="<%= i %>">
                 </form>
+
+                <% if(i != 0) { %>
+                  <!-- MOVE DETAIL UP -->
+                  <form class="move-form" action="/move-blurb-up-form"
+                    method="post" enctype="application/x-www-form-urlencoded">
+                    <input type="text" class="hidden" name="season"
+                           value="<%= event.season %>">
+                    <input type="text" class="hidden" name="eventKey"
+                           value="<%= event.key %>">
+                    <input type="text" class="hidden" name="key"
+                           value="<%= i %>">
+                    <input type="text" class="hidden" name="event"
+                           value="<%= event %>">
+                    <button type="submit" class="move-blurb-btn">
+                      <i class="fa fa-arrow-up"></i>
+                    </button>
+                  </form>
+                <% }; %>
+
+                <% if(i != (event.details.length - 1)) { %>
+                  <!-- MOVE DETAIL DOWN -->
+                  <form class="move-form" action="/move-blurb-down-form"
+                    method="post" enctype="application/x-www-form-urlencoded">
+                    <input type="text" class="hidden" name="season"
+                           value="<%= event.season %>">
+                    <input type="text" class="hidden" name="eventKey"
+                           value="<%= event.key %>">
+                    <input type="text" class="hidden" name="key"
+                           value="<%= i %>">
+                    <input type="text" class="hidden" name="event"
+                           value="<%= event %>">
+                    <button type="submit" class="move-blurb-btn">
+                      <i class="fa fa-arrow-down"></i>
+                    </button>
+                  </form>
+                <% }; %>
               </article>
             <% } %>
         </details>
+
+        <!-- ADD NEW DETAIL -->
         <details>
           <summary>
             <h3><i class="fa fa-plus-circle"></i> Add NEW Detail</h3>
@@ -229,6 +275,8 @@
           <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
             double check all values are correct before saving</p>
         </details>
+
+        <!-- COURSE MAPS -->
         <details>
           <summary>
             <h3><i class="fa fa-map-marker"></i> Edit Course Maps</h3>
