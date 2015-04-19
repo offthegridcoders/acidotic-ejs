@@ -1113,7 +1113,8 @@ footer {
   .admin-full-page h1 {
     font-size: 24px; }
   .admin-full-page h3 {
-    font-size: 17px; }
+    font-size: 17px;
+    font-weight: 100; }
   .admin-full-page h4 {
     font-weight: 100; }
   .admin-full-page .logo {
@@ -1142,6 +1143,8 @@ footer {
     .admin-full-page summary h3 {
       cursor: pointer;
       display: inline-block; }
+    .admin-full-page summary i {
+      width: 25px; }
 
 .edit-form, .login-form {
   margin-bottom: 35px; }
@@ -1172,12 +1175,38 @@ footer {
     margin-top: 20px;
     padding: 10px 20px; }
 
-.logout button {
-  font-size: 14px;
-  padding: 10px;
-  text-transform: uppercase; }
-.logout i {
-  font-size: 18px; }
+.admin-header {
+  margin-bottom: 30px; }
+  .admin-header h1 {
+    color: #fcb034;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 26px;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.93);
+    text-transform: uppercase; }
+  .admin-header button {
+    margin-top: 15px; }
+
+.admin-event-logo {
+  max-width: 60px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px; }
+
+.admin-main-title {
+  font-size: 24px !important;
+  font-weight: 100; }
+
+.logout {
+  vertical-align: middle;
+  display: inline-block; }
+  .logout button {
+    cursor: pointer;
+    font-size: 11px;
+    padding: 5px;
+    vertical-align: middle;
+    margin-left: 10px; }
+  .logout i {
+    font-size: 14px; }
 
 .hidden {
   display: none; }

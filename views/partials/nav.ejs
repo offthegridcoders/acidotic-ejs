@@ -33,6 +33,13 @@
     <li><a href="/">events</a></li>
     <li><a href="about">about</a></li>
     <li><a href="contact">contact</a></li>
-    <% if(Session) { %><li><a href="admin">admin</a></li><% } %>
+    <% if(Session) { %><li><a href="admin">admin</a>
+      <form class="logout" action="/logout"
+            method="post" enctype="application/x-www-form-urlencoded">
+        <button type="submit">
+          <i class="fa fa-user-times"></i> Logout
+        </button>
+      </form>
+    </li><% } %>
   </ul>
 </nav>

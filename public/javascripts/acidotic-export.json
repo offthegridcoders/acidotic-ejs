@@ -609,10 +609,18 @@
         "date" : "January 25, 2015",
         "designer" : "Paul Kirsch",
         "details" : [ {
-          "copy" : "The race has been cancelled due to the lack of snow and abundance of ice on the Fairgrounds.  We will work with the US Snowshoe Association to move the qualifier to another NH-based race.  Visit the series website at http://www.granitestatesnowshoeseries.org for the details on a new qualifier.",
+          "copy" : "The race has been cancelled due to the lack of snow and abundance of ice on the Fairgrounds. We will work with the US Snowshoe Association to move the qualifier to another NH-based race. Visit the series website at http://www.granitestatesnowshoeseries.org for the details on a new qualifier.",
+          "eventKey" : "sidehillerSnowshoe",
+          "image" : "",
+          "key" : "0",
+          "season" : "winter",
           "title" : ""
         }, {
           "copy" : "9:30-10:30am at the Sandwich Library parking area, Route 109 Center Sandwich, NH",
+          "eventKey" : "sidehillerSnowshoe",
+          "image" : "",
+          "key" : "1",
+          "season" : "winter",
           "title" : "Parking & Race Day Registration"
         }, {
           "copy" : "We may be no frills but we are still at the epicenter of the snowshoe racing universe. This is the only race that is part of the both the famed and internationally acclaimed Western Mass Athletic Club (WMAC) Snowshoe Series and the quickly growing and frighteningly successful Granite State Snowshoe Series. We dare call it The Crossroads of snowshoe racing. Its also a qualifying race for the 2015 National Championships in Eau Claire, WI. Its all brought to you by the Sandwich Sidehillers, Dion Snowshoes, and Hammer Nutrition.",
@@ -747,5 +755,59 @@
         "title" : "Exeter Snowshoe Hullabaloo"
       }
     }
-  }
+  },
+  "sponsors" : [
+    {
+      "link" : "http://www.dionsnowshoes.com/",
+      "image" : "assets/sponsors/01.jpg"
+    },
+    {
+      "link" : "http://www.salomon.com/us/",
+      "image" : "assets/sponsors/02.png"
+    },
+    {
+      "link" : "http://www.philbricks.com/",
+      "image" : "assets/sponsors/03.jpg"
+    },
+    {
+      "link" : "http://www.nhstateparks.org/",
+      "image" : "assets/sponsors/04.jpg"
+    },
+    {
+      "link" : "http://www.julbousa.com/",
+      "image" : "assets/sponsors/05.jpg"
+    },
+    {
+      "link" : "http://www.603brewery.com/",
+      "image" : "assets/sponsors/06.jpg"
+    },
+    {
+      "link" : "http://www.suunto.com/en-US/",
+      "image" : "assets/sponsors/07.jpg"
+    },
+    {
+      "link" : "http://www.petzl.com/us",
+      "image" : "assets/sponsors/08.jpg"
+    },
+    {
+      "link" : "http://www.sevensunscoffee.com/",
+      "image" : "assets/sponsors/10.jpg"
+    },
+    {
+      "link" : "http://lrct.org/",
+      "image" : "assets/sponsors/11.jpg"
+    },
+    {
+      "link" : "http://www.foxsox.com/defaultEcomm.aspx",
+      "image" : "assets/sponsors/12.jpg"
+    },
+    {
+      "link" : "http://www.joeviger.com/",
+      "image" : "assets/sponsors/13.jpg"
+    },
+    {
+      "link" : "http://www.scottmasonphoto.com/",
+      "image" : "assets/sponsors/14.jpg"
+    }
+  ]
 }

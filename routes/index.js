@@ -5,6 +5,7 @@ var FireBaseRef = new Firebase('https://acidotic.firebaseio.com/');
 var AllData = {};
 var SessionAuth;
 var Defaults = {};
+var Sponsors;
 
 // Defaults
   Defaults.season = 'spring';
@@ -12,6 +13,11 @@ var Defaults = {};
 // INITIALLY loads all event data into global variable
   FireBaseRef.child('events/').on('value', function(snapshot) {
     AllData = snapshot.val();
+  });
+
+  FireBaseRef.child('sponsors/').on('value', function(snapshot) {
+    Sponsors = snapshot.val();
+    console.log(snapshot.val());
   });
 
 // ADMIN and LOGIN PAGE
@@ -23,6 +29,7 @@ var Defaults = {};
     fbData.page = 'Admin';
     // starting event edit data (false or value)
     fbData.event = eventData;
+    fbData.sponsors = Sponsors;
     fbData.Session = SessionAuth;
     return fbData;
   };
@@ -240,7 +247,30 @@ var Defaults = {};
     goToAdminHome(res, false);
   });
 
+  Router.post('/update-sponsor', function(req, res){
+    var key = req.body.key;
+    var fbURL = "sponsors/" + key;
+    var fbRef = FireBaseRef.child(fbURL);
+    var newData = {
+      image: req.body.image,
+      link: req.body.link,
+    };
 
+    fbRef.update(newData, function(error) {
+      errorReport(error)
+    });
+
+    goToAdminHome(res, false);
+  });
+
+  Router.post('/remove-sponsor', function(req, res){
+    var key = req.body.key;
+    var fbURL = "sponsors/" + key;
+    var fbRef = FireBaseRef.child(fbURL);
+
+    fbRef.remove();
+    goToAdminHome(res, false);
+  });
 
 // HOME PAGE
   function getHomePageData() {
@@ -249,6 +279,7 @@ var Defaults = {};
     fbData.season = Defaults.season;
     fbData.page = Defaults.season;
     fbData.data = AllData;
+    fbData.sponsors = Sponsors;
     fbData.Session = SessionAuth;
     return fbData;
   };
@@ -264,6 +295,7 @@ var Defaults = {};
     fbData.season = season;
     fbData.page = season;
     fbData.data = AllData;
+    fbData.sponsors = Sponsors;
     fbData.Session = SessionAuth;
     return fbData
   };
@@ -296,6 +328,7 @@ var Defaults = {};
     fbData.season = season;
     fbData.page = page;
     fbData.data = AllData;
+    fbData.sponsors = Sponsors;
     fbData.Session = SessionAuth;
     return fbData
   };
@@ -318,6 +351,7 @@ var Defaults = {};
     fbData.page = season;
     fbData.data = data;
     fbData.event = eventName;
+    fbData.sponsors = Sponsors;
     fbData.Session = SessionAuth;
     return fbData;
   };

@@ -5,55 +5,99 @@
     <%= include ../../partials/nav.ejs %>
 
     <section class="admin-full-page">
-      <form class="logout" action="/logout"
-            method="post" enctype="application/x-www-form-urlencoded">
-        <button type="submit">
-          <i class="fa fa-user-times"></i> Logout
-        </button>
-      </form>
-      <div class="logo">
-        <img src="assets/logo.png">
-      </div>
-      <article>
-        <h1>Welcome to Your Admin Dashboard</h1>
-        <h4>From here you can edit all your events and corresponding details</h4>
-      </article>
-      <article>
-        <h3>Choose an Event to Edit</h3>
-        <h4>Then click the pencil</h4>
-        <form action="/admin" method="post" enctype="application/x-www-form-urlencoded">
-          <select name="eventChoice">
-            <option value="<%= JSON.stringify(data.winter.sidehillerSnowshoe) %>">
-              <%= data.winter.sidehillerSnowshoe.title %></option>
-            <option value="<%= JSON.stringify(data.winter.kingmanFarm) %>">
-              <%= data.winter.kingmanFarm.title %></option>
-            <option value="<%= JSON.stringify(data.winter.snowshoeHullabaloo) %>">
-              <%= data.winter.snowshoeHullabaloo.title %></option>
-            <option value="<%= JSON.stringify(data.winter.snowshoeChampionship) %>">
-              <%= data.winter.snowshoeChampionship.title %></option>
-            <option value="<%= JSON.stringify(data.spring.ralphWaldo) %>">
-              <%= data.spring.ralphWaldo.title %></option>
-            <option value="<%= JSON.stringify(data.spring.exeterTrail) %>">
-              <%= data.spring.exeterTrail.title %></option>
-            <option value="<%= JSON.stringify(data.summer.loonMountainRace) %>">
-              <%= data.summer.loonMountainRace.title %></option>
-            <option value="<%= JSON.stringify(data.summer.kingmanFarmTrailRace) %>">
-              <%= data.summer.kingmanFarmTrailRace.title %></option>
-            <option value="<%= JSON.stringify(data.summer.harmonyHill) %>">
-              <%= data.summer.harmonyHill.title %></option>
-            <option value="<%= JSON.stringify(data.fall.brettonWoods) %>">
-              <%= data.fall.brettonWoods.title %></option>
-            <option value="<%= JSON.stringify(data.fall.vulcansFury) %>">
-              <%= data.fall.vulcansFury.title %></option>
-            <option value="<%= JSON.stringify(data.fall.roaringFalls) %>">
-              <%= data.fall.roaringFalls.title %></option>
-          </select>
-          <button class="submit-btn" type="submit"><i class="fa fa-pencil"></i></button>
-        </form>
-      </article>
       <% if(event) { %>
+        <article class="admin-header">
+            <a href="/admin"><button><i class="fa fa-arrow-left"></i> Back to Admin Home</button></a>
+            <hr>
+        </article>
+      <% }; %>
 
+      <!-- SPONSORS -->
+      <% if(!event) { %>
+        <!-- EDIT SPONSORS -->
+        <details>
+          <summary>
+            <h3><i class="fa fa-pencil-edit"></i> Edit Sponsor List</h3>
+          </summary>
+          <p class="note">*NOTE - Editing sponsor links is acceptable; However, editing sponsor images is not reccomended - it could produce bugs. You are able to delete sponsors without a problem though.</p>
+            <hr>
+            <% for(var i=0; i<sponsors.length; i++) {
+              if (!sponsors[i]) {continue;}%>
+              <article class="detail-forms-wrapper clearfix">
+                <!-- DELETE DETAIL -->
+                <form class="remove-blurb-form" action="/remove-sponsor"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit" class="remove-blurb-btn">
+                    <i class="fa fa-times-circle"></i>
+                  </button>
+                </form>
+                <!-- EDIT DETAIL -->
+                <form class="details-form" action="/update-sponsor"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <div>
+                    <label>Link</label>
+                    <input type="text" name="link" value="<%= sponsors[i].link %>">
+                  </div>
+                  <div>
+                    <label>Image URL</label>
+                    <input type="text" name="image" value="<%= sponsors[i].image %>">
+                  </div>
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit">
+                    <i class="fa fa-check-circle"></i><span>SAVE</span>
+                  </button>
+                </form>
+              </article>
+            <% } %>
+        </details>
+      <% } %>
 
+      <!-- EVENTS -->
+      <% if(!event) { %>
+        <article>
+          <h2>Choose an Event to Edit</h2>
+          <h4>Then click the pencil</h4>
+          <form action="/admin" method="post" enctype="application/x-www-form-urlencoded">
+            <select name="eventChoice">
+              <option value="<%= JSON.stringify(data.winter.sidehillerSnowshoe) %>">
+                <%= data.winter.sidehillerSnowshoe.title %></option>
+              <option value="<%= JSON.stringify(data.winter.kingmanFarm) %>">
+                <%= data.winter.kingmanFarm.title %></option>
+              <option value="<%= JSON.stringify(data.winter.snowshoeHullabaloo) %>">
+                <%= data.winter.snowshoeHullabaloo.title %></option>
+              <option value="<%= JSON.stringify(data.winter.snowshoeChampionship) %>">
+                <%= data.winter.snowshoeChampionship.title %></option>
+              <option value="<%= JSON.stringify(data.spring.ralphWaldo) %>">
+                <%= data.spring.ralphWaldo.title %></option>
+              <option value="<%= JSON.stringify(data.spring.exeterTrail) %>">
+                <%= data.spring.exeterTrail.title %></option>
+              <option value="<%= JSON.stringify(data.summer.loonMountainRace) %>">
+                <%= data.summer.loonMountainRace.title %></option>
+              <option value="<%= JSON.stringify(data.summer.kingmanFarmTrailRace) %>">
+                <%= data.summer.kingmanFarmTrailRace.title %></option>
+              <option value="<%= JSON.stringify(data.summer.harmonyHill) %>">
+                <%= data.summer.harmonyHill.title %></option>
+              <option value="<%= JSON.stringify(data.fall.brettonWoods) %>">
+                <%= data.fall.brettonWoods.title %></option>
+              <option value="<%= JSON.stringify(data.fall.vulcansFury) %>">
+                <%= data.fall.vulcansFury.title %></option>
+              <option value="<%= JSON.stringify(data.fall.roaringFalls) %>">
+                <%= data.fall.roaringFalls.title %></option>
+            </select>
+            <button class="submit-btn" type="submit"><i class="fa fa-pencil"></i></button>
+          </form>
+        </article>
+      <% } else { %>
+        <article>
+          <h3 class="admin-main-title"><img class="admin-event-logo" src="<%= event.logo %>"> <%= event.title %></h3>
+          <hr>
+        </article>
+      <% } %>
+
+      <% if(event) { %>
         <!-- EDIT GENERAL DETAILS -->
         <details>
           <summary>
@@ -155,6 +199,7 @@
               double check all values are correct before saving</p>
             <button type="submit">SAVE</button>
           </form>
+          <hr>
         </details>
 
         <!-- EDIT EVENT DETAILS -->
@@ -274,6 +319,7 @@
           </form>
           <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
             double check all values are correct before saving</p>
+          <hr>
         </details>
 
         <!-- COURSE MAPS -->
@@ -337,8 +383,10 @@
               <button type="submit">Add Map</button>
             </div>
           </form>
+          <hr>
         </details>
       <% } %>
+
     </section>
 
     <%= include ../../partials/footer.ejs %>
