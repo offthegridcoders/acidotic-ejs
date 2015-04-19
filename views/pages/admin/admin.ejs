@@ -233,10 +233,11 @@
           <summary>
             <h3><i class="fa fa-map-marker"></i> Edit Course Maps</h3>
           </summary>
-          <p class="note">Click the X to remove old maps</p>
-          <hr>  
-          <div>
-            <% if(event.coursemaps) { %>
+
+          <% if(event.coursemaps) { %>
+            <p class="note">Click the X to remove old maps</p>
+            <hr>  
+            <div>
               <ul class="admin-maps-list">
                 <% for(var i=0; i<event.coursemaps.length; i++) {
                   if (!event.coursemaps[i]) {continue;}%>
@@ -260,8 +261,8 @@
                   </form>
                 <% }; %>
               </ul>
-            <% }; %>
-          </div>
+            </div>
+          <% }; %>
           <form class="edit-form" action="/add-map" method="post" enctype="application/x-www-form-urlencoded">
             <hr>
             <p class="note">* ADDING new maps is not recommended for general admin. Please contact the developer at this time to add new maps. Otherwise, you may experience bugs.</p><br>
@@ -277,8 +278,13 @@
                    value="<%= event.season %>">
             <input type="text" class="hidden" name="eventKey"
                    value="<%= event.key %>">
-            <input type="text" class="hidden" name="key"
+            <% if(event.coursemaps) { %>
+              <input type="text" class="hidden" name="key"
                  value="<%= event.coursemaps.length %>">
+            <% } else { %>
+              <input type="text" class="hidden" name="key"
+                 value="0">
+            <% }; %>
             <div>
               <button type="submit">Add Map</button>
             </div>
