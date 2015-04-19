@@ -17,10 +17,9 @@ var Sponsors;
 
   FireBaseRef.child('sponsors/').on('value', function(snapshot) {
     Sponsors = snapshot.val();
-    console.log(snapshot.val());
   });
 
-// ADMIN and LOGIN PAGE
+// ADMIN
   function getAdminPageData(eventData) {
     var fbData = {};
     fbData.title = 'Admin Dashboard - acidotic Racing';
@@ -47,50 +46,6 @@ var Sponsors;
     }
   };
 
-  // logout function (takes in res)
-  function logout(res) {
-    FireBaseRef.unauth();
-    SessionAuth = null;
-    // navigate to homepage
-    var data = getHomePageData();
-    return res.render('pages/seasons/winter', data);
-  };
-
-  Router.get('/login', function(req, res, next) {
-    return res.render('pages/admin/login', getAdminPageData(false));
-  });
-
-  Router.post('/login', function(req,res) {
-    // email    : "admin@acidoticracing.com",
-    // password : "RACEacidotic2015!"
-    FireBaseRef.authWithPassword({
-      email    : req.body.email,
-      password : req.body.password
-    }, function(error, authData) {
-      if (error) {
-        // failed authenication
-        console.log("Login Failed!", error);
-      } else {
-        // saves auth data in global var
-        SessionAuth = authData;
-        console.log("Authenticated successfully with payload:", authData);
-        // goes to admin homepage
-        goToAdminHome(res, false);
-      }
-    }, {
-      // expires after browser shutdown
-      remember: "sessionOnly"
-    });
-  });
-
-  Router.get('/logout', function(req,res) {
-    logout(res);
-  });
-
-  Router.post('/logout', function(req,res) {
-    logout(res);
-  });
-
   Router.get('/admin', function(req, res, next) {
     if (SessionAuth) {
       // if authenticated - go to admin homepage
@@ -112,7 +67,6 @@ var Sponsors;
     fbRef.update(req.body, function(error) {errorReport(error)});
     goToAdminHome(res, false);
   });
-
 
   Router.post('/update-details', function(req, res){
     var season = req.body.season;
@@ -272,6 +226,50 @@ var Sponsors;
     goToAdminHome(res, false);
   });
 
+// LOGIN/LOGOUT
+  function logout(res) {
+    FireBaseRef.unauth();
+    SessionAuth = null;
+    // navigate to homepage
+    var data = getHomePageData();
+    return res.render('pages/seasons/winter', data);
+  };
+  
+  Router.get('/logout', function(req,res) {
+    logout(res);
+  });
+
+  Router.post('/logout', function(req,res) {
+    logout(res);
+  });
+
+  Router.get('/login', function(req, res, next) {
+    return res.render('pages/admin/login', getAdminPageData(false));
+  });
+
+  Router.post('/login', function(req,res) {
+    // email    : "admin@acidoticracing.com",
+    // password : "RACEacidotic2015!"
+    FireBaseRef.authWithPassword({
+      email    : req.body.email,
+      password : req.body.password
+    }, function(error, authData) {
+      if (error) {
+        // failed authenication
+        console.log("Login Failed!", error);
+      } else {
+        // saves auth data in global var
+        SessionAuth = authData;
+        console.log("Authenticated successfully with payload:", authData);
+        // goes to admin homepage
+        goToAdminHome(res, false);
+      }
+    }, {
+      // expires after browser shutdown
+      remember: "sessionOnly"
+    });
+  });
+
 // HOME PAGE
   function getHomePageData() {
     var fbData = {};
@@ -320,7 +318,6 @@ var Sponsors;
     return res.render('pages/seasons/fall', setSeasonData('Fall Events', 'fall'));
   });
 
-
 // REGULAR PAGES
   function setRegPageData(title, season, page) {
     var fbData = {};
@@ -341,7 +338,6 @@ var Sponsors;
   Router.get('/contact', function(req, res, next) {
     return res.render('pages/contact', setRegPageData('Contact', 'fall', 'contact'));
   });
-
 
 // SINGLE EVENTS
   function setSingleEventData(title, season, data, eventName) {
