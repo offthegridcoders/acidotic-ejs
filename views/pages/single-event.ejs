@@ -21,7 +21,9 @@
           <h5><i class="fa fa-map-marker"></i> address:</h5>
           <p><% if(event.address) { %><%= event.address %></br><% } %>
             <%= event.address2 %></br>
-            <%= event.city %>, <%= event.state %>
+            <%= event.city %>, <%= event.state %></br>
+            <a class="directions" href="http://maps.google.com?q=<%= event.address2 + '+' + event.city + '+' + event.state %>" target="_new">
+              <i class="fa fa-compass"></i>Open in Google Maps</a>
           </p>
 
           <h5><i class="fa fa-line-chart"></i> distance:</h5>

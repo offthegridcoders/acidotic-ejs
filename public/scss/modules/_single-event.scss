@@ -91,6 +91,19 @@
   .top-wrapper-article {
     height: 400px;
     
+    .directions {
+      display: block;
+      margin-top: 5px;
+      font-weight: 600;
+      font-style: italic;
+      text-decoration: underline;
+
+      .fa-compass {
+        width: 16px;
+        text-decoration: none;
+      }
+    }
+
     @media screen and (max-width: 700px) {
       height: auto;
     }
