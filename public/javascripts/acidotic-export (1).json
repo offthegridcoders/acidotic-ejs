@@ -428,12 +428,40 @@
         "bibtime" : "TBD",
         "city" : "TBD",
         "cost" : "TBD",
-        "date" : "Race #1:  Wednesday, June 24, 2015, Race #2:  Wednesday, July 8, 2015, Race #3:  Wednesday, July 15, 2015, Race #4:  Wednesday, July 22, 2015, Race #5:  Wednesday, August 5, 2015, Race #6:  Wednesday, August 19 2015",
+        "date" : "(See Details)",
         "designer" : "TBD",
-        "details" : [ {
-          "copy" : "to be written",
-          "title" : "tbd"
-        } ],
+        "details" : {
+          "0" : {
+            "copy" : "Race #1:  Wednesday, June 24, 2015",
+            "image" : "",
+            "title" : "Race Dates"
+          },
+          "1" : {
+            "copy" : "Race #2:  Wednesday, July 8, 2015",
+            "image" : "",
+            "title" : ""
+          },
+          "2" : {
+            "copy" : "Race #3:  Wednesday, July 15, 2015",
+            "image" : "",
+            "title" : ""
+          },
+          "3" : {
+            "copy" : "Race #4:  Wednesday, July 22, 2015",
+            "image" : "",
+            "title" : ""
+          },
+          "4" : {
+            "copy" : "Race #5:  Wednesday, August 5, 2015",
+            "image" : "",
+            "title" : ""
+          },
+          "5" : {
+            "copy" : "Race #6:  Wednesday, August 19 2015",
+            "image" : "",
+            "title" : ""
+          }
+        },
         "directoremail" : "TBD",
         "directorname" : "TBD",
         "distance" : "TBD",
