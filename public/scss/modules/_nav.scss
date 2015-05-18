@@ -88,51 +88,26 @@ nav {
   }
 }
 
-.seasons-nav {
-  background-color: rgba(0, 0, 0, .41);
-  display: none;
-  padding: 10px;
+.icon-nav {
+  list-style: none;
   position: absolute;
-  right: 0;
-  top: 70px;
+  right: 20px;
+  top: 19px;
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
 
   a {
-    color: rgba(255, 255, 255, .63);
+    color: #fff;
 
     &:hover {
       color: $orange;
     }
   }
 
-  img {
-    margin-right: 8px;
-    vertical-align: middle;
-    width: 25px;
-  }
-
-  .active {
-    background-color: rgba(0, 0, 0, .58);
-    color: $orange;
+  i {
+    font-size: 22px;
   }
 }
-
-.seasons-nav-li {
-  padding: 10px 20px;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, .58);
-
-    img:first-child {
-      display: none;
-    }
-    
-    img:nth-child(2) {
-      display: inline-block;
-    }
-  }
-
-  img:nth-child(2) {
-    display: none;
-  }
-}
-

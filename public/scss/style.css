@@ -208,35 +208,20 @@ nav {
   .main-nav span {
     text-transform: lowercase; }
 
-.seasons-nav {
-  background-color: rgba(0, 0, 0, 0.41);
-  display: none;
-  padding: 10px;
+.icon-nav {
+  list-style: none;
   position: absolute;
-  right: 0;
-  top: 70px; }
-  .seasons-nav a {
-    color: rgba(255, 255, 255, 0.63); }
-    .seasons-nav a:hover {
+  right: 20px;
+  top: 19px; }
+  .icon-nav li {
+    display: inline-block;
+    margin: 5px; }
+  .icon-nav a {
+    color: #fff; }
+    .icon-nav a:hover {
       color: #fcb034; }
-  .seasons-nav img {
-    margin-right: 8px;
-    vertical-align: middle;
-    width: 25px; }
-  .seasons-nav .active {
-    background-color: rgba(0, 0, 0, 0.58);
-    color: #fcb034; }
-
-.seasons-nav-li {
-  padding: 10px 20px; }
-  .seasons-nav-li:hover {
-    background-color: rgba(0, 0, 0, 0.58); }
-    .seasons-nav-li:hover img:first-child {
-      display: none; }
-    .seasons-nav-li:hover img:nth-child(2) {
-      display: inline-block; }
-  .seasons-nav-li img:nth-child(2) {
-    display: none; }
+  .icon-nav i {
+    font-size: 22px; }
 
 header {
   background-position: 50% 100%;

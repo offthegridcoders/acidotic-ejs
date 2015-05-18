@@ -14,6 +14,7 @@ var Sponsors;
 
   FireBaseRef.child('events/').on('value', function(snapshot) {
     AllData = snapshot.val();
+    console.log(AllData);
   });
 
   FireBaseRef.child('sponsors/').on('value', function(snapshot) {
@@ -342,6 +343,7 @@ var Sponsors;
     fbData.Session = SessionAuth;
     return fbData
   };
+
   // ABOUT PAGE
   Router.get('/about', function(req, res, next) {
     return res.render('pages/about', setRegPageData('About', 'fall', 'about'));
@@ -351,6 +353,17 @@ var Sponsors;
   Router.get('/contact', function(req, res, next) {
     return res.render('pages/contact', setRegPageData('Contact', 'fall', 'contact'));
   });
+
+  // COMMUNITY PAGE
+  Router.get('/community', function(req, res, next) {
+    return res.render('pages/community', setRegPageData('About', 'fall', 'about'));
+  });
+
+  // COMMUNITY PAGE
+  Router.get('/charity', function(req, res, next) {
+    return res.render('pages/charity', setRegPageData('About', 'fall', 'about'));
+  });
+
 
 // SINGLE EVENTS
   function setSingleEventData(title, season, data, eventName) {

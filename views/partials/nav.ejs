@@ -1,38 +1,14 @@
 <!DOCTYPE html>
 <nav class="animated fadeInDownBig">
-  <p class="season-label"><%= page %></p><img src="assets/icons/<%= season %>_icon.jpg" class="season-icon">
-
-  <ul class="seasons-nav">
-    <li class="seasons-nav-li">
-      <a href="winter">
-        <img src="assets/icons/winter_icon.jpg">
-        <img src="assets/icons/winter_icon_orange.jpg">
-        Winter Season
-      </a></li>
-    <li class="seasons-nav-li">
-      <a href="spring">
-        <img src="assets/icons/spring_icon.jpg">
-        <img src="assets/icons/spring_icon_orange.jpg">
-        Spring Season
-      </a></li>
-    <li class="seasons-nav-li">
-      <a href="summer">
-        <img src="assets/icons/summer_icon.jpg">
-        <img src="assets/icons/spring_icon_orange.jpg">
-        Summer Season
-      </a></li>
-    <li class="seasons-nav-li">
-      <a href="fall">
-        <img src="assets/icons/fall_icon.jpg">
-        <img src="assets/icons/spring_icon_orange.jpg">
-        Fall Season
-      </a></li>
+  <ul class="icon-nav">
+    <li><a href="about" title="About" alt="About"><i class="fa fa-info-circle"></i></a></li>
+    <li><a href="contact" title="Contact" alt="Contact"><i class="fa fa-envelope"></i></a></li>
   </ul>
 
   <ul class="main-nav">
-    <li><a href="/">events</a></li>
-    <li><a href="about">about</a></li>
-    <li><a href="contact">contact</a></li>
+    <li><a href="/">competition</a></li>
+    <li><a href="/community">community</a></li>
+    <li><a href="/charity">charity</a></li>
     <% if(Session) { %><li><a href="admin">admin</a>
       <form class="logout" action="/logout"
             method="post" enctype="application/x-www-form-urlencoded">
