@@ -49,11 +49,11 @@ header {
   }
 }
 
-.results-header {
-  background-image: url('../assets/headers/results-header.png');
+.charity-header {
+  background-image: url('../assets/headers/charity-header.png');
   
   @media screen and (max-width: 500px) {
-    background-image: url('../assets/headers/results-header-sm.png');
+    background-image: url('../assets/headers/charity-header-sm.png');
   }
 }
 
@@ -66,7 +66,7 @@ header {
   }
 }
 
-.why-header {
+.community-header {
   background-image: url('../assets/headers/why-header.png');
   
   @media screen and (max-width: 500px) {

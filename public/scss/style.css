@@ -262,11 +262,11 @@ header {
     .fall-header {
       background-image: url('../assets/headers/fall-header-sm.png'); } }
 
-.results-header {
-  background-image: url('../assets/headers/results-header.png'); }
+.charity-header {
+  background-image: url('../assets/headers/charity-header.png'); }
   @media screen and (max-width: 500px) {
-    .results-header {
-      background-image: url('../assets/headers/results-header-sm.png'); } }
+    .charity-header {
+      background-image: url('../assets/headers/charity-header-sm.png'); } }
 
 .about-header {
   background-image: url('../assets/headers/photos-header.png');
@@ -275,10 +275,10 @@ header {
     .about-header {
       background-image: url('../assets/headers/photos-header-sm.png'); } }
 
-.why-header {
+.community-header {
   background-image: url('../assets/headers/why-header.png'); }
   @media screen and (max-width: 500px) {
-    .why-header {
+    .community-header {
       background-image: url('../assets/headers/why-header-sm.png'); } }
 
 .contact-header {

@@ -356,12 +356,12 @@ var Sponsors;
 
   // COMMUNITY PAGE
   Router.get('/community', function(req, res, next) {
-    return res.render('pages/community', setRegPageData('About', 'fall', 'about'));
+    return res.render('pages/community', setRegPageData('Community', 'winter', 'community'));
   });
 
   // COMMUNITY PAGE
   Router.get('/charity', function(req, res, next) {
-    return res.render('pages/charity', setRegPageData('About', 'fall', 'about'));
+    return res.render('pages/charity', setRegPageData('Charity', 'fall', 'charity'));
   });
 
 
