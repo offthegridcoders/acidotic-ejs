@@ -58,11 +58,11 @@ header {
 }
 
 .about-header {
-  background-image: url('../assets/headers/photos-header.png');
+  background-image: url('../assets/headers/about-header.png');
   background-position: 0 80%;
   
   @media screen and (max-width: 500px) {
-    background-image: url('../assets/headers/photos-header-sm.png');
+    background-image: url('../assets/headers/about-header-sm.png');
   }
 }
 

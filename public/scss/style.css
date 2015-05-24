@@ -269,11 +269,11 @@ header {
       background-image: url('../assets/headers/charity-header-sm.png'); } }
 
 .about-header {
-  background-image: url('../assets/headers/photos-header.png');
+  background-image: url('../assets/headers/about-header.png');
   background-position: 0 80%; }
   @media screen and (max-width: 500px) {
     .about-header {
-      background-image: url('../assets/headers/photos-header-sm.png'); } }
+      background-image: url('../assets/headers/about-header-sm.png'); } }
 
 .community-header {
   background-image: url('../assets/headers/why-header.png'); }
@@ -652,6 +652,8 @@ footer {
     background-image: url('../assets/athletes/image9.JPG'); }
   .thumbnail-holder .pic10 {
     background-image: url('../assets/athletes/image10.JPG'); }
+  .thumbnail-holder .pic11 {
+    background-image: url('../assets/athletes/image11.JPG'); }
 
 .sidehiller-event {
   background-image: url('../assets/events/event_sidehiller.jpg'); }
@@ -1348,3 +1350,11 @@ footer {
     width: 100%; }
     .loon-mountain-race-page .logo-holder img {
       width: 150px; }
+
+.charity-block h3 {
+  margin: 10px 0; }
+.charity-block img {
+  background-color: #fff;
+  width: 180px;
+  max-width: 100%;
+  padding: 10px; }
