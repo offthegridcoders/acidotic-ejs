@@ -213,6 +213,11 @@ nav {
   position: absolute;
   right: 20px;
   top: 19px; }
+  @media screen and (max-width: 600px) {
+    .icon-nav {
+      margin: 0 auto;
+      position: static;
+      width: 64px; } }
   .icon-nav li {
     display: inline-block;
     margin: 5px; }
