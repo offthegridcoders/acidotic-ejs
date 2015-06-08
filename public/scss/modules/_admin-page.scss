@@ -310,6 +310,10 @@
 .admin-maps-list {
   margin: 10px;
 
+  img {
+    max-width: 100%;
+  }
+  
   li {
     margin-bottom: 10px;
   }

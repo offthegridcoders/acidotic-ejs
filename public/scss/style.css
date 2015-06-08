@@ -638,27 +638,27 @@ footer {
     .thumbnail-holder div:hover {
       opacity: 1; }
   .thumbnail-holder .pic01 {
-    background-image: url('../assets/athletes/image1.JPG'); }
+    background-image: url('../assets/athletes/image1.jpg'); }
   .thumbnail-holder .pic02 {
-    background-image: url('../assets/athletes/image2.JPG'); }
+    background-image: url('../assets/athletes/image2.jpg'); }
   .thumbnail-holder .pic03 {
-    background-image: url('../assets/athletes/image3.JPG'); }
+    background-image: url('../assets/athletes/image3.jpg'); }
   .thumbnail-holder .pic04 {
-    background-image: url('../assets/athletes/image4.JPG'); }
+    background-image: url('../assets/athletes/image4.jpg'); }
   .thumbnail-holder .pic05 {
-    background-image: url('../assets/athletes/image5.JPG'); }
+    background-image: url('../assets/athletes/image5.jpg'); }
   .thumbnail-holder .pic06 {
-    background-image: url('../assets/athletes/image6.JPG'); }
+    background-image: url('../assets/athletes/image6.jpg'); }
   .thumbnail-holder .pic07 {
-    background-image: url('../assets/athletes/image7.JPG'); }
+    background-image: url('../assets/athletes/image7.jpg'); }
   .thumbnail-holder .pic08 {
     background-image: url('../assets/athletes/image8.jpg'); }
   .thumbnail-holder .pic09 {
-    background-image: url('../assets/athletes/image9.JPG'); }
+    background-image: url('../assets/athletes/image9.jpg'); }
   .thumbnail-holder .pic10 {
-    background-image: url('../assets/athletes/image10.JPG'); }
+    background-image: url('../assets/athletes/image10.jpg'); }
   .thumbnail-holder .pic11 {
-    background-image: url('../assets/athletes/image11.JPG'); }
+    background-image: url('../assets/athletes/image11.jpg'); }
 
 .sidehiller-event {
   background-image: url('../assets/events/event_sidehiller.jpg'); }
@@ -1316,6 +1316,8 @@ footer {
 
 .admin-maps-list {
   margin: 10px; }
+  .admin-maps-list img {
+    max-width: 100%; }
   .admin-maps-list li {
     margin-bottom: 10px; }
   .admin-maps-list .fa {
