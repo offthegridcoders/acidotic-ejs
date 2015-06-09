@@ -1,6 +1,11 @@
 .addthis-toolbox {
   margin: 10px 0;
   width: 194px;
+
+  @media screen and (max-width: 700px) {
+    margin: 10px auto;
+    width: 163px;
+  }
 }
 
 .addthis_counter {

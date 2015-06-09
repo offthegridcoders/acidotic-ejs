@@ -8,6 +8,10 @@
         "bibtime" : "08:30 am to 09:30 am",
         "city" : "Bretton Woods",
         "cost" : "$30/$25 pre-registration (Long/Short); $40/$35 day of event (Long/Short) ",
+        "coursemaps" : [{
+          "image" : "assets/maps/mountain_map_fell_race_2015_LR_pg1.jpg",
+          "thumb" : "assets/maps/mountain_map_fell_race_2015_LR_pg1_thumb.jpg"
+        }],
         "date" : "October 3, 2015",
         "designer" : "Chris J. Dunn",
         "details" : [ {
@@ -143,7 +147,11 @@
           "copy" : "Fell running, also known as mountain running and hill running, is the sport of running and racing off road, over upland country where the gradient climbed is a significant component of the difficulty. The name arises from the origins of the English sport on the fells of northern Britain. Fell races are organized on the premise that contenders possess mountain navigation skills and carry adequate survival equipment as prescribed by the organizer. Modern fell running has common characteristics with cross country running. Courses are often longer, steeper, unmarked when out on the hills (with a few exceptions) and these longer races can demand mountain navigational techniques. Nevertheless, cross country seems fast and furious to many fell runners. Fell running also overlaps with orienteering. Courses are again longer but demand different techniques from orienteering. However, fell running does require navigational skills in a wild, mountainous environment, particularly in determining and choosing between routes. [adapted from Wikipedia]",
           "title" : "What Is Fell Running?"
         }, {
-          "copy" : "No transfers or refunds after September 26, 2014.",
+          "copy" : "No transfers or refunds after September 26, 2015.",
+          "eventKey" : "brettonWoods",
+          "image" : "",
+          "key" : "44",
+          "season" : "fall",
           "title" : "Note"
         }, null, {
           "copy" : "We are happy to offer all active military, retired military, and military spouses a discount on registration.  In addition, we would also like to extend a discount to all police, fire, and rescue professionals.  See the details on the online registration page.",
@@ -313,7 +321,17 @@
         "address2" : "6 Commerce Way",
         "bibtime" : "08:30 am to 09:30 am",
         "city" : "Exeter",
-        "cost" : "$25 (10 miles), $20 (4.6 miles) [$30 & $25 day of event]",
+        "cost" : "$30 (10 miles), $25 (4.6 miles) [$40 & $35 day of event]",
+        "coursemaps" : [
+          {
+            "image" : "assets/maps/4.5 mile course map Henderson Swazey.jpg",
+            "thumb" : "assets/maps/4.5 mile course map Henderson Swazey_thumb.jpg"
+          },
+          {
+            "image" : "assets/maps/exeter-trail-map01.jpg",
+            "thumb" : "assets/maps/exeter-trail-map01-thumb.jpg"
+          }
+        ],
         "date" : "June 27th, 2015",
         "designer" : "Ri Fahnestock",
         "details" : [ null, {
@@ -423,189 +441,156 @@
     },
     "summer" : {
       "harmonyHill" : {
-        "address" : "TBD",
-        "address2" : "TBD",
-        "bibtime" : "TBD",
-        "city" : "TBD",
-        "cost" : "TBD",
-        "date" : "(See Details)",
-        "designer" : "TBD",
-        "details" : {
-          "0" : {
-            "copy" : "Returning for a 3rd Year, The Harmony Hill Cross Country (XC) Series is a fun summer XC running series for all abilities and ages.  In the past two years this has become a favorite race for first time runners as well as seasoned athletes.  This series will focus on family fun, bringing the community together, and promoting an active lifestyle through enjoying the outdoors.  The event will feature something for everyone including; a 'Popsicle Dash'; 1 mile fun run; and a competitive approximately 3.6 mile XC race. The 1-mile fun run is an out and back through a field with uneven terrain.  The XC race will begin in an open field, pass through wooded areas on double-track and single-track trails, and go around Meadow Lake in the heart of the State Park.  The race also features a couple challenging hills, and may include an occasional cooling rain storm, a sweltering evening, a beautiful sunset or a few mosquitos.  See below for more details of each race.",
-            "image" : "",
-            "title" : ""
-          },
-          "1" : {
-            "copy" : "Please “Like” our Facebook page for announcements.  Race cancellations will also be posted there!",
-            "image" : "",
-            "title" : ""
-          },
-          "2" : {
-            "copy" : "",
-            "image" : "",
-            "title" : "Series Schedule*:"
-          },
-          "3" : {
-            "copy" : "Race #1:  Wednesday, June 24, 2015",
-            "image" : "",
-            "title" : ""
-          },
-          "4" : {
-            "copy" : "Race #2:  Wednesday, July 8, 2015",
-            "image" : "",
-            "title" : ""
-          },
-          "5" : {
-            "copy" : "Race #3:  Wednesday, July 15, 2015",
-            "image" : "",
-            "title" : ""
-          },
-          "6" : {
-            "copy" : "Race #4:  Wednesday, July 22, 2015",
-            "image" : "",
-            "title" : ""
-          },
-          "7" : {
-            "copy" : "Race #5:  Wednesday, August 5, 2015",
-            "image" : "",
-            "title" : ""
-          },
-          "8" : {
-            "copy" : "Race #6:  Wednesday, August 19 2015",
-            "image" : "",
-            "title" : ""
-          },
-          "9" : {
-            "copy" : "*Please note this year’s schedule includes a few 'off' weeks.  These dates will be used to reschedule if events must be cancelled due to inclement weather.",
-            "image" : "",
-            "title" : ""
-          },
-          "10" : {
-            "copy" : "5:30 - 6:00 PM",
-            "image" : "",
-            "title" : "Day of Registration:"
-          },
-          "11" : {
-            "copy" : "Starts at 6:00 PM [FREE]",
-            "image" : "",
-            "title" : "Popsicle Dash"
-          },
-          "12" : {
-            "copy" : "Starts at 6:05 PM [FREE]",
-            "image" : "",
-            "title" : "1 Mile Fun Run"
-          },
-          "13" : {
-            "copy" : "Starts at 6:30 PM",
-            "image" : "",
-            "title" : "3.5 Mile XC race"
-          },
-          "14" : {
-            "copy" : "Online:  6  Races Pre-Pay: $50 Adult; $25 -Students K-12 –Closes Monday, June 22, 2015.",
-            "image" : "",
-            "title" : "Cost"
-          },
-          "15" : {
-            "copy" : "Day of event/Per Race: $10 Adult ; $5 -Students K-12",
-            "image" : "",
-            "title" : ""
-          },
-          "16" : {
-            "copy" : "Online $250 Group package for Youth Running Teams/Clubs.  This rate will enable clubs to bring 10runners each week, but don’t have to be the SAME runners.  Each runner will need to check in at registration and have a registration form on file.",
-            "image" : "",
-            "title" : ""
-          },
-          "17" : {
-            "copy" : "Proceeds from the race will again go to the Friends of Northwood Meadows and the Northwood Area Land Management Collaborative (NALMC), two volunteer groups that maintain the trails and the park. By participating in these events YOU are helping to keep the trails maintained so that the community can have a beautiful place to enjoy for many years to come. In the past two years approximately $4,000 from this series has been split between these two groups!",
-            "image" : "",
-            "title" : ""
-          },
-          "18" : {
-            "copy" : "XC race competitors will receive a race number which must be worn during the race on the front of the body. Each XC race will be timed and scored.  To qualify for series standings you must race at least five of the six races.  Your five best cumulative times will be used to determine your series standing. You will receive one race bib (#) to be used for the entire series. Lost or misplaced bibs may be replaced for $5 the night of the event.",
-            "image" : "",
-            "title" : ""
-          },
-          "19" : {
-            "copy" : "Please “Like” our Facebook page for announcements. Race cancellations will also be posted there!",
-            "image" : "",
-            "title" : ""
-          },
-          "20" : {
-            "copy" : "Please park at the NALMAC/Harmony Hill Kiosk where the porta-potty is located. If that parking lot is full, only park on one side of the road. We will have cones blocking the side you should not park on. Please respect the parking rules. The residents have given us permission to park on only one side of the road and if we do not respect their wishes, we may lose our privileges to hold the race series.",
-            "image" : "",
-            "title" : "Parking"
-          },
-          "21" : {
-            "copy" : "Young children can run/crawl/walk (yes parents can join them!) about 100 yards to a cooler of popsicles. This is non-competitive and just a fun way to get smaller kids excited about the outdoors!",
-            "image" : "",
-            "title" : "Popsicle Dash"
-          },
-          "22" : {
-            "copy" : "A one mile run around the field that consists of rolling terrain. We will have a mowed area for the runners to follow. Although this is a field, there are sticks, rocks, roots and other objects found in trail running. The event is open to anyone who wants to run and you can go as fast or as slow as you need to! This is designed for children as well as adults who want to run, but are not ready for the long race.",
-            "image" : "",
-            "title" : "1 Mile Fun Run"
-          },
-          "23" : {
-            "copy" : "The 3.6 mile XC race will start on the NALMC Trail in the field on Harmony Road and follow thetrail through the field and down some beautiful double-track and single-track. When you emerge from the woods, you will follow the NALMC trail to the left and then take a quick right onto the lake loop.  You will then run along the fast and scenic trail around the lake and will take your first left to continue around the lake. The course continues around the lake and then returns to the yellow NALMC trail as you retrace your steps back to the start/finish. There will be ample markings along the race course using flags, signs and arrows. A map of the park trails can be found here: http://www.nhstateparks.org/uploads/pdf/Northwood-Meadows_Trail-Map_NALMC.pdf",
-            "image" : "",
-            "title" : "XC Race"
-          },
-          "24" : {
-            "copy" : "There will be no weekly prizes. Prizes will be awarded at the end of the series based on overall standings for men, women and youth (male and female.)",
-            "image" : "",
-            "title" : ""
-          },
-          "25" : {
-            "copy" : "Please remember that part of this race (including the start area), is dependent upon the use of private land. These 'rules' (or general common sense and common courtesy) must be followed or we may not be allowed to continue the race series.",
-            "image" : "",
-            "title" : "Etiquette"
-          },
-          "26" : {
-            "copy" : "Yield to other park users including but not limited to: horses, hikers, fisherman, runners, dogs, and mountain bikers. We will have signs out on the course informing people that a race is in progress but please do your best to be a good ambassador of the sport.",
-            "image" : "",
-            "title" : ""
-          },
-          "27" : {
-            "copy" : "Littering and swearing will not be tolerated and will be grounds for being banned from future races and you will not be refunded entry fees.",
-            "image" : "",
-            "title" : ""
-          },
-          "28" : {
-            "copy" : "You must use the porta potty that we are providing",
-            "image" : "",
-            "title" : ""
-          },
-          "29" : {
-            "copy" : "Stay on the trail. Cutting the switchbacks leads to erosion and the field that you run through belongs to a farmer with active crops. Please do not trample his hay field. It may only look like grass but it is a source of income for him.",
-            "image" : "",
-            "title" : ""
-          },
-          "30" : {
-            "copy": "At each race we will have coolers with water. Please bring your own cup or water bottle to help us reduce our waste production.",
-            "image" : "",
-            "title" : "Refreshments"
-          },
-          "31" : {
-            "copy": "We will be hosting a picnic at the last race in the series and anyone can feel free to bring their favorite dish if they would like to participate in a potluck. We will be providing hot-dogs, veggie burgers, and hamburgers. We do ask that you bring your own plate, utensils, and cup in order to reduce the amount of trash we would normally accumulate.",
-            "image" : "",
-            "title" : "Picnic"
-          }
-        },
-        "directoremail" : "TBD",
-        "directorname" : "TBD",
-        "distance" : "TBD",
+        "address" : "NALMAC Kiosk at Harmony Hill Farm",
+        "address2" : "399 Harmony Hill Road",
+        "bibtime" : "5:30 - 6:00 pm",
+        "city" : "Northwood",
+        "cost" : "$10 Adult | $5 K-12",
+        "date" : "June 24, 2015 - August 19, 2015",
+        "designer" : "Kristina Folcik-Welts",
+        "details" : [ {
+          "copy" : "Returning for a 3rd Year, The Harmony Hill Cross Country (XC) Series is a fun summer XC running series for all abilities and ages.  In the past two years this has become a favorite race for first time runners as well as seasoned athletes.  This series will focus on family fun, bringing the community together, and promoting an active lifestyle through enjoying the outdoors.  The event will feature something for everyone including; a 'Popsicle Dash'; 1 mile fun run; and a competitive approximately 3.6 mile XC race. The 1-mile fun run is an out and back through a field with uneven terrain.  The XC race will begin in an open field, pass through wooded areas on double-track and single-track trails, and go around Meadow Lake in the heart of the State Park.  The race also features a couple challenging hills, and may include an occasional cooling rain storm, a sweltering evening, a beautiful sunset or a few mosquitos.  See below for more details of each race.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Please “Like” our Facebook page for announcements.  Race cancellations will also be posted there!",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "",
+          "image" : "",
+          "title" : "Series Schedule*:"
+        }, {
+          "copy" : "Race #1:  Wednesday, June 24, 2015",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Race #2:  Wednesday, July 8, 2015",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Race #3:  Wednesday, July 15, 2015",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Race #4:  Wednesday, July 22, 2015",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Race #5:  Wednesday, August 5, 2015",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Race #6:  Wednesday, August 19 2015",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "*Please note this year’s schedule includes a few 'off' weeks.  These dates will be used to reschedule if events must be cancelled due to inclement weather.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "5:30 - 6:00 PM",
+          "image" : "",
+          "title" : "Day of Registration:"
+        }, {
+          "copy" : "Starts at 6:00 PM [FREE]",
+          "image" : "",
+          "title" : "Popsicle Dash"
+        }, {
+          "copy" : "Starts at 6:05 PM [FREE]",
+          "image" : "",
+          "title" : "1 Mile Fun Run"
+        }, {
+          "copy" : "Starts at 6:30 PM",
+          "image" : "",
+          "title" : "3.5 Mile XC race"
+        }, {
+          "copy" : "Online:  6  Races Pre-Pay: $50 Adult; $25 -Students K-12 –Closes Monday, June 22, 2015.",
+          "image" : "",
+          "title" : "Cost"
+        }, {
+          "copy" : "Day of event/Per Race: $10 Adult ; $5 -Students K-12",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Online $250 Group package for Youth Running Teams/Clubs.  This rate will enable clubs to bring 10runners each week, but don’t have to be the SAME runners.  Each runner will need to check in at registration and have a registration form on file.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Proceeds from the race will again go to the Friends of Northwood Meadows and the Northwood Area Land Management Collaborative (NALMC), two volunteer groups that maintain the trails and the park. By participating in these events YOU are helping to keep the trails maintained so that the community can have a beautiful place to enjoy for many years to come. In the past two years approximately $4,000 from this series has been split between these two groups!",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "XC race competitors will receive a race number which must be worn during the race on the front of the body. Each XC race will be timed and scored.  To qualify for series standings you must race at least five of the six races.  Your five best cumulative times will be used to determine your series standing. You will receive one race bib (#) to be used for the entire series. Lost or misplaced bibs may be replaced for $5 the night of the event.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Please “Like” our Facebook page for announcements. Race cancellations will also be posted there!",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Please park at the NALMAC/Harmony Hill Kiosk where the porta-potty is located. If that parking lot is full, only park on one side of the road. We will have cones blocking the side you should not park on. Please respect the parking rules. The residents have given us permission to park on only one side of the road and if we do not respect their wishes, we may lose our privileges to hold the race series.",
+          "image" : "",
+          "title" : "Parking"
+        }, {
+          "copy" : "Young children can run/crawl/walk (yes parents can join them!) about 100 yards to a cooler of popsicles. This is non-competitive and just a fun way to get smaller kids excited about the outdoors!",
+          "image" : "",
+          "title" : "Popsicle Dash"
+        }, {
+          "copy" : "A one mile run around the field that consists of rolling terrain. We will have a mowed area for the runners to follow. Although this is a field, there are sticks, rocks, roots and other objects found in trail running. The event is open to anyone who wants to run and you can go as fast or as slow as you need to! This is designed for children as well as adults who want to run, but are not ready for the long race.",
+          "image" : "",
+          "title" : "1 Mile Fun Run"
+        }, {
+          "copy" : "The 3.6 mile XC race will start on the NALMC Trail in the field on Harmony Road and follow thetrail through the field and down some beautiful double-track and single-track. When you emerge from the woods, you will follow the NALMC trail to the left and then take a quick right onto the lake loop.  You will then run along the fast and scenic trail around the lake and will take your first left to continue around the lake. The course continues around the lake and then returns to the yellow NALMC trail as you retrace your steps back to the start/finish. There will be ample markings along the race course using flags, signs and arrows. A map of the park trails can be found here: http://www.nhstateparks.org/uploads/pdf/Northwood-Meadows_Trail-Map_NALMC.pdf",
+          "image" : "",
+          "title" : "XC Race"
+        }, {
+          "copy" : "There will be no weekly prizes. Prizes will be awarded at the end of the series based on overall standings for men, women and youth (male and female.)",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Please remember that part of this race (including the start area), is dependent upon the use of private land. These 'rules' (or general common sense and common courtesy) must be followed or we may not be allowed to continue the race series.",
+          "image" : "",
+          "title" : "Etiquette"
+        }, {
+          "copy" : "Yield to other park users including but not limited to: horses, hikers, fisherman, runners, dogs, and mountain bikers. We will have signs out on the course informing people that a race is in progress but please do your best to be a good ambassador of the sport.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Littering and swearing will not be tolerated and will be grounds for being banned from future races and you will not be refunded entry fees.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "You must use the porta potty that we are providing",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "Stay on the trail. Cutting the switchbacks leads to erosion and the field that you run through belongs to a farmer with active crops. Please do not trample his hay field. It may only look like grass but it is a source of income for him.",
+          "image" : "",
+          "title" : ""
+        }, {
+          "copy" : "At each race we will have coolers with water. Please bring your own cup or water bottle to help us reduce our waste production.",
+          "image" : "",
+          "title" : "Refreshments"
+        }, {
+          "copy" : "We will be hosting a picnic at the last race in the series and anyone can feel free to bring their favorite dish if they would like to participate in a potluck. We will be providing hot-dogs, veggie burgers, and hamburgers. We do ask that you bring your own plate, utensils, and cup in order to reduce the amount of trash we would normally accumulate.",
+          "image" : "",
+          "title" : "Picnic"
+        } ],
+        "directoremail" : "msb_sg@yahoo.com",
+        "directorname" : "Mindy Bubier",
+        "distance" : "3.5 miles",
         "galleryUrl" : "https://www.flickr.com/photos/gianinal/",
         "id" : "11",
         "image" : "assets/events/event_harmony-hill.jpg",
         "key" : "harmonyHill",
         "logo" : "assets/logos/harmony_logo.jpg",
         "photographer" : "TBD",
-        "registrationLink" : "http://www.google.com",
+        "registrationLink" : "https://www.runreg.com/harmony-hill-summer-xc-series",
         "registrationStatus" : "open",
-        "resultsUrl" : "http://www.coolrunning.com/results/15/nh/Feb21_Exeter_set1.shtml",
+        "resultsUrl" : "",
         "season" : "summer",
-        "starttime" : "TBD",
+        "starttime" : "6:30 pm",
         "state" : "New Hampshire",
         "time" : "TBD",
         "title" : "Harmony Hill Summer XC Series",
@@ -767,7 +752,7 @@
         "state" : "New Hampshire",
         "time" : "Women: 8:00am  Men: 9:30am",
         "title" : "Loon Mountain Race | NE Mountain Championship",
-        "video" : "https://youtu.be/hKkGJCfJfGI"
+        "video" : "https://www.youtube.com/embed/hKkGJCfJfGI"
       },
       "quotes" : {
         "first" : {
