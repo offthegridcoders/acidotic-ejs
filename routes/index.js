@@ -14,7 +14,6 @@ var Sponsors;
 
   FireBaseRef.child('events/').on('value', function(snapshot) {
     AllData = snapshot.val();
-    console.log(AllData);
   });
 
   FireBaseRef.child('sponsors/').on('value', function(snapshot) {
@@ -461,6 +460,67 @@ var Sponsors;
     var data = setSingleEventData(AllData.fall.roaringFalls.title,
       'fall', AllData, AllData.fall.roaringFalls);
     return res.render('pages/single-event', data);
+  });
+
+  //Make sure the old links still work:
+  Router.get('/events/view_event.php', function(req, res, next){
+    var data;
+    switch(req.query.ID) {
+    case '1':
+        data = setSingleEventData(AllData.winter.kingmanFarm.title,
+        'winter', AllData, AllData.winter.kingmanFarm);
+        break;
+    case '2':
+        var data = setSingleEventData(AllData.winter.sidehillerSnowshoe.title,
+        'winter', AllData, AllData.winter.sidehillerSnowshoe);
+        break;
+    case '3':
+        var data = setSingleEventData(AllData.winter.snowshoeHullabaloo.title,
+        'winter', AllData, AllData.winter.snowshoeHullabaloo);
+        break;
+    case '4':
+        var data = setSingleEventData(AllData.winter.snowshoeChampionship.title,
+        'winter', AllData, AllData.winter.snowshoeChampionship);
+        break;
+    case '6':
+        var data = setSingleEventData(AllData.spring.ralphWaldo.title,
+        'spring', AllData, AllData.spring.ralphWaldo);
+        break;
+    case '7':
+        var data = setSingleEventData(AllData.spring.exeterTrail.title,
+        'spring', AllData, AllData.spring.exeterTrail);
+        break;
+    case '8':
+        var data = setSingleEventData(AllData.summer.loonMountainRace.title,
+        'summer', AllData, AllData.summer.loonMountainRace);
+        break;
+    case '9':
+        var data = setSingleEventData(AllData.summer.harmonyHill.title,
+        'summer', AllData, AllData.summer.harmonyHill);
+        break;
+    case '13':
+        var data = setSingleEventData(AllData.fall.brettonWoods.title,
+        'fall', AllData, AllData.fall.brettonWoods);
+        break;
+    case '14':
+        var data = setSingleEventData(AllData.fall.vulcansFury.title,
+        'fall', AllData, AllData.fall.vulcansFury);
+        break;
+    case '15':
+        var data = setSingleEventData(AllData.fall.roaringFalls.title,
+        'fall', AllData, AllData.fall.roaringFalls);
+        break;
+    default:
+        console.log('Didnt find old event page so defaulted to homepage');
+        return res.render('pages/seasons/' + Defaults.season, getHomePageData());
+    }
+    
+    return res.render('pages/single-event', data);
+  });
+
+  //The 404 Route (ALWAYS Keep this as the last route)
+  Router.get('*', function(req, res, next){
+    return res.render('pages/seasons/' + Defaults.season, getHomePageData());
   });
 
 module.exports = Router;
