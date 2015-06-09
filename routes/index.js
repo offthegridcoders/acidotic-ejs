@@ -462,60 +462,48 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
+  // OLD ACIDOTIC LINKS
   //Make sure the old links still work:
+  //
   Router.get('/events/view_event.php', function(req, res, next){
-    var data;
     switch(req.query.ID) {
     case '1':
-        data = setSingleEventData(AllData.winter.kingmanFarm.title,
-        'winter', AllData, AllData.winter.kingmanFarm);
+        res.redirect(301, 'http://www.acidoticracing.com/kingman-farm/');
         break;
     case '2':
-        var data = setSingleEventData(AllData.winter.sidehillerSnowshoe.title,
-        'winter', AllData, AllData.winter.sidehillerSnowshoe);
+        res.redirect(301, 'http://www.acidoticracing.com/sidehiller-snowshoe/');
         break;
     case '3':
-        var data = setSingleEventData(AllData.winter.snowshoeHullabaloo.title,
-        'winter', AllData, AllData.winter.snowshoeHullabaloo);
+        res.redirect(301, 'http://www.acidoticracing.com/snowshoe-hullabaloo/');
         break;
     case '4':
-        var data = setSingleEventData(AllData.winter.snowshoeChampionship.title,
-        'winter', AllData, AllData.winter.snowshoeChampionship);
+        res.redirect(301, 'http://www.acidoticracing.com/snowshoe-championship/');
         break;
     case '6':
-        var data = setSingleEventData(AllData.spring.ralphWaldo.title,
-        'spring', AllData, AllData.spring.ralphWaldo);
+        res.redirect(301, 'http://www.acidoticracing.com/ralph-waldo/');
         break;
     case '7':
-        var data = setSingleEventData(AllData.spring.exeterTrail.title,
-        'spring', AllData, AllData.spring.exeterTrail);
+        res.redirect(301, 'http://www.acidoticracing.com/exeter-trail/');
         break;
     case '8':
-        var data = setSingleEventData(AllData.summer.loonMountainRace.title,
-        'summer', AllData, AllData.summer.loonMountainRace);
+        res.redirect(301, 'http://www.acidoticracing.com/loon-mountain-race/');
         break;
     case '9':
-        var data = setSingleEventData(AllData.summer.harmonyHill.title,
-        'summer', AllData, AllData.summer.harmonyHill);
+        res.redirect(301, 'http://www.acidoticracing.com/harmony-hill/');
         break;
     case '13':
-        var data = setSingleEventData(AllData.fall.brettonWoods.title,
-        'fall', AllData, AllData.fall.brettonWoods);
+        res.redirect(301, 'http://www.acidoticracing.com/bretton-woods/');
         break;
     case '14':
-        var data = setSingleEventData(AllData.fall.vulcansFury.title,
-        'fall', AllData, AllData.fall.vulcansFury);
+        res.redirect(301, 'http://www.acidoticracing.com/vulcans-fury/');
         break;
     case '15':
-        var data = setSingleEventData(AllData.fall.roaringFalls.title,
-        'fall', AllData, AllData.fall.roaringFalls);
+        res.redirect(301, 'http://www.acidoticracing.com/roaring-falls/');
         break;
     default:
         console.log('Didnt find old event page so defaulted to homepage');
-        return res.render('pages/seasons/' + Defaults.season, getHomePageData());
+        return res.status(404).redirect('http://www.acidoticracing.com/');
     }
-    
-    return res.render('pages/single-event', data);
   });
 
   //The 404 Route (ALWAYS Keep this as the last route)
