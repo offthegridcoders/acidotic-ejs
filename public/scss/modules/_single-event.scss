@@ -93,14 +93,14 @@
     
     .directions {
       display: block;
-      margin-top: 5px;
-      font-weight: 600;
       font-style: italic;
+      font-weight: 600;
+      margin-top: 5px;
       text-decoration: underline;
 
       .fa-compass {
-        width: 16px;
         text-decoration: none;
+        width: 16px;
       }
     }
 
