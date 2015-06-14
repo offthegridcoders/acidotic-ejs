@@ -8,6 +8,7 @@ var concatCss = require('gulp-concat-css');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var concat = require('gulp-concat');
+var ejsmin = require('gulp-ejsmin');
 
 var mainCssName = 'style.css';
 var mainJsName = 'build.js';
@@ -16,6 +17,7 @@ var allFiles = {
   css: 'public/scss/*.css',
   scss: 'public/scss/**/*.scss',
   assets: 'public/assets/**/*.*',
+  templates: './templates/**/*.ejs',
   vendorScss: 'public/scss/vendor/*.css',
   js: 'public/js/**/*.js'
 };
@@ -43,7 +45,7 @@ var files = {
   css: './public/dist/' + mainCssName
 }
 
-gulp.task('default', ['sass', 'img-min', 'concat-scripts'], function() {
+gulp.task('default', ['sass', 'img-min', 'concat-scripts', 'min-ejs'], function() {
   // watchs files for changes to rebuild
   return gulp.watch([
       allFiles.scss,
@@ -108,3 +110,10 @@ gulp.task('default', ['sass', 'img-min', 'concat-scripts'], function() {
       }))
       .pipe(gulp.dest(paths.assets));
   });
+
+  gulp.task('min-ejs', function () {
+    gulp.src(allFiles.templates)
+      .pipe(ejsmin({removeComment: true}))
+      .pipe(gulp.dest("./views"));
+  });
+
