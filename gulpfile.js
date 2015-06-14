@@ -5,6 +5,8 @@ var minifyCSS = require('gulp-minify-css');
 var watch = require('gulp-watch');
 var autoprefixer = require('gulp-autoprefixer');
 var concatCss = require('gulp-concat-css');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var paths = {
   scss: 'public/scss/**/*.scss',
@@ -12,7 +14,7 @@ var paths = {
   vendor: 'public/scss/vendor/*.css'
 };
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['sass', 'img-min'], function() {
   return gulp.watch([
       paths.scss,
       paths.assets,
@@ -38,12 +40,28 @@ gulp.task('default', ['sass'], function() {
       .pipe(concatCss('style.css'))
       .pipe(gulp.dest('./public/stylesheets'));
   });
+  
+  gulp.task('auto-prefix', ['concat-css'], function () {
+    return gulp.src('./public/stylesheets/style.css')
+        .pipe(autoprefixer({
+            browsers: ['last 10 versions'],
+            cascade: true
+        }))
+        .pipe(gulp.dest('./public/stylesheets/'));
+  });
 
-  gulp.task('minify-css', ['concat-css'], function() {
+  gulp.task('minify-css', ['auto-prefix'], function() {
     return gulp.src('./public/stylesheets/style.css')
       .pipe(minifyCSS())
       .pipe(gulp.dest('./public/stylesheets/'))
   });
-
-
-// e2e tests
+  
+  gulp.task('img-min', function () {
+    return gulp.src('./public/assets/*.*')
+      .pipe(imagemin({
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngquant()]
+      }))
+      .pipe(gulp.dest('./public/assets/'));
+  });
