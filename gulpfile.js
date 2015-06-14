@@ -9,6 +9,7 @@ var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var concat = require('gulp-concat');
 var ejsmin = require('gulp-ejsmin');
+var uglify = require('gulp-uglifyjs');
 
 var mainCssName = 'style.css';
 var mainJsName = 'build.js';
@@ -45,7 +46,7 @@ var files = {
   css: './public/dist/' + mainCssName
 }
 
-gulp.task('default', ['sass', 'img-min', 'concat-scripts', 'min-ejs'], function() {
+gulp.task('default', ['sass', 'img-min', 'uglify-js', 'min-ejs'], function() {
   // watchs files for changes to rebuild
   return gulp.watch([
       allFiles.scss,
@@ -98,6 +99,13 @@ gulp.task('default', ['sass', 'img-min', 'concat-scripts', 'min-ejs'], function(
   return gulp.src(files.js.all)
     .pipe(concat(mainJsName))
     .pipe(gulp.dest(paths.dist));
+  });
+    
+  // uglifies js
+  gulp.task('uglify-js', ['concat-scripts'], function() {
+  gulp.src(files.js.main)
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.dist))
   });
   
   // minifies all images
