@@ -465,8 +465,12 @@ var Sponsors;
   // OLD ACIDOTIC LINKS
   //Make sure the old links still work:
   //
-  
+
   Router.get('/results.php', function(req, res, next){
+    res.redirect(410, 'http://www.acidoticracing.com/');
+  });
+  
+  Router.get('/photos.php', function(req, res, next){
     res.redirect(410, 'http://www.acidoticracing.com/');
   });
 
