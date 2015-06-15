@@ -474,6 +474,49 @@ var Sponsors;
     res.redirect(410, 'http://www.acidoticracing.com/');
   });
 
+  // old url redirects
+
+
+  Router.get('/kingman-farm', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/kingman-farm-trail-race');
+  });
+
+  Router.get('/sidehiller-showshoe', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/sidehiller-snowshoe-race');
+  });
+
+  Router.get('/snowshoe-hullabaloo', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/exeter-snowshoe-hullabaloo');
+  });
+
+  Router.get('/snowshoe-championship', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/nh-snowshoe-championship');
+  });
+
+  Router.get('/ralph-waldo', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/ralph-waldo-emerson-trail-race');
+  });
+
+  Router.get('/exeter-trail', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/exeter-trail-race');
+  });
+
+  Router.get('/harmony-hill', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/harmony-hill-summer-xc-series');
+  });
+
+  Router.get('/bretton-woods', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/bretton-woods-fell-race');
+  });
+
+  Router.get('/vulcans-fury', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/vulcans-fury-trail-race');
+  });
+
+  Router.get('/roaring-falls', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/roaring-falls-trail-race');
+  });
+
   Router.get('/events/view_event.php', function(req, res, next){
     switch(req.query.ID) {
     case '1':
