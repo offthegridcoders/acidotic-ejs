@@ -378,42 +378,42 @@ var Sponsors;
   };
 
   // SIDEHILLER SNOWSHOE
-  Router.get('/sidehiller-snowshoe', function(req, res, next) {
+  Router.get('/sidehiller-snowshoe-race', function(req, res, next) {
     var data = setSingleEventData(AllData.winter.sidehillerSnowshoe.title,
       'winter', AllData, AllData.winter.sidehillerSnowshoe);
     return res.render('pages/single-event', data);
   });
 
   // KINGMAN FARM
-  Router.get('/kingman-farm', function(req, res, next) {
+  Router.get('/kingman-farm-moonlight-snowshoe-race', function(req, res, next) {
     var data = setSingleEventData(AllData.winter.kingmanFarm.title,
       'winter', AllData, AllData.winter.kingmanFarm);
     return res.render('pages/single-event', data);
   });
 
   // SNOWSHOE HULLABALOO
-  Router.get('/snowshoe-hullabaloo', function(req, res, next) {
+  Router.get('/exeter-snowshoe-hullabaloo', function(req, res, next) {
     var data = setSingleEventData(AllData.winter.snowshoeHullabaloo.title,
       'winter', AllData, AllData.winter.snowshoeHullabaloo);
     return res.render('pages/single-event', data);
   });
 
   // SNOWSHOE CHAMPIONSHIP
-  Router.get('/snowshoe-championship', function(req, res, next) {
+  Router.get('/nh-snowshoe-championship', function(req, res, next) {
     var data = setSingleEventData(AllData.winter.snowshoeChampionship.title,
       'winter', AllData, AllData.winter.snowshoeChampionship);
     return res.render('pages/single-event', data);
   });
 
   // RALPH WALDO
-  Router.get('/ralph-waldo', function(req, res, next) {
+  Router.get('/ralph-waldo-emerson-trail-race', function(req, res, next) {
     var data = setSingleEventData(AllData.spring.ralphWaldo.title,
       'spring', AllData, AllData.spring.ralphWaldo);
     return res.render('pages/single-event', data);
   });
 
   // EXETER TRAIL RACE
-  Router.get('/exeter-trail', function(req, res, next) {
+  Router.get('/exeter-trail-race', function(req, res, next) {
     var data = setSingleEventData(AllData.spring.exeterTrail.title,
       'spring', AllData, AllData.spring.exeterTrail);
     return res.render('pages/single-event', data);
@@ -435,28 +435,28 @@ var Sponsors;
   });
 
   // HARMONY HILL SUMMER XC SERIES
-  Router.get('/harmony-hill', function(req, res, next) {
+  Router.get('/harmony-hill-summer-xc-series', function(req, res, next) {
     var data = setSingleEventData(AllData.summer.harmonyHill.title,
       'summer', AllData, AllData.summer.harmonyHill);
     return res.render('pages/single-event', data);
   });
 
   // BRETTON WOODS FELL RACE
-  Router.get('/bretton-woods', function(req, res, next) {
+  Router.get('/bretton-woods-fell-race', function(req, res, next) {
     var data = setSingleEventData(AllData.fall.brettonWoods.title,
       'fall', AllData, AllData.fall.brettonWoods);
     return res.render('pages/single-event', data);
   });
 
   // VULCANS FURY
-  Router.get('/vulcans-fury', function(req, res, next) {
+  Router.get('/vulcans-fury-trail-race', function(req, res, next) {
     var data = setSingleEventData(AllData.fall.vulcansFury.title,
       'fall', AllData, AllData.fall.vulcansFury);
     return res.render('pages/single-event', data);
   });
 
   // ROARING FALLS
-  Router.get('/roaring-falls', function(req, res, next) {
+  Router.get('/roaring-falls-trail-race', function(req, res, next) {
     var data = setSingleEventData(AllData.fall.roaringFalls.title,
       'fall', AllData, AllData.fall.roaringFalls);
     return res.render('pages/single-event', data);
@@ -469,7 +469,7 @@ var Sponsors;
   Router.get('/results.php', function(req, res, next){
     res.redirect(410, 'http://www.acidoticracing.com/');
   });
-  
+
   Router.get('/photos.php', function(req, res, next){
     res.redirect(410, 'http://www.acidoticracing.com/');
   });
@@ -477,37 +477,37 @@ var Sponsors;
   Router.get('/events/view_event.php', function(req, res, next){
     switch(req.query.ID) {
     case '1':
-        res.redirect(301, 'http://www.acidoticracing.com/kingman-farm/');
+        res.redirect(301, 'http://www.acidoticracing.com/kingman-farm-trail-race/');
         break;
     case '2':
-        res.redirect(301, 'http://www.acidoticracing.com/sidehiller-snowshoe/');
+        res.redirect(301, 'http://www.acidoticracing.com/sidehiller-snowshoe-race/');
         break;
     case '3':
-        res.redirect(301, 'http://www.acidoticracing.com/snowshoe-hullabaloo/');
+        res.redirect(301, 'http://www.acidoticracing.com/exeter-snowshoe-hullabaloo/');
         break;
     case '4':
-        res.redirect(301, 'http://www.acidoticracing.com/snowshoe-championship/');
+        res.redirect(301, 'http://www.acidoticracing.com/nh-snowshoe-championship/');
         break;
     case '6':
-        res.redirect(301, 'http://www.acidoticracing.com/ralph-waldo/');
+        res.redirect(301, 'http://www.acidoticracing.com/ralph-waldo-emerson-trail-race/');
         break;
     case '7':
-        res.redirect(301, 'http://www.acidoticracing.com/exeter-trail/');
+        res.redirect(301, 'http://www.acidoticracing.com/exeter-trail-race/');
         break;
     case '8':
         res.redirect(301, 'http://www.acidoticracing.com/loon-mountain-race/');
         break;
     case '9':
-        res.redirect(301, 'http://www.acidoticracing.com/harmony-hill/');
+        res.redirect(301, 'http://www.acidoticracing.com/harmony-hill-summer-xc-series/');
         break;
     case '13':
-        res.redirect(301, 'http://www.acidoticracing.com/bretton-woods/');
+        res.redirect(301, 'http://www.acidoticracing.com/bretton-woods-fell-race/');
         break;
     case '14':
-        res.redirect(301, 'http://www.acidoticracing.com/vulcans-fury/');
+        res.redirect(301, 'http://www.acidoticracing.com/vulcans-fury-trail-race/');
         break;
     case '15':
-        res.redirect(301, 'http://www.acidoticracing.com/roaring-falls/');
+        res.redirect(301, 'http://www.acidoticracing.com/roaring-falls-trail-race/');
         break;
     default:
         console.log('Didnt find old event page so defaulted to homepage');
