@@ -108,6 +108,35 @@ var Sponsors;
   FireBaseRef.child('sponsors/').on('value', function(snapshot) {
     Sponsors = snapshot.val();
   });
+
+
+  function getAdminPageData(eventData) {
+    var fbData = {};
+    fbData.title = 'Admin Dashboard - acidotic Racing';
+    fbData.season = Defaults.season;
+    fbData.description = 'Admin Dashboard'
+    fbData.data = AllData;
+    fbData.page = 'Admin';
+    // starting event edit data (false or value)
+    fbData.event = eventData;
+    fbData.sponsors = Sponsors;
+    fbData.Session = SessionAuth;
+    return fbData;
+  };
+
+  function goToAdminHome(res, startingData) {
+    var data = getAdminPageData(startingData);
+    return res.render('pages/admin/admin', data);
+  };
+
+  function errorReport(error) {
+    if (error) {
+      console.log("Data could not be saved." + error);
+    } else {
+      console.log("Data saved successfully.");
+    }
+  };
+
 // LOGIN/LOGOUT
   function logout(res) {
     FireBaseRef.unauth();
@@ -153,43 +182,18 @@ var Sponsors;
     });
   });
 // ADMIN
-  function getAdminPageData(eventData) {
-    var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
-    fbData.season = Defaults.season;
-    fbData.data = AllData;
-    fbData.page = 'Admin';
-    // starting event edit data (false or value)
-    fbData.event = eventData;
-    fbData.sponsors = Sponsors;
-    fbData.Session = SessionAuth;
-    return fbData;
-  };
 
-  function goToAdminHome(res, startingData) {
-    var data = getAdminPageData(startingData);
-    return res.render('pages/admin/admin', data);
-  };
-
-  function errorReport(error) {
-    if (error) {
-      console.log("Data could not be saved." + error);
-    } else {
-      console.log("Data saved successfully.");
-    }
-  };
-
-  Router.get('/', function(req, res, next) {
+  Router.get('/admin', function(req, res, next) {
     if (SessionAuth) {
       // if authenticated - go to admin homepage
       goToAdminHome(res, false);
     } else {
       // navigate to regular homepage
-      return res.render('pages/seasons/winter', getHomePageData());
+      return res.status(401).redirect('/');
     }
   });
 
-  Router.post('/', function(req, res){
+  Router.post('/admin', function(req, res){
     return res.render('pages/admin/admin', getAdminPageData(JSON.parse(req.body.eventChoice)));
   });
 
