@@ -147,7 +147,12 @@ var Sponsors;
   Router.get('/login', function(req, res, next) {
     var fbData = {};
     fbData.season = Defaults.season;
-    return res.render('pages/admin/login', fbData);
+    if (req.cookies.authenticated) {
+      return res.redirect('/admin');
+
+    } else {
+      return res.render('pages/admin/login', fbData);
+    }
   });
 
   Router.post('/login', function(req,res) {
@@ -182,7 +187,7 @@ var Sponsors;
       goToAdminHome(res, false);
     } else {
       // navigate to regular homepage
-      return res.status(401).redirect('/');
+      return res.status(401).redirect('/login');
     }
   });
 
