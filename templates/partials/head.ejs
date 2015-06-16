@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <head>
-  <title><%= title %></title>
+  <!-- title and description -->
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>" />
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="description" content="<%= description %>" />
-  
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="YxjZnBC9M4ByvRcLQL-FmSowB7HASDXlZrrNgMCNZmg" />
+  <!-- base href -->
+    <base href="/">
 
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="acidotic Racing">
-  <meta itemprop="description" content="Our mission is to host uncompromisingly excellent events in beautiful locations on challenging courses and to make every competitor feel as though they are important and valuable to us.">
-  <meta itemprop="image" content="http://offthegridcoders.github.io/acidotic-racing/dist/assets/logo-social.png">
-
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@acidoticracing">
-  <meta name="twitter:title" content="acidotic Racing">
-  <meta name="twitter:description" content="Our mission is to host uncompromisingly excellent events in beautiful locations on challenging courses and to make every competitor feel as though they are important and valuable to us.">
-  <meta name="twitter:creator" content="@acidoticracing">
-  <!-- Twitter summary card with large image must be at least 280x150px -->
-  <meta name="twitter:image:src" content="http://offthegridcoders.github.io/acidotic-racing/dist/assets/logo-social.png">
-
-  <!-- Open Graph data -->
-  <meta property="og:title" content="acidotic Racing" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://offthegridcoders.github.io/acidotic-racing/dist/events/winter/" />
-  <meta property="og:image" content="http://offthegridcoders.github.io/acidotic-racing/dist/assets/logo-social.png" />
-  <meta property="og:description" content="Our mission is to host uncompromisingly excellent events in beautiful locations on challenging courses and to make every competitor feel as though they are important and valuable to us." />
-  <meta property="og:site_name" content="acidoticRacing" />
-  <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
-  <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
-  <meta property="article:section" content="Article Section" />
-  <meta property="article:tag" content="Article Tag" />
-
-  <base href="/">
-
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
   
   <!-- Fonts -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <link rel='stylesheet' href='/dist/style.css' />
 
   <!-- Firebase -->
-  <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+
+  <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="YxjZnBC9M4ByvRcLQL-FmSowB7HASDXlZrrNgMCNZmg" />
+
+  <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="<%= title %>">
+    <meta itemprop="description" content="<%= description %>">
+    <meta itemprop="image" content="http://www.acidoticracing.com/assets/logo-social.png">
+
+  <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@acidoticracing">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= description %>">
+    <meta name="twitter:creator" content="@acidoticracing">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="http://www.acidoticracing.com/assets/logo-social.png">
+
+  <!-- Open Graph data -->
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.acidoticracing.com<%= url %>" />
+    <meta property="og:image" content="http://www.acidoticracing.com/assets/logo-social.png" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:site_name" content="acidoticRacing" />
+    <meta property="article:published_time" content="2013-09-17T05:59:00+01:00" />
+    <meta property="article:modified_time" content="2013-09-16T19:08:47+01:00" />
+    <meta property="article:section" content="Article Section" />
+    <meta property="article:tag" content="Article Tag" />
 
   <!-- Google Analytics -->
     <script>

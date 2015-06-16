@@ -35,15 +35,15 @@ var Sponsors;
       description: 'As a race director and an athlete, I understand that no detail is too small. Our organization strives to host professional race services in a diverse multitude of endurance pursuits.'
     },
     contact: {
-      title: 'Contact Title',
+      title: 'Contact',
       description: 'Please feel free to contact us at with any questions you may have at contact@acidoticRACING.com or fill out the form below. We will be sure to respond in a timely manner. Thank you for contacting us!'
     },
     community: {
-      title: 'Community Title',
+      title: 'Community',
       description: 'acidotic Racing is a community of like minded multi-sport endurance athletes. We pride ourselves on being approachable and supportive of all persons, skills, and abilities.'
     },
     charity: {
-      title: 'Charity Title',
+      title: 'Charity',
       description: 'aR has made a commitment to support the charitable organizations that are dearest to our hearts. This is done through a variety of charitable giving outlets associated with our professional event services.'
     },
     sidehillerSnowshoe: {
@@ -391,10 +391,11 @@ var Sponsors;
     return res.render('pages/seasons/' + Defaults.season, getHomePageData());
   });
 // SEASON PAGES
-  function setSeasonData(season, title, description) {
+  function setSeasonData(season, title, description, url) {
     var fbData = {};
     fbData.title = title;
     fbData.description = description;
+    fbData.url = url;
     fbData.season = season;
     fbData.page = season;
     fbData.data = AllData;
@@ -406,31 +407,32 @@ var Sponsors;
   // WINTER
   Router.get('/winter', function(req, res, next) {
     return res.render('pages/seasons/winter',
-      setSeasonData('winter', meta.winter.title, meta.winter.description));
+      setSeasonData('winter', meta.winter.title, meta.winter.description, req._parsedOriginalUrl.href));
   });
 
   // SPRING
   Router.get('/spring', function(req, res, next) {
     return res.render('pages/seasons/spring',
-      setSeasonData('spring', meta.spring.title, meta.spring.description));
+      setSeasonData('spring', meta.spring.title, meta.spring.description, req._parsedOriginalUrl.href));
   });
 
   // SUMMER
   Router.get('/summer', function(req, res, next) {
     return res.render('pages/seasons/summer',
-      setSeasonData('summer', meta.summer.title, meta.summer.description));
+      setSeasonData('summer', meta.summer.title, meta.summer.description, req._parsedOriginalUrl.href));
   });
 
   // FALL
   Router.get('/fall', function(req, res, next) {
     return res.render('pages/seasons/fall',
-      setSeasonData('fall', meta.fall.title, meta.fall.description));
+      setSeasonData('fall', meta.fall.title, meta.fall.description, req._parsedOriginalUrl.href));
   });
 // REGULAR PAGES
-  function setRegPageData(season, page, title, description) {
+  function setRegPageData(season, page, title, description, url) {
     var fbData = {};
     fbData.title = title;
     fbData.description = description;
+    fbData.url = url;
     fbData.season = season;
     fbData.page = page;
     fbData.data = AllData;
@@ -441,31 +443,32 @@ var Sponsors;
 
   // ABOUT PAGE
   Router.get('/about', function(req, res, next) {
-    return res.render('pages/about', setRegPageData('fall', 'about', meta.about.title, meta.about.description));
+    return res.render('pages/about', setRegPageData('fall', 'about', meta.about.title, meta.about.description, req._parsedOriginalUrl.href));
   });
 
   // CONTACT PAGE
   Router.get('/contact', function(req, res, next) {
     return res.render('pages/contact',
-      setRegPageData('fall', 'contact', meta.contact.title, meta.contact.description));
+      setRegPageData('fall', 'contact', meta.contact.title, meta.contact.description, req._parsedOriginalUrl.href));
   });
 
   // COMMUNITY PAGE
   Router.get('/community', function(req, res, next) {
     return res.render('pages/community',
-      setRegPageData('winter', 'community', meta.community.title, meta.community.description));
+      setRegPageData('winter', 'community', meta.community.title, meta.community.description, req._parsedOriginalUrl.href));
   });
 
   // COMMUNITY PAGE
   Router.get('/charity', function(req, res, next) {
     return res.render('pages/charity',
-      setRegPageData('fall', 'charity', meta.charity.title, meta.charity.description));
+      setRegPageData('fall', 'charity', meta.charity.title, meta.charity.description, req._parsedOriginalUrl.href));
   });
 // SINGLE EVENTS
-  function setSingleEventData(season, data, eventName, title,  description) {
+  function setSingleEventData(season, data, eventName, title,  description, url) {
     var fbData = {};
     fbData.title = title;
     fbData.description = description;
+    fbData.url = url;
     fbData.season = season;
     fbData.page = season;
     fbData.data = data;
@@ -479,14 +482,14 @@ var Sponsors;
   Router.get('/sidehiller-snowshoe-race', function(req, res, next) {
     var data = setSingleEventData('winter',
       AllData, AllData.winter.sidehillerSnowshoe,
-      meta.sidehillerSnowshoe.title, meta.sidehillerSnowshoe.description);
+      meta.sidehillerSnowshoe.title, meta.sidehillerSnowshoe.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
   // KINGMAN FARM
   Router.get('/kingman-farm-moonlight-snowshoe-race', function(req, res, next) {
     var data = setSingleEventData('winter',
       AllData, AllData.winter.kingmanFarm,
-      meta.kingmanFarm.title, meta.kingmanFarm.description);
+      meta.kingmanFarm.title, meta.kingmanFarm.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -494,7 +497,7 @@ var Sponsors;
   Router.get('/exeter-snowshoe-hullabaloo', function(req, res, next) {
     var data = setSingleEventData('winter',
       AllData, AllData.winter.snowshoeHullabaloo,
-      meta.snowshoeHullabaloo.title, meta.snowshoeHullabaloo.description);
+      meta.snowshoeHullabaloo.title, meta.snowshoeHullabaloo.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -502,7 +505,7 @@ var Sponsors;
   Router.get('/nh-snowshoe-championship', function(req, res, next) {
     var data = setSingleEventData('winter',
       AllData, AllData.winter.snowshoeChampionship,
-      meta.snowshoeChampionship.title, meta.snowshoeChampionship.description);
+      meta.snowshoeChampionship.title, meta.snowshoeChampionship.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -510,7 +513,7 @@ var Sponsors;
   Router.get('/ralph-waldo-emerson-trail-race', function(req, res, next) {
     var data = setSingleEventData('spring',
       AllData, AllData.spring.ralphWaldo,
-      meta.ralphWaldo.title, meta.ralphWaldo.description);
+      meta.ralphWaldo.title, meta.ralphWaldo.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -518,7 +521,7 @@ var Sponsors;
   Router.get('/exeter-trail-race', function(req, res, next) {
     var data = setSingleEventData('spring',
       AllData, AllData.spring.exeterTrail,
-      meta.exeterTrail.title, meta.exeterTrail.description);
+      meta.exeterTrail.title, meta.exeterTrail.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -526,7 +529,7 @@ var Sponsors;
   Router.get('/loon-mountain-race', function(req, res, next) {
     var data = setSingleEventData('summer',
       AllData, AllData.summer.loonMountainRace,
-      meta.loonMountainRace.title, meta.loonMountainRace.description);
+      meta.loonMountainRace.title, meta.loonMountainRace.description, req._parsedOriginalUrl.href);
     // return res.render('pages/loon-mountain-race', data);
     return res.render('pages/single-event', data);
   });
@@ -535,7 +538,7 @@ var Sponsors;
   Router.get('/kingman-farm-trail-race', function(req, res, next) {
     var data = setSingleEventData('summer',
       AllData, AllData.summer.kingmanFarmTrailRace,
-      meta.kingmanFarmTrailRace.title, meta.kingmanFarmTrailRace.description);
+      meta.kingmanFarmTrailRace.title, meta.kingmanFarmTrailRace.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -543,7 +546,7 @@ var Sponsors;
   Router.get('/harmony-hill-summer-xc-series', function(req, res, next) {
     var data = setSingleEventData('summer',
       AllData, AllData.summer.harmonyHill,
-      meta.harmonyHill.title, meta.harmonyHill.description);
+      meta.harmonyHill.title, meta.harmonyHill.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -551,7 +554,7 @@ var Sponsors;
   Router.get('/bretton-woods-fell-race', function(req, res, next) {
     var data = setSingleEventData('fall',
       AllData, AllData.fall.brettonWoods,
-      meta.brettonWoods.title, meta.brettonWoods.description);
+      meta.brettonWoods.title, meta.brettonWoods.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -559,7 +562,7 @@ var Sponsors;
   Router.get('/vulcans-fury-trail-race', function(req, res, next) {
     var data = setSingleEventData('fall',
       AllData, AllData.fall.vulcansFury,
-      meta.vulcansFury.title, meta.vulcansFury.description);
+      meta.vulcansFury.title, meta.vulcansFury.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
@@ -567,7 +570,7 @@ var Sponsors;
   Router.get('/roaring-falls-trail-race', function(req, res, next) {
     var data = setSingleEventData('fall',
       AllData, AllData.fall.roaringFalls,
-      meta.roaringFalls.title, meta.roaringFalls.description);
+      meta.roaringFalls.title, meta.roaringFalls.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 // OLD ACIDOTIC LINKS
