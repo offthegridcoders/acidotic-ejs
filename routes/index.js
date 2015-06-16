@@ -16,83 +16,83 @@ var Sponsors;
     },
     winter: {
       title: 'Winter Events',
-      description: 'Winter Events description'
+      description: 'When our favorite trails get covered in a blanket of snow we see opportunities where others might see obstacles. Spend a winter racing with us and it just might become your favorite thirteen weeks of the year.'
     },
     spring: {
       title: 'Spring Events',
-      description: 'Spring Events description'
+      description: 'As the snow recedes and our favorite trails emerge we get the fever just like you. Our two spring trail races will test your winter fitness while satisfying your need to get out in the woods.'
     },
     summer: {
       title: 'Summer Events',
-      description: 'Summer Events description'
+      description: 'This is our busiest and most diverse season of the year. No matter what your passion, if it involves breathtaking challenges look no further.'
     },
     fall: {
       title: 'Fall Events',
-      description: 'Fall Events description'
+      description: 'Come with us to some of the most spectacular places New Hampshire has to offer. Youll earn every glimpse of foliage at these amazing locations.'
     },
     about: {
       title: 'About Page',
-      description: 'About page description'
+      description: 'As a race director and an athlete, I understand that no detail is too small. Our organization strives to host professional race services in a diverse multitude of endurance pursuits.'
     },
     contact: {
       title: 'Contact Title',
-      description: 'Contact page description'
+      description: 'Please feel free to contact us at with any questions you may have at contact@acidoticRACING.com or fill out the form below. We will be sure to respond in a timely manner. Thank you for contacting us!'
     },
     community: {
       title: 'Community Title',
-      description: 'Community page description'
+      description: 'acidotic Racing is a community of like minded multi-sport endurance athletes. We pride ourselves on being approachable and supportive of all persons, skills, and abilities.'
     },
     charity: {
       title: 'Charity Title',
-      description: 'Charity page description'
+      description: 'aR has made a commitment to support the charitable organizations that are dearest to our hearts. This is done through a variety of charitable giving outlets associated with our professional event services.'
     },
     sidehillerSnowshoe: {
-      title: 'sidehillerSnowshoe',
-      description: 'sidehillerSnowshoe' 
+      title: 'Sidehiller Snowshoe Race - Winter Event',
+      description: 'We may be no frills but we are still at the epicenter of the snowshoe racing universe. This is the only race that is part of the both the famed and internationally acclaimed Western Mass Athletic Club (WMAC) Snowshoe Series and the quickly growing and frighteningly successful Granite State Snowshoe Series.' 
     },
     kingmanFarm: {
-      title: 'kingmanFarm',
-      description: 'kingmanFarm' 
+      title: 'Kingman Farm Moonlight Snowshoe Race - Winter Event',
+      description: 'This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race.' 
     },
     snowshoeHullabaloo: {
-      title: 'snowshoeHullabaloo',
-      description: 'snowshoeHullabaloo' 
+      title: 'Exeter Snowshoe Hullabaloo - Winter Event',
+      description: 'The Snowshoe Hullabaloo is run over almost 4 miles of tight and twisted, packed single track in the Henderson-Swazey (aka Ft. Rock) Woods in Exeter, NH. The course is a pulse-raising roller coaster of ups, downs and hair-pin turns.' 
     },
     snowshoeChampionship: {
-      title: 'snowshoeChampionship',
-      description: 'snowshoeChampionship' 
+      title: 'NH Snowshoe Championship - Winter Event',
+      description: 'Snowshoe racing is a uniquely regional sport and in our opinion there is NO region with a more vibrant and competitive scene than the northeast! Thats why the Northeast Snowshoe Federation was formed.' 
     },
     ralphWaldo: {
-      title: 'ralphWaldo',
-      description: 'ralphWaldo' 
+      title: 'Ralph Waldo Emerson Trail Race - Spring Event',
+      description: 'The race will take place on the City of Concords Winant Park Trails. Located close to downtown Concord the trails offer a beautiful taste of windy singletrack, switchbacks with breathtaking views of the capital area and nordic-type paths. The approximately 10 mile long course will be more of the same!' 
     },
     exeterTrail: {
-      title: 'exeterTrail',
-      description: 'exeterTrail' 
+      title: 'Exeter Trail Race - Spring Event',
+      description: 'All competitors will start at the same time in the same location. At a predetermined spot the 10 mile & 4.6 mile races will split with competitors going in different directions. This a very technical trail race.' 
     },
     loonMountainRace: {
-      title: 'loonMountainRace',
-      description: 'loonMountainRace' 
+      title: 'Loon Mountain Race | NE Mountain Championship - Summer Event',
+      description: 'Over the years our Loon Mountain Race has developed quite a following here in the northeast. The reputation as one of the region’s toughest races is due in large part to the kilometer ascent of North Peak.' 
     },
     kingmanFarmTrailRace: {
-      title: 'kingmanFarmTrailRace',
-      description: 'kingmanFarmTrailRace' 
+      title: 'Kingman Farm Trail Race - Summer Event',
+      description: 'Were getting back to our roots a little (pun intended) with one of the newest editions to our renowned event schedule. The Kingman Farm Trail Race will be an old-school show up, lace up, and race sort of event' 
     },
     harmonyHill: {
-      title: 'harmonyHill',
-      description: 'harmonyHill' 
+      title: 'Harmony Hill Summer XC Series - Summer Event',
+      description: 'Returning for a 3rd Year, The Harmony Hill Cross Country (XC) Series is a fun summer XC running series for all abilities and ages. In the past two years this has become a favorite race for first time runners as well as seasoned athletes' 
     },
     brettonWoods: {
-      title: 'brettonWoods',
-      description: 'brettonWoods' 
+      title: 'Bretton Woods Fell Race - Fall Event',
+      description: 'In an effort to accommodate more competitors we are offering two different courses this year. The short course will race the first three check points (CPs); A, B, & C. The total distance will be approximately TBA miles.' 
     },
     vulcansFury: {
-      title: 'vulcansFury',
-      description: 'vulcansFury' 
+      title: 'Vulcans Fury Trail Race - Fall Event',
+      description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.' 
     },
     roaringFalls: {
-      title: 'roaringFalls',
-      description: 'roaringFalls' 
+      title: 'Roaring Falls Trail Race - Fall Event',
+      description: 'The Castle in the Clouds, in beautiful Moultonborough, is one of New Hampshires iconic landmarks. And while many people are familiar with the 1914 mountaintop estate known as Lucknow, very few are aware that the property sits on over 5200 acres of some of the most spectacular geologic features and mountain visitas in the state.' 
     }
   };
 
