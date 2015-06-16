@@ -182,6 +182,10 @@ nav {
   z-index: 9000; }
   nav:hover {
     transition: background .4s ease; }
+  @media screen and (max-width: 600px) {
+    nav {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      height: auto; } }
   nav .season-icon {
     cursor: pointer;
     float: right;
@@ -205,6 +209,9 @@ nav {
   margin: 10px auto 0;
   max-width: 100%;
   text-align: center; }
+  @media screen and (max-width: 600px) {
+    .main-nav {
+      display: none; } }
   .main-nav li {
     border-right: solid 1px #fff;
     display: inline-block;
@@ -240,20 +247,45 @@ nav {
   position: absolute;
   right: 20px;
   top: 19px; }
+  .icon-nav span {
+    display: none; }
+    @media screen and (max-width: 600px) {
+      .icon-nav span {
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-top: 5px; } }
+    @media screen and (max-width: 400px) {
+      .icon-nav span {
+        display: none; } }
   @media screen and (max-width: 600px) {
     .icon-nav {
       margin: 0 auto;
       position: static;
-      width: 64px; } }
+      width: auto;
+      text-align: center; } }
   .icon-nav li {
     display: inline-block;
     margin: 5px; }
+    @media screen and (max-width: 600px) {
+      .icon-nav li {
+        width: 19%;
+        margin: 0;
+        padding: 10px; } }
+  .icon-nav .mobile-only {
+    display: none; }
+    @media screen and (max-width: 600px) {
+      .icon-nav .mobile-only {
+        display: inline-block; } }
+  .icon-nav i {
+    font-size: 22px; }
+    @media screen and (max-width: 600px) {
+      .icon-nav i {
+        font-size: 28px; } }
   .icon-nav a {
     color: #fff; }
     .icon-nav a:hover {
-      color: #fcb034; }
-  .icon-nav i {
-    font-size: 22px; }
+      color: #fcb034 !important; }
 
 header {
   background-position: 50% 100%;
