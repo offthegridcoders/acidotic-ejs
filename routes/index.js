@@ -379,6 +379,7 @@ var Sponsors;
     var fbData = {};
     fbData.title = meta.homepage.title;
     fbData.description = meta.homepage.description;
+    fbData.url = '';
     fbData.season = Defaults.season;
     fbData.page = Defaults.season;
     fbData.data = AllData;
