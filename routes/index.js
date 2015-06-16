@@ -107,15 +107,12 @@ var Sponsors;
     Sponsors = snapshot.val();
   });
 
-
+// LOGIN/LOGOUT
   function getAdminPageData(eventData) {
     var fbData = {};
-    fbData.title = 'Admin Dashboard - acidotic Racing';
     fbData.season = Defaults.season;
-    fbData.description = 'Admin Dashboard'
     fbData.data = AllData;
     fbData.page = 'Admin';
-    fbData.url = null;
     // starting event edit data (false or value)
     fbData.event = eventData;
     fbData.sponsors = Sponsors;
@@ -134,7 +131,7 @@ var Sponsors;
       console.log("Data saved successfully.");
     }
   };
-// LOGIN/LOGOUT
+
   function logout(res) {
     FireBaseRef.unauth();
     res.clearCookie('authenticated');
@@ -148,7 +145,9 @@ var Sponsors;
   });
 
   Router.get('/login', function(req, res, next) {
-    return res.render('pages/admin/login', getAdminPageData(false));
+    var fbData = {};
+    fbData.season = Defaults.season;
+    return res.render('pages/admin/login', fbData);
   });
 
   Router.post('/login', function(req,res) {

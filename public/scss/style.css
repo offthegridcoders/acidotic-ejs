@@ -1130,6 +1130,25 @@ footer {
       background-color: rgba(84, 110, 32, 0.83);
       border-color: transparent; }
 
+.login-page {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 3px 3px 20px #000;
+  margin: 100px auto 50px;
+  max-width: 400px;
+  min-width: 300px;
+  padding: 40px 70px; }
+  @media screen and (max-width: 700px) {
+    .login-page {
+      padding: 20px; } }
+  .login-page h1 {
+    font-size: 24px; }
+  .login-page h3 {
+    font-size: 17px;
+    font-weight: 100; }
+  .login-page h4 {
+    font-weight: 100; }
+
 .admin-full-page {
   background-color: #fff;
   border-radius: 4px;
