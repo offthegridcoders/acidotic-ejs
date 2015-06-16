@@ -94,7 +94,6 @@ var Sponsors;
       description: 'The Castle in the Clouds, in beautiful Moultonborough, is one of New Hampshires iconic landmarks. And while many people are familiar with the 1914 mountaintop estate known as Lucknow, very few are aware that the property sits on over 5200 acres of some of the most spectacular geologic features and mountain visitas in the state.' 
     }
   };
-
 // INITIALLY loads data into global variable
   FireBaseRef.child('defaultseason/').on('value', function(snapshot) {
     Defaults.season = snapshot.val();
@@ -135,7 +134,6 @@ var Sponsors;
       console.log("Data saved successfully.");
     }
   };
-
 // LOGIN/LOGOUT
   function logout(res) {
     FireBaseRef.unauth();
@@ -146,10 +144,6 @@ var Sponsors;
   };
   
   Router.get('/logout', function(req,res) {
-    logout(res);
-  });
-
-  Router.post('/logout', function(req,res) {
     logout(res);
   });
 
