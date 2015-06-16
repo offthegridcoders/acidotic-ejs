@@ -28,7 +28,15 @@
   <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="<%= title %>">
     <meta itemprop="description" content="<%= description %>">
-    <meta itemprop="image" content="http://www.acidoticracing.com/assets/logo-social.png">
+    <% if (event) { %>
+      <% if (event.image) { %>
+        <meta itemprop="image"
+              content="http://www.acidoticracing.com/<%= event.image %>">
+      <% }%>
+    <% } else { %>
+      <meta itemprop="image"
+            content="http://www.acidoticracing.com/assets/logo-social.png">
+    <% } %>
 
   <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">

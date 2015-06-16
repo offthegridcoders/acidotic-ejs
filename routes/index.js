@@ -117,6 +117,7 @@ var Sponsors;
     fbData.description = 'Admin Dashboard'
     fbData.data = AllData;
     fbData.page = 'Admin';
+    fbData.url = null;
     // starting event edit data (false or value)
     fbData.event = eventData;
     fbData.sponsors = Sponsors;
