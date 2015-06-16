@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/Article">
-    <%= include ../partials/head.ejs %>
+    <%= include ../partials/head %>
   <body class="<%= season %>-page">
-    <%= include ../partials/nav.ejs %>
+    <%= include ../partials/nav %>
 
     <section class="full-page">
       <div class="logo">
@@ -46,7 +46,7 @@
           </a>
           <% } %>
         </div>
-        <% include ../partials/mailchimp.ejs %>
+        <% include ../partials/mailchimp %>
       </article>
       <article>
         <h5><i class="fa fa-users"></i> race director(s):</h5>
@@ -114,10 +114,10 @@
         </ul>
       </article>
       <hr>
-      <%= include ../partials/add-this.ejs %>
+      <%= include ../partials/add-this %>
     </section>
 
-        <%= include ../partials/footer.ejs %>
-    <%= include ../partials/scripts.ejs %>
+        <%= include ../partials/footer %>
+    <%= include ../partials/scripts %>
   </body>
 </html>
