@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 /**
  * Module dependencies.
  */
@@ -84,7 +83,11 @@ function onError(error) {
 function onListening() {
   var addr = server.address();
   var bind = typeof addr === 'string'
-    ? 'pipe ' + addr
-    : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+    ? addr
+    : addr.port;
+  debug('Load Complete!');
+  debug('Listening at http://localhost:' + bind);
+  console.log(' ');
+  debug('TO VIEW APP:')
+  debug('Run \'gulp\' in another terminal to open browser');
 }

@@ -7,13 +7,18 @@ You can see the progress here: [LINK](https://acidotic.herokuapp.com/)
 Node.js / Express / EJS
 Heroku / Firebase
 
-#### Dependancies
-`sudo npm install`
+#### Dependencies
 `gem install scss-lint`
+
+#### Install & Run
+`chmod +x install.sh backup.sh bin/www && ./install.sh`
 
 ### Running Locally
 `DEBUG=acidotic:* ./bin/www`
 >App should be listening on port 3000
+
+### Backup Database (JSON)
+`./backup.sh`
 
 #### Structure
 + /bin
