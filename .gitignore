@@ -7,3 +7,6 @@
 
 # css and sass cache
 **/.sass-cache
+
+backup
+./backup

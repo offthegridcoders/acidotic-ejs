@@ -1,6 +1,7 @@
 #!/bin/bash
+./backup.sh
 echo 'Installing NPM Module Dependencies';
-#sudo npm install
+sudo npm install
 echo 'NPM install complete!';
 echo 'LOADING APP....';
 echo -e '\033[1;33m###################################################\033[0m';
@@ -13,3 +14,4 @@ echo -e '\033[1;33m#                                                 #\033[0m';
 echo -e '\033[1;33m###################################################\033[0m';
 echo ' ';
 DEBUG=acidotic:* ./bin/www
+echo 'Thank you for using the app! Goodbye.';
