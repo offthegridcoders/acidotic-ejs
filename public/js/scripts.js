@@ -8,12 +8,12 @@ function setNavBar(elm) {
       $(elm).css('background','rgba(0, 0, 0, .8');
 
     } else {
-      $(elm).css('position', 'absolute');
+      $(elm).css('position', 'fixed');
       $(elm).css('background','rgba(0, 0, 0, 0');
     }
   } else {
     // NAV styling for pages without header
-    $('nav').css('position', 'absolute');
+    $('nav').css('position', 'fixed');
     $('nav').css('background','rgba(0, 0, 0, .8');
   }
 };
