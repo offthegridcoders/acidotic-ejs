@@ -13,10 +13,10 @@ Heroku / Firebase
 #### First Install & Run
 `chmod +x install.sh && ./install.sh`
 
-### Running Locally
+#### Running Locally
 `./run.sh`
 
-### Backup Database (JSON)
+#### Backup Database (JSON)
 `./backup.sh`
 
 #### Structure
