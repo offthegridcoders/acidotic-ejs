@@ -9,6 +9,7 @@ Heroku / Firebase
 
 #### Dependencies
 `gem install scss-lint`
+'npm install gulp -g'
 
 #### First Install & Run
 `chmod +x install.sh && ./install.sh`
