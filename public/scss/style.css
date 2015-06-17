@@ -184,7 +184,7 @@ nav {
     transition: background .4s ease; }
   @media screen and (max-width: 600px) {
     nav {
-      background-color: rgba(0, 0, 0, 0.7) !important;
+      background-color: rgba(0, 0, 0, 0.9) !important;
       height: auto; } }
   nav .season-icon {
     cursor: pointer;
@@ -239,6 +239,8 @@ nav {
     @media screen and (max-width: 550px) {
       .main-nav a {
         font-size: 12px; } }
+  .main-nav .selected {
+    color: #fcb034; }
   .main-nav span {
     text-transform: lowercase; }
 
@@ -286,6 +288,8 @@ nav {
     color: #fff; }
     .icon-nav a:hover {
       color: #fcb034 !important; }
+  .icon-nav .selected {
+    color: #fcb034; }
 
 header {
   background-position: 50% 100%;
@@ -364,6 +368,25 @@ footer {
   .social-footer-links img {
     margin: 5px;
     width: 40px; }
+
+aside {
+  display: none; }
+  @media screen and (max-width: 600px) {
+    aside {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      text-align: center;
+      padding: 15px; }
+      aside p {
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.4); }
+      aside i {
+        color: rgba(255, 255, 255, 0.4); }
+      aside .fa-angle-double-left, aside .fa-angle-double-right {
+        margin: 0 10px; } }
 
 .event-links {
   background-image: url('../assets/tiles/black-screen.png');

@@ -17,3 +17,31 @@ footer {
     width: 40px;
   }
 }
+
+aside {    
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,.9);
+    text-align: center;
+    padding: 15px;
+
+    p {
+      display: inline-block;
+      color: rgba(255,255,255,.4);
+    }
+
+    i {
+      color: rgba(255,255,255,.4);
+    }
+
+    .fa-angle-double-left,
+    .fa-angle-double-right {
+      margin: 0 10px;
+    }
+  }
+}

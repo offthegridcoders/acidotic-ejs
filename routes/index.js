@@ -370,7 +370,6 @@ var Sponsors;
     goToAdminHome(res, false);
   });
 // HOME PAGE
-
   function getHomePageData() {
     var fbData = {};
     fbData.title = meta.homepage.title;

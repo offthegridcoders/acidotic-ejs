@@ -14,7 +14,7 @@ nav {
   }
 
   @media screen and (max-width: 600px) {
-    background-color: rgba(0, 0, 0, .7) !important;
+    background-color: rgba(0, 0, 0, .9) !important;
     height: auto;
   }
   
@@ -92,6 +92,10 @@ nav {
     }
   }
 
+  .selected {
+    color: $orange;
+  }
+
   span {
     text-transform: lowercase;
   }
@@ -158,5 +162,9 @@ nav {
     &:hover {
       color: $orange !important;
     }
+  }
+
+  .selected {
+    color: $orange;
   }
 }
