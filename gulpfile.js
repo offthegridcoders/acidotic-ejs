@@ -37,6 +37,7 @@ var files = {
       [
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/wow/dist/wow.min.js',
+        './public/js/touchSwipe.js',
         './public/js/inits.js',
         './public/js/functions.js',
         './public/js/scripts.js',
@@ -50,7 +51,7 @@ var files = {
 gulp.task('default', ['serve']);
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'uglify-js', 'min-ejs', 'img-min'], function() {
 
     browserSync.init({
       proxy: "http://localhost:3000/"

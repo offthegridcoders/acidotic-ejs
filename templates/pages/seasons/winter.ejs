@@ -80,5 +80,15 @@
 
     <%= include ../../partials/footer %>
     <%= include ../../partials/scripts %>
+
+    <script>
+    $(document).touchwipe({
+      wipeLeft: function() { window.location.assign('/spring') },
+      wipeRight: function() { window.location.assign('/fall') },
+      min_move_x: 100,
+      min_move_y: 100,
+      preventDefaultEvents: false
+    });
+    </script>
   </body>
 </html>
