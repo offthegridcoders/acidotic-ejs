@@ -10,12 +10,11 @@ Heroku / Firebase
 #### Dependencies
 `gem install scss-lint`
 
-#### Install & Run
-`chmod +x install.sh backup.sh bin/www && ./install.sh`
+#### First Install & Run
+`chmod +x install.sh && ./install.sh`
 
 ### Running Locally
-`DEBUG=acidotic:* ./bin/www`
->App should be listening on port 3000
+`./run.sh`
 
 ### Backup Database (JSON)
 `./backup.sh`
