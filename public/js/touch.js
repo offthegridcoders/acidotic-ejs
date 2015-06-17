@@ -25,7 +25,7 @@ function slidePageForward() {
     case '/contact':
       return window.location.assign('/community')
     default:
-      alert('no swipe effect');
+      return;
   }
 }
 
@@ -48,6 +48,6 @@ function slidePageBack() {
     case '/contact':
       return window.location.assign('/about')
     default:
-      alert('no swipe effect');
+      return;
   }
 }
