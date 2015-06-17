@@ -106,7 +106,6 @@ var Sponsors;
   FireBaseRef.child('sponsors/').on('value', function(snapshot) {
     Sponsors = snapshot.val();
   });
-
 // LOGIN/LOGOUT
   function getAdminPageData(eventData) {
     var fbData = {};
@@ -180,7 +179,6 @@ var Sponsors;
     });
   });
 // ADMIN
-
   Router.get('/admin', function(req, res, next) {
     if (req.cookies.authenticated) {
       // if authenticated - go to admin homepage
@@ -387,7 +385,7 @@ var Sponsors;
   };
 
   Router.get('/', function(req, res, next) {
-    return res.render('pages/seasons/' + Defaults.season, getHomePageData());
+    return res.redirect('/' + Defaults.season);
   });
 // SEASON PAGES
   function setSeasonData(season, title, description, url) {

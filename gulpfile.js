@@ -37,7 +37,8 @@ var files = {
       [
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/wow/dist/wow.min.js',
-        './public/js/touchSwipe.js',
+        './public/js/touchWipe.js',
+        './public/js/touch.js',
         './public/js/inits.js',
         './public/js/functions.js',
         './public/js/scripts.js',
