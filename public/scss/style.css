@@ -190,7 +190,7 @@ nav {
     padding: 7px 40px;
     width: 100%;
     background-color: #fcb034; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 400px) {
       nav h1 {
         display: block; } }
   nav:hover {

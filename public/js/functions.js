@@ -26,32 +26,15 @@
 // hides swipe container
   var prevScrollPos;
   $('aside').hide();
-  $('nav h1').show();
-  $('nav img').hide();
+  if (window.innerWidth < 400) $('nav h1').show();
   function toggleAside() {
     var curScrollPos = $(window).scrollTop();
-    console.log('prev: ' + prevScrollPos + ' cur: ' + curScrollPos);
     if (prevScrollPos < curScrollPos) {
       $('aside').hide();
-      $('nav h1').hide();
-      $('nav img').hide();
+      if (window.innerWidth < 400) $('nav h1').hide();
     } else {
       $('aside').show();
-      $('nav h1').show();
-      $('nav img').show();
+      if (window.innerWidth < 400) $('nav h1').show();
     }
     prevScrollPos = curScrollPos;
   }
-
-function hideAddressBar() {
-  if(!window.location.hash) {
-    if(document.height < window.outerHeight)
-      document.body.style.height = (window.outerHeight + 50) + 'px';
-    setTimeout( function(){ 
-        window.scrollTo(0, 1); 
-        document.body.style.height = 'auto'; 
-      }, 50 );
-  }
-}
-
-hideAddressBar()
