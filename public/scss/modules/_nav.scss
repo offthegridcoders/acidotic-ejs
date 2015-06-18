@@ -9,6 +9,22 @@ nav {
   width: 100%;
   z-index: 9000;
 
+  h1 {
+    display: none;
+    color: darken($orange, 40%);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 7px 40px;
+    width: 100%;
+    background-color: $orange;
+
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+
   &:hover {
     transition: background .4s ease;
   }
@@ -132,6 +148,7 @@ nav {
   li {
     display: inline-block;
     margin: 5px;
+    position: relative;
 
     @media screen and (max-width: 600px) {
       width: 19%;
@@ -156,8 +173,12 @@ nav {
     }
   }
 
-  a {
-    color: #fff;  
+  a {    
+    color: #fff;
+
+    @media screen and (max-width: 600px) {
+      color: rgba(255, 255, 255, .8);
+    }
 
     &:hover {
       color: $orange !important;
@@ -166,5 +187,18 @@ nav {
 
   .selected {
     color: $orange;
+
+    &:before {
+      content: '';
+      width: 1px;
+      height: 1px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid $orange;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -5px;
+    }
   }
 }

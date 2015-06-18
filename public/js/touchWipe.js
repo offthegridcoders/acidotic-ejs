@@ -3,6 +3,7 @@
  * Common usage: wipe images (left and right to show the previous or next image)
  * 
  * @author Andreas Waltl, netCU Internetagentur (http://www.netcu.de)
+ * http://www.netcu.de/jquery-touchwipe-iphone-ipad-library (taken from here)
  * @version 1.1.1 (9th December 2010) - fix bug (older IE's had problems)
  * @version 1.1 (1st September 2010) - support wipe up and wipe down
  * @version 1.0 (15th July 2010)

@@ -180,6 +180,19 @@ nav {
   transition: background .4s ease;
   width: 100%;
   z-index: 9000; }
+  nav h1 {
+    display: none;
+    color: #633e01;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 7px 40px;
+    width: 100%;
+    background-color: #fcb034; }
+    @media screen and (max-width: 600px) {
+      nav h1 {
+        display: block; } }
   nav:hover {
     transition: background .4s ease; }
   @media screen and (max-width: 600px) {
@@ -268,7 +281,8 @@ nav {
       text-align: center; } }
   .icon-nav li {
     display: inline-block;
-    margin: 5px; }
+    margin: 5px;
+    position: relative; }
     @media screen and (max-width: 600px) {
       .icon-nav li {
         width: 19%;
@@ -286,10 +300,24 @@ nav {
         font-size: 28px; } }
   .icon-nav a {
     color: #fff; }
+    @media screen and (max-width: 600px) {
+      .icon-nav a {
+        color: rgba(255, 255, 255, 0.8); } }
     .icon-nav a:hover {
       color: #fcb034 !important; }
   .icon-nav .selected {
     color: #fcb034; }
+    .icon-nav .selected:before {
+      content: '';
+      width: 1px;
+      height: 1px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #fcb034;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -5px; }
 
 header {
   background-position: 50% 100%;
