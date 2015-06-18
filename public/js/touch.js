@@ -1,6 +1,10 @@
 $(document).touchwipe({
-  wipeLeft: function() {slidePageForward()},
-  wipeRight: function() {slidePageBack()},
+  wipeLeft: function() {
+    $('body').hide();
+    slidePageForward()},
+  wipeRight: function() {
+    $('body').hide();
+    slidePageBack()},
   min_move_x: 100,
   min_move_y: 100,
   preventDefaultEvents: false
