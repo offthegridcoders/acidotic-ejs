@@ -26,15 +26,15 @@
 // hides swipe container
   var prevScrollPos;
   $('aside').hide();
-  if (window.innerWidth < 400) $('nav h1').show();
+  if (window.innerWidth <= 400) $('nav h1').show();
   function toggleAside() {
     var curScrollPos = $(window).scrollTop();
     if (prevScrollPos < curScrollPos) {
       $('aside').hide();
-      if (window.innerWidth < 400) $('nav h1').hide();
+      if (window.innerWidth <= 400) $('nav h1').hide();
     } else {
       $('aside').show();
-      if (window.innerWidth < 400) $('nav h1').show();
+      if (window.innerWidth <= 400) $('nav h1').show();
     }
     prevScrollPos = curScrollPos;
   }
