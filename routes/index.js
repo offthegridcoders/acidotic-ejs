@@ -112,6 +112,7 @@ var Sponsors;
     fbData.season = Defaults.season;
     fbData.data = AllData;
     fbData.page = 'Admin';
+    fbData.title = 'Admin Dashboard';
     // starting event edit data (false or value)
     fbData.event = eventData;
     fbData.sponsors = Sponsors;
