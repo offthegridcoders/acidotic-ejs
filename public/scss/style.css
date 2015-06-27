@@ -181,15 +181,15 @@ nav {
   width: 100%;
   z-index: 9000; }
   nav h1 {
-    display: none;
+    background-color: #fcb034;
     color: #633e01;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 200;
+    display: none;
     font-size: 16px;
+    font-weight: 200;
     padding: 7px 40px;
-    width: 100%;
-    background-color: #fcb034; }
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%; }
     @media screen and (max-width: 400px) {
       nav h1 {
         display: block; } }
@@ -268,8 +268,8 @@ nav {
       .icon-nav span {
         display: block;
         font-size: 10px;
-        text-transform: uppercase;
-        margin-top: 5px; } }
+        margin-top: 5px;
+        text-transform: uppercase; } }
     @media screen and (max-width: 400px) {
       .icon-nav span {
         display: none; } }
@@ -277,17 +277,17 @@ nav {
     .icon-nav {
       margin: 0 auto;
       position: static;
-      width: auto;
-      text-align: center; } }
+      text-align: center;
+      width: auto; } }
   .icon-nav li {
     display: inline-block;
     margin: 5px;
     position: relative; }
     @media screen and (max-width: 600px) {
       .icon-nav li {
-        width: 19%;
         margin: 0;
-        padding: 10px; } }
+        padding: 10px;
+        width: 19%; } }
   .icon-nav .mobile-only {
     display: none; }
     @media screen and (max-width: 600px) {
@@ -308,16 +308,16 @@ nav {
   .icon-nav .selected {
     color: #fcb034; }
     .icon-nav .selected:before {
-      content: '';
-      width: 1px;
-      height: 1px;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       border-top: 5px solid #fcb034;
+      content: '';
+      height: 1px;
+      left: 50%;
+      margin-left: -5px;
       position: absolute;
       top: 0;
-      left: 50%;
-      margin-left: -5px; }
+      width: 1px; }
 
 header {
   background-position: 50% 100%;
@@ -401,16 +401,16 @@ aside {
   display: none; }
   @media screen and (max-width: 600px) {
     aside {
-      display: block;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
       background-color: rgba(0, 0, 0, 0.9);
+      bottom: 0;
+      display: block;
+      padding: 15px;
+      position: fixed;
       text-align: center;
-      padding: 15px; }
+      width: 100%; }
       aside p {
-        display: inline-block;
-        color: rgba(255, 255, 255, 0.4); }
+        color: rgba(255, 255, 255, 0.4);
+        display: inline-block; }
       aside i {
         color: rgba(255, 255, 255, 0.4); }
       aside .fa-angle-double-left, aside .fa-angle-double-right {

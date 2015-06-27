@@ -22,21 +22,21 @@ aside {
   display: none;
 
   @media screen and (max-width: 600px) {
-    display: block;
-    position: fixed;
+    background-color: rgba(0, 0, 0, .9);
     bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,.9);
-    text-align: center;
+    display: block;
     padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
 
     p {
+      color: rgba(255, 255, 255, .4);
       display: inline-block;
-      color: rgba(255,255,255,.4);
     }
 
     i {
-      color: rgba(255,255,255,.4);
+      color: rgba(255, 255, 255, .4);
     }
 
     .fa-angle-double-left,
