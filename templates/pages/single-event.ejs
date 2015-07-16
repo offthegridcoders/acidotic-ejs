@@ -92,6 +92,15 @@
           <% }); %>
         </article>
       <% }; %>
+
+      <% if(event.standings) { %>
+      <article class="standings-btn-wrapper">
+        <h5>Series Standings</h5>
+        <a href="<%= event.standings %>" target="_blank">
+          <button>Click here</button>
+        </a>
+      </article>
+      <% }; %>
       <article class="event-links-footer">
         <ul>
           <% if(event.galleryUrl) { %>

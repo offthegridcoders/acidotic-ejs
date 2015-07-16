@@ -320,3 +320,15 @@
     }
   }
 }
+
+.standings-btn-wrapper {
+  button {
+    background-color: $orange;
+    color: #fff;
+    border: solid 1px darken($orange, 15%);
+    padding: 10px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}

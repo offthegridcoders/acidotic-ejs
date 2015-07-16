@@ -170,7 +170,13 @@
               <input type="text" name="video" value="<%= event.video %>">
               <p>Enter YouTube video link</p>
             </div>
-
+            <% if(event.standings) { %>
+              <div>
+                <label>Standings Link</label>
+                <input type="text" name="standings" value="<%= event.standings %>">
+                <p>Enter Standings link</p>
+              </div>
+            <% } %>
             <input type="text" class="hidden" name="season"
                    value="<%= event.season %>">
             <input type="text" class="hidden" name="key"

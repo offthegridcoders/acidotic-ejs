@@ -1132,6 +1132,15 @@ aside {
       .event-links-footer i {
         display: block; } }
 
+.standings-btn-wrapper button {
+  background-color: #fcb034;
+  color: #fff;
+  border: solid 1px #e08c03;
+  padding: 10px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 20px; }
+
 .left-side .athlete-block {
   float: right;
   margin-left: 40px; }
