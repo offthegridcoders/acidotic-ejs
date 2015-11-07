@@ -70,7 +70,7 @@ var Sponsors;
       description: 'All competitors will start at the same time in the same location. At a predetermined spot the 10 mile & 4.6 mile races will split with competitors going in different directions. This a very technical trail race.'
     },
     loonMountainRace: {
-      title: 'Loon Mountain Race',
+      title: 'Loon Mountain Race - Summer Event',
       description: 'Over the years our Loon Mountain Race has developed quite a following here in the northeast. The reputation as one of the region’s toughest races is due in large part to the kilometer ascent of North Peak.'
     },
     kingmanFarmTrailRace: {
