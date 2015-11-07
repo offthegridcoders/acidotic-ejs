@@ -47,51 +47,51 @@ var Sponsors;
     },
     sidehillerSnowshoe: {
       title: 'Sidehiller Snowshoe Race - Winter Event',
-      description: 'We may be no frills but we are still at the epicenter of the snowshoe racing universe. This is the only race that is part of the both the famed and internationally acclaimed Western Mass Athletic Club (WMAC) Snowshoe Series and the quickly growing and frighteningly successful Granite State Snowshoe Series.' 
+      description: 'We may be no frills but we are still at the epicenter of the snowshoe racing universe. This is the only race that is part of the both the famed and internationally acclaimed Western Mass Athletic Club (WMAC) Snowshoe Series and the quickly growing and frighteningly successful Granite State Snowshoe Series.'
     },
     kingmanFarm: {
       title: 'Kingman Farm Moonlight Snowshoe Race - Winter Event',
-      description: 'This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race.' 
+      description: 'This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race.'
     },
     snowshoeHullabaloo: {
       title: 'Exeter Snowshoe Hullabaloo - Winter Event',
-      description: 'The Snowshoe Hullabaloo is run over almost 4 miles of tight and twisted, packed single track in the Henderson-Swazey (aka Ft. Rock) Woods in Exeter, NH. The course is a pulse-raising roller coaster of ups, downs and hair-pin turns.' 
+      description: 'The Snowshoe Hullabaloo is run over almost 4 miles of tight and twisted, packed single track in the Henderson-Swazey (aka Ft. Rock) Woods in Exeter, NH. The course is a pulse-raising roller coaster of ups, downs and hair-pin turns.'
     },
     snowshoeChampionship: {
       title: 'NH Snowshoe Championship - Winter Event',
-      description: 'Snowshoe racing is a uniquely regional sport and in our opinion there is NO region with a more vibrant and competitive scene than the northeast! Thats why the Northeast Snowshoe Federation was formed.' 
+      description: 'Snowshoe racing is a uniquely regional sport and in our opinion there is NO region with a more vibrant and competitive scene than the northeast! Thats why the Northeast Snowshoe Federation was formed.'
     },
     ralphWaldo: {
       title: 'Ralph Waldo Emerson Trail Race - Spring Event',
-      description: 'The race will take place on the City of Concords Winant Park Trails. Located close to downtown Concord the trails offer a beautiful taste of windy singletrack, switchbacks with breathtaking views of the capital area and nordic-type paths. The approximately 10 mile long course will be more of the same!' 
+      description: 'The race will take place on the City of Concords Winant Park Trails. Located close to downtown Concord the trails offer a beautiful taste of windy singletrack, switchbacks with breathtaking views of the capital area and nordic-type paths. The approximately 10 mile long course will be more of the same!'
     },
     exeterTrail: {
       title: 'Exeter Trail Race - Spring Event',
-      description: 'All competitors will start at the same time in the same location. At a predetermined spot the 10 mile & 4.6 mile races will split with competitors going in different directions. This a very technical trail race.' 
+      description: 'All competitors will start at the same time in the same location. At a predetermined spot the 10 mile & 4.6 mile races will split with competitors going in different directions. This a very technical trail race.'
     },
     loonMountainRace: {
-      title: 'Loon Mountain Race | NE Mountain Championship - Summer Event',
-      description: 'Over the years our Loon Mountain Race has developed quite a following here in the northeast. The reputation as one of the region’s toughest races is due in large part to the kilometer ascent of North Peak.' 
+      title: 'Loon Mountain Race',
+      description: 'Over the years our Loon Mountain Race has developed quite a following here in the northeast. The reputation as one of the region’s toughest races is due in large part to the kilometer ascent of North Peak.'
     },
     kingmanFarmTrailRace: {
       title: 'Kingman Farm Trail Race - Summer Event',
-      description: 'Were getting back to our roots a little (pun intended) with one of the newest editions to our renowned event schedule. The Kingman Farm Trail Race will be an old-school show up, lace up, and race sort of event' 
+      description: 'Were getting back to our roots a little (pun intended) with one of the newest editions to our renowned event schedule. The Kingman Farm Trail Race will be an old-school show up, lace up, and race sort of event'
     },
     harmonyHill: {
       title: 'Harmony Hill Summer XC Series - Summer Event',
-      description: 'Returning for a 3rd Year, The Harmony Hill Cross Country (XC) Series is a fun summer XC running series for all abilities and ages. In the past two years this has become a favorite race for first time runners as well as seasoned athletes' 
+      description: 'Returning for a 3rd Year, The Harmony Hill Cross Country (XC) Series is a fun summer XC running series for all abilities and ages. In the past two years this has become a favorite race for first time runners as well as seasoned athletes'
     },
     brettonWoods: {
       title: 'Bretton Woods Fell Race - Fall Event',
-      description: 'In an effort to accommodate more competitors we are offering two different courses this year. The short course will race the first three check points (CPs); A, B, & C. The total distance will be approximately TBA miles.' 
+      description: 'In an effort to accommodate more competitors we are offering two different courses this year. The short course will race the first three check points (CPs); A, B, & C. The total distance will be approximately TBA miles.'
     },
     vulcansFury: {
       title: 'Vulcans Fury Trail Race - Fall Event',
-      description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.' 
+      description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.'
     },
     roaringFalls: {
       title: 'Roaring Falls Trail Race - Fall Event',
-      description: 'The Castle in the Clouds, in beautiful Moultonborough, is one of New Hampshires iconic landmarks. And while many people are familiar with the 1914 mountaintop estate known as Lucknow, very few are aware that the property sits on over 5200 acres of some of the most spectacular geologic features and mountain visitas in the state.' 
+      description: 'The Castle in the Clouds, in beautiful Moultonborough, is one of New Hampshires iconic landmarks. And while many people are familiar with the 1914 mountaintop estate known as Lucknow, very few are aware that the property sits on over 5200 acres of some of the most spectacular geologic features and mountain visitas in the state.'
     }
   };
 // INITIALLY loads data into global variable
@@ -139,7 +139,7 @@ var Sponsors;
     var data = getHomePageData();
     return res.redirect('/');
   };
-  
+
   Router.get('/logout', function(req,res) {
     logout(res);
   });
