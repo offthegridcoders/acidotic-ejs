@@ -27,12 +27,12 @@
   height: 400px;
   position: relative;
   width: 450px;
-  
+
   @media screen and (max-width: 950px) {
     height: 360px;
     width: 400px;
   }
-  
+
   @media screen and (max-width: 850px) {
     height: 360px;
     width: 370px;
@@ -121,11 +121,11 @@
   width: 450px;
 
 
-  
+
   @media screen and (max-width: 950px) {
     width: 400px;
   }
-  
+
   @media screen and (max-width: 850px) {
     width: 370px;
   }
@@ -171,27 +171,27 @@
 
   .pic04 {
     background-image: url('../assets/athletes/image4.JPG');
-  }  
+  }
 
   .pic05 {
     background-image: url('../assets/athletes/image5.JPG');
-  } 
+  }
 
   .pic06 {
     background-image: url('../assets/athletes/image6.JPG');
-  } 
+  }
 
   .pic07 {
     background-image: url('../assets/athletes/image7.JPG');
-  } 
+  }
 
   .pic08 {
     background-image: url('../assets/athletes/image8.jpg');
-  } 
+  }
 
   .pic09 {
     background-image: url('../assets/athletes/image9.JPG');
-  } 
+  }
 
   .pic10 {
     background-image: url('../assets/athletes/image10.JPG');
@@ -223,7 +223,7 @@
 
 .suunto {
   background-image: url('../assets/events/suunto.jpg');
-  
+
   .event-info {
     padding: 30px;
   }
@@ -280,7 +280,7 @@
   background-image: url('../assets/events/event_kingmanfarm.jpg');
 }
 
-.vulcan-fury {
+.vulcans-fury {
   background-image: url('../assets/events/event_vulcansfury.jpg');
 }
 

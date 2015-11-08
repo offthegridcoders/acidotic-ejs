@@ -1,1 +1,73 @@
-<!DOCTYPE html><html itemscope itemtype="http://schema.org/Article"><%= include ../../partials/head %><body class="<%= season %>-page"><%= include ../../partials/nav %><%= include ../../partials/header %>    <section class="left-side animated fadeInLeftBig"><h1 class="main-header">autumn<span>events</span></h1><article class="brown-box"><p>"<%= data.fall.quotes.first.quote %>"</p><p>-<%= data.fall.quotes.first.person %></p></article><article class="event-block vulcan-fury"><img src="assets/logos/vulcans_logo.png"><div class="event-info"><h2><%= data.fall.vulcansFury.title %></h2><h3><%= data.fall.vulcansFury.date %></h3><h3><%= data.fall.vulcansFury.starttime %></h3><h4><%= data.fall.vulcansFury.address %></br><%= data.fall.vulcansFury.address2 %></br><%= data.fall.vulcansFury.city %>, <%= data.fall.vulcansFury.state %></h4><a href="vulcans-fury-trail-race"><button>click here for details</button></a><h5>Photo Courtesy of <%= data.fall.vulcansFury.photographer %></h5></div></article><article class="event-block roaring-falls"><img src="assets/logos/roaring-falls.png"><div class="event-info"><h2><%= data.fall.roaringFalls.title %></h2><h3><%= data.fall.roaringFalls.date %></h3><h3><%= data.fall.roaringFalls.starttime %></h3><h4><%= data.fall.roaringFalls.address %></br><%= data.fall.roaringFalls.address2 %></br><%= data.fall.roaringFalls.city %>, <%= data.fall.roaringFalls.state %></h4><a href="roaring-falls-trail-race"><button>click here for details</button></a><h5>Photo Courtesy of <%= data.fall.roaringFalls.photographer %></h5></div></article></section><section class="right-side animated fadeInRightBig"><article class="event-block bretton-woods"><img src="assets/logos/bretton-woods.png"><div class="event-info"><h2><%= data.fall.brettonWoods.title %></h2><h3><%= data.fall.brettonWoods.date %></h3><h3><%= data.fall.brettonWoods.starttime %></h3><h4><%= data.fall.brettonWoods.address %></br><%= data.fall.brettonWoods.address2 %></br><%= data.fall.brettonWoods.city %>, <%= data.fall.brettonWoods.state %></h4><a href="bretton-woods-fell-race"><button>click here for details</button></a><h5>Photo Courtesy of <%= data.fall.brettonWoods.photographer %></h5></div></article><article class="brown-box"><p>"<%= data.fall.quotes.second.quote %>"</p><p>-<%= data.fall.quotes.second.person %></p></article><article class="event-block suunto"><img src="assets/logos/sunnto.jpg"><div class="event-info"><h2><%= data.suunto.title %></h2><h3><%= data.suunto.copy %></h3></div></article></section><%= include ../../partials/footer %><%= include ../../partials/scripts %></script></body></html>
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+    <%- include ../../partials/head %>
+  <body class="<%= season %>-page">
+    <%- include ../../partials/nav %>
+    <%- include ../../partials/header %>
+    <section class="left-side animated fadeInLeftBig">
+      <h1 class="main-header">autumn<span>events</span></h1>
+      <article class="brown-box">
+        <p>"<%= data.fall.quotes.first.quote %>"</p>
+        <p>-<%= data.fall.quotes.first.person %></p>
+      </article>
+      <article class="event-block vulcans-fury">
+        <img src="assets/logos/vulcans_logo.png">
+        <div class="event-info">
+          <h2><%= data.fall.vulcansFury.title %></h2>
+          <h3><%= data.fall.vulcansFury.date %></h3>
+          <h3><%= data.fall.vulcansFury.starttime %></h3>
+          <h4><%= data.fall.vulcansFury.address %></br>
+              <%= data.fall.vulcansFury.address2 %></br>
+              <%= data.fall.vulcansFury.city %>, <%= data.fall.vulcansFury.state %></h4>
+          <a href="vulcans-fury-trail-race"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.fall.vulcansFury.photographer %></h5>
+        </div>
+      </article>
+      <article class="event-block roaring-falls">
+        <img src="assets/logos/roaring-falls.png">
+        <div class="event-info">
+          <h2><%= data.fall.roaringFalls.title %></h2>
+          <h3><%= data.fall.roaringFalls.date %></h3>
+          <h3><%= data.fall.roaringFalls.starttime %></h3>
+          <h4><%= data.fall.roaringFalls.address %></br>
+              <%= data.fall.roaringFalls.address2 %></br>
+              <%= data.fall.roaringFalls.city %>, <%= data.fall.roaringFalls.state %></h4>
+          <a href="roaring-falls-trail-race"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.fall.roaringFalls.photographer %></h5>
+        </div>
+      </article>
+    </section>
+
+    <section class="right-side animated fadeInRightBig">
+      <article class="event-block bretton-woods">
+        <img src="assets/logos/bretton-woods.png">
+        <div class="event-info">
+          <h2><%= data.fall.brettonWoods.title %></h2>
+          <h3><%= data.fall.brettonWoods.date %></h3>
+          <h3><%= data.fall.brettonWoods.starttime %></h3>
+          <h4><%= data.fall.brettonWoods.address %></br>
+              <%= data.fall.brettonWoods.address2 %></br>
+              <%= data.fall.brettonWoods.city %>, <%= data.fall.brettonWoods.state %></h4>
+          <a href="bretton-woods-fell-race"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.fall.brettonWoods.photographer %></h5>
+        </div>
+      </article>
+      <article class="brown-box">
+        <p>"<%= data.fall.quotes.second.quote %>"</p>
+        <p>-<%= data.fall.quotes.second.person %></p>
+      </article>
+      <article class="event-block suunto">
+        <img src="assets/logos/sunnto.jpg">
+        <div class="event-info">
+          <h2><%= data.suunto.title %></h2>
+          <h3><%= data.suunto.copy %></h3>
+        </div>
+      </article>
+    </section>
+
+    <%- include ../../partials/footer %>
+    <%- include ../../partials/scripts %>
+
+  </body>
+</html>
+``

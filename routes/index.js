@@ -45,10 +45,6 @@ var Sponsors;
       title: 'Charity',
       description: 'aR has made a commitment to support the charitable organizations that are dearest to our hearts. This is done through a variety of charitable giving outlets associated with our professional event services.'
     },
-    sidehillerSnowshoe: {
-      title: 'Sidehiller Snowshoe Race - Winter Event',
-      description: 'We may be no frills but we are still at the epicenter of the snowshoe racing universe. This is the only race that is part of the both the famed and internationally acclaimed Western Mass Athletic Club (WMAC) Snowshoe Series and the quickly growing and frighteningly successful Granite State Snowshoe Series.'
-    },
     kingmanFarm: {
       title: 'Kingman Farm Moonlight Snowshoe Race - Winter Event',
       description: 'This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race.'
@@ -474,13 +470,6 @@ var Sponsors;
     return fbData;
   };
 
-  // SIDEHILLER SNOWSHOE
-  Router.get('/sidehiller-snowshoe-race', function(req, res, next) {
-    var data = setSingleEventData('winter',
-      AllData, AllData.winter.sidehillerSnowshoe,
-      meta.sidehillerSnowshoe.title, meta.sidehillerSnowshoe.description, req._parsedOriginalUrl.href);
-    return res.render('pages/single-event', data);
-  });
   // KINGMAN FARM
   Router.get('/kingman-farm-moonlight-snowshoe-race', function(req, res, next) {
     var data = setSingleEventData('winter',
@@ -585,7 +574,11 @@ var Sponsors;
   });
 
   Router.get('/sidehiller-showshoe', function(req, res, next){
-    res.redirect(301, 'http://www.acidoticracing.com/sidehiller-snowshoe-race');
+    res.redirect(301, 'http://www.acidoticracing.com/');
+  });
+
+  Router.get('/sidehiller-showshoe-race', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/');
   });
 
   Router.get('/snowshoe-hullabaloo', function(req, res, next){
@@ -626,7 +619,7 @@ var Sponsors;
         res.redirect(301, 'http://www.acidoticracing.com/kingman-farm-trail-race/');
         break;
     case '2':
-        res.redirect(301, 'http://www.acidoticracing.com/sidehiller-snowshoe-race/');
+        res.redirect(301, 'http://www.acidoticracing.com/');
         break;
     case '3':
         res.redirect(301, 'http://www.acidoticracing.com/exeter-snowshoe-hullabaloo/');
