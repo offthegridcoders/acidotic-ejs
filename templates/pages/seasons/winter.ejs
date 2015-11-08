@@ -3,7 +3,7 @@
     <%= include ../../partials/head %>
   <body class="<%= season %>-page">
     <%= include ../../partials/nav %>
-    <%= include ../../partials/header %>    
+    <%= include ../../partials/header %>
     <section class="left-side animated fadeInLeftBig">
       <h1 class="main-header">Winter<span>events</span></h1>
       <article class="blue-box">
@@ -46,19 +46,6 @@
     </section>
 
     <section class="right-side animated fadeInRightBig">
-      <article class="event-block sidehiller-event">
-        <img src="assets/logos/sidehiller.jpg">
-        <div class="event-info">
-          <h2><%= data.winter.sidehillerSnowshoe.title %></h2>
-          <h3><%= data.winter.sidehillerSnowshoe.date %></h3>
-          <h3><%= data.winter.sidehillerSnowshoe.starttime %></h3>
-          <h4><%= data.winter.sidehillerSnowshoe.address %></br>
-              <%= data.winter.sidehillerSnowshoe.address2 %></br>
-              <%= data.winter.sidehillerSnowshoe.city %>, <%= data.winter.sidehillerSnowshoe.state %></h4>
-          <a href="sidehiller-snowshoe-race/"><button>click here for details</button></a>
-          <h5>Photo Courtesy of <%= data.winter.sidehillerSnowshoe.photographer %></h5>
-        </div>
-      </article>
       <article class="blue-box">
         <p>"<%= data.winter.quotes.second.quote %>"</p>
         <p>-<%= data.winter.quotes.second.person %></p>
