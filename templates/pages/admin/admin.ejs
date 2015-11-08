@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+<!DOCTYPE html>
+<head>
+  <title>Admin Dashboard</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- base href -->
+    <base href="/">
+  <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+  <!-- Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='/dist/style.css' />
+  <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
+  <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="YxjZnBC9M4ByvRcLQL-FmSowB7HASDXlZrrNgMCNZmg" />
+</head>
+
+  <body class="<%= season %>-page">
+    <%= include ../../partials/nav.ejs %>
+
+    <section class="admin-full-page">
+      <% if(event) { %>
+        <article class="admin-header">
+            <a href="/admin"><button><i class="fa fa-arrow-left"></i> Back to Admin Home</button></a>
+            <hr>
+        </article>
+      <% }; %>
+      <article>
+        <a href="/logout"><button>Logout</button></a>
+      </article>
+      <!-- EVENTS -->
+      <% if(!event) { %>
+        <article>
+          <h2>Choose an Event to Edit</h2>
+          <h4>Then click the pencil</h4>
+          <form action="/admin" method="post" enctype="application/x-www-form-urlencoded">
+            <select name="eventChoice">
+              <option value="<%= JSON.stringify(data.winter.sidehillerSnowshoe) %>">
+                <%= data.winter.sidehillerSnowshoe.title %></option>
+              <option value="<%= JSON.stringify(data.winter.kingmanFarm) %>">
+                <%= data.winter.kingmanFarm.title %></option>
+              <option value="<%= JSON.stringify(data.winter.snowshoeHullabaloo) %>">
+                <%= data.winter.snowshoeHullabaloo.title %></option>
+              <option value="<%= JSON.stringify(data.winter.snowshoeChampionship) %>">
+                <%= data.winter.snowshoeChampionship.title %></option>
+              <option value="<%= JSON.stringify(data.spring.ralphWaldo) %>">
+                <%= data.spring.ralphWaldo.title %></option>
+              <option value="<%= JSON.stringify(data.spring.exeterTrail) %>">
+                <%= data.spring.exeterTrail.title %></option>
+              <option value="<%= JSON.stringify(data.summer.loonMountainRace) %>">
+                <%= data.summer.loonMountainRace.title %></option>
+              <option value="<%= JSON.stringify(data.summer.kingmanFarmTrailRace) %>">
+                <%= data.summer.kingmanFarmTrailRace.title %></option>
+              <option value="<%= JSON.stringify(data.summer.harmonyHill) %>">
+                <%= data.summer.harmonyHill.title %></option>
+              <option value="<%= JSON.stringify(data.fall.brettonWoods) %>">
+                <%= data.fall.brettonWoods.title %></option>
+              <option value="<%= JSON.stringify(data.fall.vulcansFury) %>">
+                <%= data.fall.vulcansFury.title %></option>
+              <option value="<%= JSON.stringify(data.fall.roaringFalls) %>">
+                <%= data.fall.roaringFalls.title %></option>
+            </select>
+            <button class="submit-btn" type="submit"><i class="fa fa-pencil"></i></button>
+          </form>
+        </article>
+      <% } else { %>
+        <article>
+          <h3 class="admin-main-title"><img class="admin-event-logo" src="<%= event.logo %>"> <%= event.title %></h3>
+          <hr>
+        </article>
+      <% } %>
+      <% if(event) { %>
+        <!-- EDIT GENERAL DETAILS -->
+        <details>
+          <summary>
+            <h3><i class="fa fa-pencil-square-o"></i> Edit General Event Details</h3>
+          </summary>
+          <hr>
+          <form class="edit-form" action="/update-event" method="post" enctype="application/x-www-form-urlencoded">
+            <div>
+              <label>Title</label>
+              <input type="text" name="title" value="<%= event.title %>">
+            </div>
+            <div>
+              <label>Date</label>
+              <input type="text" name="date" value="<%= event.date %>">
+            </div>
+            <div>
+              <label>Address</label>
+              <input type="text" name="address" value="<%= event.address %>">
+              <p>ie. Old Church (leave blank if not needed)</p>
+            </div>
+            <div>
+              <label>Address Line 2</label>
+              <input type="text" name="address2" value="<%= event.address2 %>">
+              <p>ie. 125 Main Street</p>
+            </div>
+            <div>
+              <label>City</label>
+              <input type="text" name="city" value="<%= event.city %>">
+            </div>
+            <div>
+              <label>State</label>
+              <input type="text" name="state" value="<%= event.state %>">
+            </div>
+            <div>
+              <label>Distance</label>
+              <input type="text" name="distance" value="<%= event.distance %>">
+            </div>
+            <div>
+              <label>Start Time</label>
+              <input type="text" name="starttime" value="<%= event.starttime %>">
+            </div>
+            <div>
+              <label>Bib Pickup Time</label>
+              <input type="text" name="bibtime" value="<%= event.bibtime %>">
+            </div>
+            <div>
+              <label>Cost</label>
+              <input type="text" name="cost" value="<%= event.cost %>">
+            </div>
+            <div>
+              <label>Race Director Name(s)</label>
+              <input type="text" name="directorname" value="<%= event.directorname %>">
+            </div>
+            <div>
+              <label>Race Director Email(s)</label>
+              <input type="text" name="directoremail" value="<%= event.directoremail %>">
+            </div>
+            <div>
+              <label>Race Designer</label>
+              <input type="text" name="designer" value="<%= event.designer %>">
+            </div>
+            <div>
+              <label>Registration Status</label>
+              <input type="text" name="registrationStatus" value="<%= event.registrationStatus %>">
+              <p>Type <strong>open</strong> or <strong>closed</strong></p>
+            </div>
+            <div>
+              <label>Registration Link</label>
+              <input type="text" name="registrationLink" value="<%= event.registrationLink %>">
+              <p>Paste the Registration URL</p>
+            </div>
+            <div>
+              <label>Results Year</label>
+              <input type="text" name="resultsYear" value="<%= event.resultsYear %>">
+              <p>enter year for results</p>
+            </div>
+            <div>
+              <label>Results Link</label>
+              <input type="text" name="resultsUrl" value="<%= event.resultsUrl %>">
+              <p>Paste the Results Page URL</p>
+            </div>
+            <div>
+              <label>Photo Gallery Link</label>
+              <input type="text" name="galleryUrl" value="<%= event.galleryUrl %>">
+              <p>Paste the Photo Gallery URL</p>
+            </div>
+            <div>
+              <label>Photographer</label>
+              <input type="text" name="photographer" value="<%= event.photographer %>">
+              <p>Enter photographer name</p>
+            </div>
+            <div>
+              <label>Video Link</label>
+              <input type="text" name="video" value="<%= event.video %>">
+              <p>Enter YouTube video link</p>
+            </div>
+            <% if(event.standings) { %>
+              <div>
+                <label>Standings Link</label>
+                <input type="text" name="standings" value="<%= event.standings %>">
+                <p>Enter Standings link</p>
+              </div>
+            <% } %>
+            <input type="text" class="hidden" name="season"
+                   value="<%= event.season %>">
+            <input type="text" class="hidden" name="key"
+                   value="<%= event.key %>">
+            <p class="note">Changes above will not be saved until you click the save button</p>
+            <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
+              double check all values are correct before saving</p>
+            <button type="submit">SAVE</button>
+          </form>
+          <hr>
+        </details>
+
+        <!-- EDIT EVENT DETAILS -->
+        <details>
+          <summary>
+            <h3><i class="fa fa-pencil-square-o"></i> Edit Event Details</h3>
+          </summary>
+            <p class="note">You are only able to change ONE blurb at a time. Meaning, whichever blurb you click 'save' on will be the only one that gets updated. Even if you have changed others.</p>
+            <hr>
+            <% for(var i=0; i<event.details.length; i++) {
+              if (!event.details[i]) {continue;}%>
+              <article class="detail-forms-wrapper">
+                <!-- DELETE DETAIL -->
+                <form class="remove-blurb-form" action="/remove-detail"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <input type="text" class="hidden" name="season"
+                         value="<%= event.season %>">
+                  <input type="text" class="hidden" name="eventKey"
+                         value="<%= event.key %>">
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit" class="remove-blurb-btn"><i class="fa fa-times-circle"></i><span>DELETE</span></button>
+                </form>
+                <!-- EDIT DETAIL -->
+                <form class="details-form" action="/update-details"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <button class="details-form-btn" type="submit"><i class="fa fa-check-circle"></i><span>SAVE</span></button>
+                  <div>
+                    <label>Title</label>
+                    <input type="text" name="title" value="<%= event.details[i].title %>">
+                  </div>
+                  <div>
+                    <label>Copy</label>
+                    <textarea name="copy"><%= event.details[i].copy %></textarea> 
+                  </div>
+                  <div>
+                    <label>Image URL</label>
+                    <input type="text" name="image" value="<%= event.details[i].image %>">
+                  </div>
+
+                  <input type="text" class="hidden" name="season"
+                         value="<%= event.season %>">
+                  <input type="text" class="hidden" name="eventKey"
+                         value="<%= event.key %>">
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                </form>
+
+                <% if(i != 0) { %>
+                  <!-- MOVE DETAIL UP -->
+                  <form class="move-form" action="/move-blurb-up-form"
+                    method="post" enctype="application/x-www-form-urlencoded">
+                    <input type="text" class="hidden" name="season"
+                           value="<%= event.season %>">
+                    <input type="text" class="hidden" name="eventKey"
+                           value="<%= event.key %>">
+                    <input type="text" class="hidden" name="key"
+                           value="<%= i %>">
+                    <input type="text" class="hidden" name="event"
+                           value="<%= event %>">
+                    <button type="submit" class="move-blurb-btn">
+                      <i class="fa fa-arrow-up"></i>
+                    </button>
+                  </form>
+                <% }; %>
+
+                <% if(i != (event.details.length - 1)) { %>
+                  <!-- MOVE DETAIL DOWN -->
+                  <form class="move-form" action="/move-blurb-down-form"
+                    method="post" enctype="application/x-www-form-urlencoded">
+                    <input type="text" class="hidden" name="season"
+                           value="<%= event.season %>">
+                    <input type="text" class="hidden" name="eventKey"
+                           value="<%= event.key %>">
+                    <input type="text" class="hidden" name="key"
+                           value="<%= i %>">
+                    <input type="text" class="hidden" name="event"
+                           value="<%= event %>">
+                    <button type="submit" class="move-blurb-btn">
+                      <i class="fa fa-arrow-down"></i>
+                    </button>
+                  </form>
+                <% }; %>
+              </article>
+            <% } %>
+        </details>
+
+        <!-- ADD NEW DETAIL -->
+        <details>
+          <summary>
+            <h3><i class="fa fa-plus-circle"></i> Add NEW Detail</h3>
+          </summary>
+          <p class="note">For now, all new details added will be sent to the bottom of the list</p>
+          <hr>
+          <form class="details-form" action="/new-detail"
+            method="post" enctype="application/x-www-form-urlencoded">
+            <button type="submit" class="details-form-btn"><i class="fa fa-check-circle"></i><span>SAVE</span></button>
+            <div>
+              <label>Title</label>
+              <input type="text" name="title">
+            </div>
+            <div>
+              <label>Copy</label>
+              <textarea name="copy"></textarea> 
+            </div>
+            <div>
+              <label>Image URL</label>
+              <input type="text" name="image">
+            </div>
+
+            <input type="text" class="hidden" name="season"
+                   value="<%= event.season %>">
+            <input type="text" class="hidden" name="eventKey"
+                   value="<%= event.key %>">
+            <input type="text" class="hidden" name="key"
+                   value="<%= event.details.length %>">
+          </form>
+          <p class="note">NOTE: Changes will be live instantly and there is no undo. Please
+            double check all values are correct before saving</p>
+          <hr>
+        </details>
+
+        <!-- COURSE MAPS -->
+        <details>
+          <summary>
+            <h3><i class="fa fa-map-marker"></i> Edit Course Maps</h3>
+          </summary>
+
+          <% if(event.coursemaps) { %>
+            <p class="note">Click the X to remove old maps</p>
+            <hr>  
+            <div>
+              <ul class="admin-maps-list">
+                <% for(var i=0; i<event.coursemaps.length; i++) {
+                  if (!event.coursemaps[i]) {continue;}%>
+                  <form action="/remove-map" method="post"
+                        enctype="application/x-www-form-urlencoded">
+                    <li>
+                      <button type="submit">
+                        <i class="fa fa-times-circle"></i>
+                      </button>
+                      <%= event.coursemaps[i].image %>
+                    </li>
+                    <li>
+                      <img src="<%= event.coursemaps[i].thumb %>">
+                    </li>
+                    <input type="text" class="hidden" name="season"
+                           value="<%= event.season %>">
+                    <input type="text" class="hidden" name="eventKey"
+                           value="<%= event.key %>">
+                    <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  </form>
+                <% }; %>
+              </ul>
+            </div>
+          <% }; %>
+          <form class="edit-form" action="/add-map" method="post" enctype="application/x-www-form-urlencoded">
+            <hr>
+            <p class="note">* ADDING new maps is not recommended for general admin. Please contact the developer at this time to add new maps. Otherwise, you may experience bugs.</p><br>
+            <div>
+              <label>New Map Url</label>
+              <input type="text" name="image" value="" required>
+            </div>
+            <div>
+              <label>New Map Thumb Url</label>
+              <input type="text" name="thumb" value="" required>
+            </div>
+            <input type="text" class="hidden" name="season"
+                   value="<%= event.season %>">
+            <input type="text" class="hidden" name="eventKey"
+                   value="<%= event.key %>">
+            <% if(event.coursemaps) { %>
+              <input type="text" class="hidden" name="key"
+                 value="<%= event.coursemaps.length %>">
+            <% } else { %>
+              <input type="text" class="hidden" name="key"
+                 value="0">
+            <% }; %>
+            <div>
+              <button type="submit">Add Map</button>
+            </div>
+          </form>
+          <hr>
+        </details>
+      <% } %>
+      <% if(!event) { %>
+        <!-- DEFAULT SEASON -->
+        <article>
+          <details>
+            <summary>
+              <h3><i class="fa fa-pencil-edit"></i> Set Default Season</h3>
+            </summary>
+            <p class="note">Please select the current season to display on the home page.</p>
+            <hr>
+            <form action="/update-default-season"
+              method="post" enctype="application/x-www-form-urlencoded">
+              <select name="defaultSeason">
+                <option value="winter">Winter</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+              </select>
+              <button type="submit">Save</button>
+            </form>
+            <hr>
+          </details>
+        </article>
+        <!-- EDIT SPONSORS -->
+        <article>
+          <details>
+            <summary>
+              <h3><i class="fa fa-pencil-edit"></i> Edit Sponsor List</h3>
+            </summary>
+            <p class="note">*NOTE - Editing sponsor links is acceptable; However, editing sponsor images is not reccomended - it could produce bugs. You are able to delete sponsors without a problem though.</p>
+            <hr>
+            <% for(var i=0; i<sponsors.length; i++) {
+              if (!sponsors[i]) {continue;}%>
+              <article class="detail-forms-wrapper clearfix">
+                <!-- DELETE DETAIL -->
+                <form class="remove-blurb-form" action="/remove-sponsor"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit" class="remove-blurb-btn">
+                    <i class="fa fa-times-circle"></i>
+                  </button>
+                </form>
+                <!-- EDIT DETAIL -->
+                <form class="details-form" action="/update-sponsor"
+                  method="post" enctype="application/x-www-form-urlencoded">
+                  <div>
+                    <label>Link</label>
+                    <input type="text" name="link" value="<%= sponsors[i].link %>">
+                  </div>
+                  <div>
+                    <label>Image URL</label>
+                    <input type="text" name="image" value="<%= sponsors[i].image %>">
+                  </div>
+                  <input type="text" class="hidden" name="key"
+                         value="<%= i %>">
+                  <button type="submit">
+                    <i class="fa fa-check-circle"></i><span>SAVE</span>
+                  </button>
+                </form>
+              </article>
+            <% } %>
+          </details>
+        </article>
+      <% } %>
+    </section>
+    <%= include ../../partials/footer.ejs %>
+    <%= include ../../partials/scripts.ejs %>
+  </body>
+</html>

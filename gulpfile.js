@@ -19,6 +19,7 @@ var allFiles = {
   css: 'public/scss/*.css',
   scss: 'public/scss/**/*.scss',
   assets: 'public/assets/**/*.*',
+  templates: 'templates/**/*.ejs',
   vendorScss: 'public/scss/vendor/*.css',
   js: 'public/js/**/*.js'
 };
@@ -51,7 +52,7 @@ var files = {
 gulp.task('default', ['serve']);
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'uglify-js', 'img-min'], function() {
+gulp.task('serve', ['sass', 'uglify-js', 'min-ejs', 'img-min'], function() {
 
     browserSync.init({
       proxy: "http://localhost:3000/"
@@ -60,6 +61,7 @@ gulp.task('serve', ['sass', 'uglify-js', 'img-min'], function() {
     gulp.watch(allFiles.scss, ['sass']);
     gulp.watch(allFiles.assets, ['img-min']);
     gulp.watch(allFiles.js, ['uglify-js']);
+    gulp.watch(allFiles.templates, ['min-ejs']);
 });
 
 // compiles scss then minifies and uglifies all css files
@@ -124,5 +126,13 @@ gulp.task('img-min', function () {
       use: [pngquant()]
     }))
     .pipe(gulp.dest(paths.assets))
+    .pipe(browserSync.stream());
+});
+
+// minifies ejs
+gulp.task('min-ejs', function () {
+  return gulp.src(allFiles.templates)
+    .pipe(ejsmin({removeComment: true}))
+    .pipe(gulp.dest("./views"))
     .pipe(browserSync.stream());
 });

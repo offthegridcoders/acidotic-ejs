@@ -397,23 +397,23 @@ footer {
     margin: 5px;
     width: 40px; }
 
-aside {
-  display: none; }
+.swipe {
+  display: none !important; }
   @media screen and (max-width: 600px) {
-    aside {
+    .swipe {
       background-color: rgba(0, 0, 0, 0.9);
       bottom: 0;
-      display: block;
+      display: block !important;
       padding: 15px;
       position: fixed;
       text-align: center;
       width: 100%; }
-      aside p {
+      .swipe p {
         color: rgba(255, 255, 255, 0.4);
         display: inline-block; }
-      aside i {
+      .swipe i {
         color: rgba(255, 255, 255, 0.4); }
-      aside .fa-angle-double-left, aside .fa-angle-double-right {
+      .swipe .fa-angle-double-left, .swipe .fa-angle-double-right {
         margin: 0 10px; } }
 
 .event-links {

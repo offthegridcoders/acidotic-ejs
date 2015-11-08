@@ -18,13 +18,13 @@ footer {
   }
 }
 
-aside {    
-  display: none;
+.swipe {
+  display: none !important;
 
   @media screen and (max-width: 600px) {
     background-color: rgba(0, 0, 0, .9);
     bottom: 0;
-    display: block;
+    display: block !important;
     padding: 15px;
     position: fixed;
     text-align: center;

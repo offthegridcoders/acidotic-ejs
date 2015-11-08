@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article">
+    <%- include ../../partials/head %>
+  <body class="<%= season %>-page">
+    <%- include ../../partials/nav %>
+    <%- include ../../partials/header %>
+    <section class="left-side animated fadeInLeftBig">
+      <h1 class="main-header">spring<span>events</span></h1>
+      <article class="brown-box">
+        <p>"<%= data.spring.quotes.first.quote %>"</p>
+        <p>-<%= data.spring.quotes.first.person %></p>
+      </article>
+      <article class="event-block exeter-trail">
+        <img src="assets/logos/exeter-trail-race.jpg">
+        <div class="event-info">
+          <h2><%= data.spring.exeterTrail.title %></h2>
+          <h3><%= data.spring.exeterTrail.date %></h3>
+          <h3><%= data.spring.exeterTrail.starttime %></h3>
+          <h4><%= data.spring.exeterTrail.address %></br>
+              <%= data.spring.exeterTrail.address2 %></br>
+              <%= data.spring.exeterTrail.city %>, <%= data.spring.exeterTrail.state %></h4>
+          <a href="exeter-trail-race/"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.spring.exeterTrail.photographer %></h5>
+        </div>
+      </article>
+    </section>
+    <section class="right-side animated fadeInRightBig">
+      <article class="event-block ralph-waldo">
+        <img src="assets/logos/ralph-waldo.png">
+        <div class="event-info">
+          <h2><%= data.spring.ralphWaldo.title %></h2>
+          <h3><%= data.spring.ralphWaldo.date %></h3>
+          <h3><%= data.spring.ralphWaldo.starttime %></h3>
+          <h4><%= data.spring.ralphWaldo.address %></br>
+              <%= data.spring.ralphWaldo.address2 %></br>
+              <%= data.spring.ralphWaldo.city %>, <%= data.spring.ralphWaldo.state %></h4>
+          <a href="ralph-waldo-emerson-trail-race/"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.spring.ralphWaldo.photographer %></h5>
+        </div>
+      </article>
+      <article class="brown-box">
+        <p>"<%= data.spring.quotes.second.quote %>"</p>
+        <p>-<%= data.spring.quotes.second.person %></p>
+      </article>
+      <article class="event-block suunto">
+        <img src="assets/logos/sunnto.jpg">
+        <div class="event-info">
+          <h2><%= data.suunto.title %></h2>
+          <h3><%= data.suunto.copy %></h3>
+        </div>
+      </article>
+    </section>
+
+    <%- include ../../partials/footer %>
+    <%- include ../../partials/scripts %>
+  </body>
+</html>
