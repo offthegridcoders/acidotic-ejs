@@ -527,14 +527,6 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
-  // HARMONY HILL SUMMER XC SERIES
-  Router.get('/harmony-hill-summer-xc-series', function(req, res, next) {
-    var data = setSingleEventData('summer',
-      AllData, AllData.summer.harmonyHill,
-      meta.harmonyHill.title, meta.harmonyHill.description, req._parsedOriginalUrl.href);
-    return res.render('pages/single-event', data);
-  });
-
   // BRETTON WOODS FELL RACE
   Router.get('/bretton-woods-fell-race', function(req, res, next) {
     var data = setSingleEventData('fall',
@@ -611,6 +603,12 @@ var Sponsors;
 
   Router.get('/roaring-falls', function(req, res, next){
     res.redirect(301, 'http://www.acidoticracing.com/roaring-falls-trail-race');
+  });
+
+
+  // HARMONY HILL SUMMER XC SERIES
+  Router.get('/harmony-hill-summer-xc-series', function(req, res, next) {
+    res.redirect(301, 'http://www.acidoticracing.com/');
   });
 
   Router.get('/events/view_event.php', function(req, res, next){
