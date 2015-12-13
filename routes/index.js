@@ -49,6 +49,10 @@ var Sponsors;
       title: 'Kingman Farm Moonlight Snowshoe Race - Winter Event',
       description: 'This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race.'
     },
+    fatBike: {
+      title: 'Fatty Moose Fat Bike Race - Winter Event',
+      description: ''
+    },
     snowshoeHullabaloo: {
       title: 'Exeter Snowshoe Hullabaloo - Winter Event',
       description: 'The Snowshoe Hullabaloo is run over almost 4 miles of tight and twisted, packed single track in the Henderson-Swazey (aka Ft. Rock) Woods in Exeter, NH. The course is a pulse-raising roller coaster of ups, downs and hair-pin turns.'
@@ -475,6 +479,14 @@ var Sponsors;
     var data = setSingleEventData('winter',
       AllData, AllData.winter.kingmanFarm,
       meta.kingmanFarm.title, meta.kingmanFarm.description, req._parsedOriginalUrl.href);
+    return res.render('pages/single-event', data);
+  });
+
+  // FATTY MOOSE FAT BIKE RACE
+  Router.get('/fatty-moose-fat-bike-race', function(req, res, next) {
+    var data = setSingleEventData('winter',
+      AllData, AllData.winter.fatBike,
+      meta.fatBike.title, meta.fatBike.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
   });
 
