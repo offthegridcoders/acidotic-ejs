@@ -20,7 +20,7 @@
 </head>
 
   <body class="<%= season %>-page">
-    <%= include ../../partials/nav.ejs %>
+    <%- include ../../partials/nav.ejs %>
 
     <section class="admin-full-page">
       <% if(event) { %>
@@ -220,7 +220,7 @@
                   </div>
                   <div>
                     <label>Copy</label>
-                    <textarea name="copy"><%= event.details[i].copy %></textarea> 
+                    <textarea name="copy"><%= event.details[i].copy %></textarea>
                   </div>
                   <div>
                     <label>Image URL</label>
@@ -290,7 +290,7 @@
             </div>
             <div>
               <label>Copy</label>
-              <textarea name="copy"></textarea> 
+              <textarea name="copy"></textarea>
             </div>
             <div>
               <label>Image URL</label>
@@ -317,7 +317,7 @@
 
           <% if(event.coursemaps) { %>
             <p class="note">Click the X to remove old maps</p>
-            <hr>  
+            <hr>
             <div>
               <ul class="admin-maps-list">
                 <% for(var i=0; i<event.coursemaps.length; i++) {
@@ -438,7 +438,7 @@
         </article>
       <% } %>
     </section>
-    <%= include ../../partials/footer.ejs %>
-    <%= include ../../partials/scripts.ejs %>
+    <%- include ../../partials/footer.ejs %>
+    <%- include ../../partials/scripts.ejs %>
   </body>
 </html>
