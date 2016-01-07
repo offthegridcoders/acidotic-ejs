@@ -88,10 +88,6 @@ var Sponsors;
     vulcansFury: {
       title: 'Vulcans Fury Trail Race - Fall Event',
       description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.'
-    },
-    roaringFalls: {
-      title: 'Roaring Falls Trail Race - Fall Event',
-      description: 'The Castle in the Clouds, in beautiful Moultonborough, is one of New Hampshires iconic landmarks. And while many people are familiar with the 1914 mountaintop estate known as Lucknow, very few are aware that the property sits on over 5200 acres of some of the most spectacular geologic features and mountain visitas in the state.'
     }
   };
 // INITIALLY loads data into global variable
@@ -555,13 +551,6 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
-  // ROARING FALLS
-  Router.get('/roaring-falls-trail-race', function(req, res, next) {
-    var data = setSingleEventData('fall',
-      AllData, AllData.fall.roaringFalls,
-      meta.roaringFalls.title, meta.roaringFalls.description, req._parsedOriginalUrl.href);
-    return res.render('pages/single-event', data);
-  });
 // OLD ACIDOTIC LINKS
 //Make sure the old links still work:
   Router.get('/results.php', function(req, res, next){
@@ -611,10 +600,6 @@ var Sponsors;
 
   Router.get('/vulcans-fury', function(req, res, next){
     res.redirect(301, 'http://www.acidoticracing.com/vulcans-fury-trail-race');
-  });
-
-  Router.get('/roaring-falls', function(req, res, next){
-    res.redirect(301, 'http://www.acidoticracing.com/roaring-falls-trail-race');
   });
 
 
