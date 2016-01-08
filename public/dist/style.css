@@ -783,6 +783,14 @@ footer {
   background-image: url('../assets/events/event_granitestate.jpg');
   margin-top: 40px; }
 
+.fat-moose {
+  background-image: url('../assets/events/event_fatmoose.png');
+  margin-top: 40px; }
+  
+.frosty-crank {
+  background-image: url('../assets/events/event_frostycrank.png');
+  margin-top: 40px; } 
+  
 .suunto {
   background-image: url('../assets/events/suunto.jpg'); }
   .suunto .event-info {
