@@ -50,8 +50,12 @@ var Sponsors;
       description: 'This is a NIGHT race! Working headlamps are mandatory. No headlamp...no race. The gently rolling approximately 5 km course will be illuminated by your headlamp. The trails at UNH’s Kingman Farm are the perfect site for a snowshoe race.'
     },
     fatBike: {
-      title: 'Fatty Moose Fat Bike Race - Winter Event',
+      title: 'Fat Moose Fat Bike Race - Winter Event',
       description: ''
+    },
+    frostyCrank: {
+	      title: 'Frosty Crank Fat Bike Race - Winter Event',
+	      description: ''
     },
     snowshoeHullabaloo: {
       title: 'Exeter Snowshoe Hullabaloo - Winter Event',
@@ -478,12 +482,20 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
-  // FATTY MOOSE FAT BIKE RACE
+  // FAT MOOSE FAT BIKE RACE
   Router.get('/fatty-moose-fat-bike-race', function(req, res, next) {
     var data = setSingleEventData('winter',
       AllData, AllData.winter.fatBike,
       meta.fatBike.title, meta.fatBike.description, req._parsedOriginalUrl.href);
     return res.render('pages/single-event', data);
+  });
+
+  // FROSTY CRANK FAT BIKE RACE
+  Router.get('/fat-bike-frosty-crank', function(req, res, next) {
+      var data = setSingleEventData('winter',
+        AllData, AllData.winter.frostyCrank,
+        meta.frostyCrank.title, meta.frostyCrank.description, req._parsedOriginalUrl.href);
+      return res.render('pages/single-event', data);
   });
 
   // SNOWSHOE HULLABALOO
