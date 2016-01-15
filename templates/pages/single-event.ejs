@@ -5,9 +5,16 @@
     <%- include ../partials/nav %>
 
     <section class="full-page">
-      <div class="logo">
+      <div class="logo-sponsor">
         <img src="assets/logo.png">
       </div>
+      
+	<% if(event.logo == 'assets/logos/loonmountain.png') { %>
+	  <div class="logo">
+		<img src="assets/logos/kellerwilliams.png">
+	  </div>
+	<% } %>      
+     
       <div class="header">
         <h1><%= event.title %></h1>
       </div>
