@@ -972,7 +972,9 @@ footer {
   }
 .full-page .logo-sponsor img {
     margin: 10px 10px 40px;
-    width: 420px; }
+    width: 420px;
+    border-color: transparent;
+    }
   .full-page .logo-sponsor h1 {
     font: Arial 18px;
     font-style: italic;
