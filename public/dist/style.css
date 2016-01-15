@@ -967,11 +967,16 @@ footer {
   margin-top: 20px;
   text-align: center; }
   @media screen and (max-width: 550px) {
-    .full-page .logo {
-      text-align: center; } }
-  .full-page .logo img {
+    .full-page .logo-sponsor {
+      text-align: center; } 
+  }
+.full-page .logo-sponsor img {
     margin: 10px 10px 40px;
-    width: 380px; }
+    width: 420px; }
+  .full-page .logo-sponsor h1 {
+    font: Arial 18px;
+    font-style: italic;
+    }
     
 .full-page .header {
   border-bottom: solid 1px #000;
