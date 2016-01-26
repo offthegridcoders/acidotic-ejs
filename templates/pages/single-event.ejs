@@ -19,6 +19,9 @@
      
       <div class="header">
         <h1><%= event.title %></h1>
+        <% if(event.logo == 'assets/logos/loonmountain.png') { %>
+        	<h1>USATF MOUNTAIN RUNNING CHAMPIONSHIPS</h1>
+        <% } %>    
       </div>
       <article class="top-wrapper-article">
         <div class="race-image" style="background-image: url(<%= event.image %>);">
