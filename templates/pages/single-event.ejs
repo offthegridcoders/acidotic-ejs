@@ -25,7 +25,12 @@
       </div>
       <article class="top-wrapper-article">
         <div class="race-image" style="background-image: url(<%= event.image %>);">
-          <img src="<%= event.logo %>">
+          <img src="<%= event.logo %>"> 
+        <% if(event.logo == 'assets/logos/loonmountain.png') { %>
+          <img style="float:right;" src="assets/logos/USATF_2016_Logo.png">
+        <% } %>    
+
+         
         </div>
         <div class="race-details">
           <h5><i class="fa fa-calendar"></i> date</h5>
