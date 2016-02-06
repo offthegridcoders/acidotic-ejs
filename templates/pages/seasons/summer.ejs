@@ -51,7 +51,20 @@
         <p>"<%= data.summer.quotes.second.quote %>"</p>
         <p>-<%= data.summer.quotes.second.person %></p>
       </article>
-    </section>
+      <article class="event-block harmony-hill">
+        <img src="assets/logos/harmony_logo.jpg">
+        <div class="event-info">
+          <h2><%= data.summer.harmonyHill.title %></h2>
+          <h3><%= data.summer.harmonyHill.date %></h3>
+          <h3><%= data.summer.harmonyHill.starttime %></h3>
+          <h4><%= data.summer.harmonyHill.address %></br>
+              <%= data.summer.harmonyHill.address2 %></br>
+              <%= data.summer.harmonyHill.city %>, <%= data.summer.harmonyHill.state %></h4>
+          <a href="kingman-farm-trail-race/"><button>click here for details</button></a>
+          <h5>Photo Courtesy of <%= data.summer.harmonyHill.photographer %></h5>
+        </div>
+      </article>
+    </section>    
 
     <%- include ../../partials/footer %>
     <%- include ../../partials/scripts %>

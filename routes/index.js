@@ -547,6 +547,15 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
+  // HARMONY HILL SUMMER XC SERIES
+  Router.get('/harmony-hill-summer-xc-series', function(req, res, next) {
+    var data = setSingleEventData('summer',
+      AllData, AllData.summer.harmonyHill,
+      meta.harmonyHill.title, meta.harmonyHill.description, req._parsedOriginalUrl.href);
+    return res.render('pages/single-event', data);
+  });
+
+
   // BRETTON WOODS FELL RACE
   Router.get('/bretton-woods-fell-race', function(req, res, next) {
     var data = setSingleEventData('fall',
@@ -615,11 +624,6 @@ var Sponsors;
   });
 
 
-  // HARMONY HILL SUMMER XC SERIES
-  Router.get('/harmony-hill-summer-xc-series', function(req, res, next) {
-    res.redirect(301, 'http://www.acidoticracing.com/');
-  });
-
   Router.get('/events/view_event.php', function(req, res, next){
     switch(req.query.ID) {
     case '1':
@@ -643,7 +647,7 @@ var Sponsors;
     case '8':
         res.redirect(301, 'http://www.acidoticracing.com/loon-mountain-race/');
         break;
-    case '9':
+    case '11':
         res.redirect(301, 'http://www.acidoticracing.com/harmony-hill-summer-xc-series/');
         break;
     case '13':
