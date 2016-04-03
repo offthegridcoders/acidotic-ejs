@@ -40,9 +40,13 @@
         <% } %>    
 
         <!-- GSMC.png for Granite State Mountain Cup -->
-        <% if(event.key == 'brettonWoods' || event.key == 'loonMountainRace') { %>
+        <% if(event.key == 'brettonWoods') { %>
+          <img style="position:absolute;bottom:4px;right:4px;" src="assets/logos/GSMC.png">
+        <% } %>  
+
+        <% if(event.key == 'loonMountainRace') { %>
           <img style="position:absolute;bottom:4px;left:4px;" src="assets/logos/GSMC.png">
-        <% } %>                 
+        <% } %>                       
          
         </div>
         <div class="race-details">
