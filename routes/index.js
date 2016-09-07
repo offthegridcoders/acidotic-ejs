@@ -89,6 +89,10 @@ var Sponsors;
       title: 'Bretton Woods Fell Race - Fall Event',
       description: 'In an effort to accommodate more competitors we are offering two different courses this year. The short course will race the first three check points (CPs); A, B, & C. The total distance will be approximately TBA miles.'
     },
+    puritySprings: {
+       title: 'Purity Springs 5K - Fall Event',
+       description: 'Thanksgiving 5K.'
+    },
     vulcansFury: {
       title: 'Vulcans Fury Trail Race - Fall Event',
       description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.'
@@ -564,6 +568,14 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
+   // PURITY SPRINGS 5K
+   Router.get('/purity-springs', function(req, res, next) {
+     var data = setSingleEventData('fall',
+       AllData, AllData.fall.puritySprings,
+       meta.puritySprings.title, meta.puritySprings.description, req._parsedOriginalUrl.href);
+     return res.render('pages/single-event', data);
+  });
+
   // VULCANS FURY
   Router.get('/vulcans-fury-trail-race', function(req, res, next) {
     var data = setSingleEventData('fall',
@@ -619,6 +631,10 @@ var Sponsors;
     res.redirect(301, 'http://www.acidoticracing.com/bretton-woods-fell-race');
   });
 
+  Router.get('/purity-springs', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/purity-springs');
+  });
+
   Router.get('/vulcans-fury', function(req, res, next){
     res.redirect(301, 'http://www.acidoticracing.com/vulcans-fury-trail-race');
   });
@@ -658,6 +674,9 @@ var Sponsors;
         break;
     case '15':
         res.redirect(301, 'http://www.acidoticracing.com/roaring-falls-trail-race/');
+        break;
+    case '19':
+        res.redirect(301, 'http://www.acidoticracing.com/purity-springs/');
         break;
     default:
         console.log('Didnt find old event page so defaulted to homepage');

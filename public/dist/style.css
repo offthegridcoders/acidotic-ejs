@@ -842,6 +842,10 @@ footer {
 
 .bretton-woods {
   background-image: url('../assets/events/event_brettonwoods.jpg'); }
+  
+.purity-springs {
+  background-image: url('../assets/events/event_puritysprings.jpg'); }
+}
 
 .results-event {
   background-image: url('../assets/events/event_results.jpg'); }
