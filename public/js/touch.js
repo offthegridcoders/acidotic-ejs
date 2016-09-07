@@ -49,6 +49,8 @@ function slidePageForward() {
     case '/bretton-woods-fell-race/':
       return window.location.assign('/vulcans-fury-trail-race/')
     case '/vulcans-fury-trail-race/':
+    	return window.location.assign('/purity-springs/')
+    case '/purity-springs/':
       return window.location.assign('/sidehiller-snowshoe-race/')
     default:
       return;
@@ -74,7 +76,7 @@ function slidePageBack() {
     case '/contact':
       return window.location.assign('/about')
     case '/sidehiller-snowshoe-race/':
-      return window.location.assign('/vulcans-fury-trail-race/')
+      return window.location.assign('/purity-springs/')
     case '/kingman-farm-moonlight-snowshoe-race/':
       return window.location.assign('/sidehiller-snowshoe-race/')
     case '/exeter-snowshoe-hullabaloo/':
@@ -95,6 +97,9 @@ function slidePageBack() {
       return window.location.assign('/harmony-hill-summer-xc-series/')
     case '/vulcans-fury-trail-race/':
       return window.location.assign('/bretton-woods-fell-race/')
+    case '/purity-springs/':
+      return window.location.assign('/vulcans-fury-trail-race/')
+
     default:
       return;
   }
