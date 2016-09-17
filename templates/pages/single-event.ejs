@@ -114,11 +114,11 @@
             <h5><%= content.title %></h5>
             <p class="no-extra-padding">
            <% if(event.key == 'kimnedeauinterview' && content.title == "") { %>
-           <i>
+           <p class="no-extra-padding" style='font-style: italic;'>
            <% }; %>
            <%= content.copy %>
            <% if(event.key == 'kimnedeauinterview' && content.title == "") { %>
-           </i>
+           </p>
            <% }; %>
             </p>
         <% }); %>
