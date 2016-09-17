@@ -842,7 +842,10 @@ footer {
 
 .bretton-woods {
   background-image: url('../assets/events/event_brettonwoods.jpg'); }
-  
+
+.kimnedeauinterview {
+background-image: url('../assets/events/event_kimnedeau.jpg'); }
+ 
 .purity-springs {
   background-image: url('../assets/events/event_puritysprings.jpg'); }
 }

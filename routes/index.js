@@ -93,6 +93,10 @@ var Sponsors;
        title: 'Purity Springs 5K - Fall Event',
        description: 'Thanksgiving 5K.'
     },
+    kimnedeauinterview: {
+	   title: 'Kim Nedeau Interview',
+	   description: 'The first American woman finisher, she led her team to bronze medal'
+    },
     vulcansFury: {
       title: 'Vulcans Fury Trail Race - Fall Event',
       description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.'
@@ -576,6 +580,14 @@ var Sponsors;
      return res.render('pages/single-event', data);
   });
 
+  // KIM NEDEAU INTERVIEW
+  Router.get('/kim-nedeau-interview', function(req, res, next) {
+  var data = setSingleEventData('fall',
+	AllData, AllData.fall.kimnedeauinterview,
+	'Kim Nedeau Interview', meta.kimnedeauinterview.description, req._parsedOriginalUrl.href);
+  return res.render('pages/single-event', data);
+  });
+
   // VULCANS FURY
   Router.get('/vulcans-fury-trail-race', function(req, res, next) {
     var data = setSingleEventData('fall',
@@ -621,6 +633,10 @@ var Sponsors;
 
   Router.get('/exeter-trail', function(req, res, next){
     res.redirect(301, 'http://www.acidoticracing.com/exeter-trail-race');
+  });
+
+  Router.get('/kim-nedeau-interview', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/exeter-trail-racekim-nedeau-interview');
   });
 
   Router.get('/harmony-hill', function(req, res, next){
@@ -677,6 +693,9 @@ var Sponsors;
         break;
     case '19':
         res.redirect(301, 'http://www.acidoticracing.com/purity-springs/');
+        break;
+    case '25':
+        res.redirect(301, 'http://www.acidoticracing.com/kim-nedeau-interview/');
         break;
     default:
         console.log('Didnt find old event page so defaulted to homepage');

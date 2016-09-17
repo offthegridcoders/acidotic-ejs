@@ -60,16 +60,19 @@
               <i class="fa fa-compass"></i>Open in Google Maps</a>
           </p>
 
-          <h5><i class="fa fa-line-chart"></i> distance:</h5>
-          <p><%= event.distance %></p>
-          <h5><i class="fa fa-clock-o"></i> start time:</h5>
-          <p><%= event.starttime %></p>
-          <h5><i class="fa fa-clock-o"></i> bib pick-up:</h5>
-          <p><%= event.bibtime %></p>
-          <h5><i class="fa fa-usd"></i> cost:</h5>
-          <p><%= event.cost %></p>
+          <% if(event.key != 'kimnedeauinterview') { %>
+		  <h5><i class="fa fa-line-chart"></i> distance:</h5>
+		  <p><%= event.distance %></p>
+		  <h5><i class="fa fa-clock-o"></i> start time:</h5>
+		  <p><%= event.starttime %></p>
+		  <h5><i class="fa fa-clock-o"></i> bib pick-up:</h5>
+		  <p><%= event.bibtime %></p>
+		  <h5><i class="fa fa-usd"></i> cost:</h5>
+		  <p><%= event.cost %></p>
+	   <% } %> 
         </div>
       </article>
+      <% if(event.key != 'kimnedeauinterview') { %>
       <article>
         <div class="button-wrapper reg-<%= event.registrationStatus %>">
           <p>Online Registration <%= event.registrationStatus %></p>
@@ -90,8 +93,11 @@
         <h5><i class="fa fa-user"></i> designer</h5>
         <p><%= event.designer %></p>
       </article>
+      <% } %>
       <article>
+        <% if(event.key != 'kimnedeauinterview') { %>
         <h4>details</h4>
+        <% } %>
         
         <% if(event.logo == 'assets/logos/loonmountain.png') { %>   
         	<!--<p class="no-extra-padding">
@@ -131,6 +137,16 @@
         <article>
           <h4>Course Map(s)</h4>
           <% event.coursemaps.forEach(function(map) { %>
+            <a href="<%= map.image %>" target="_blank">
+              <img src="<%= map.thumb %>" class="course-map">
+            </a>
+          <% }); %>
+        </article>
+      <% }; %>
+      
+      <% if(event.pictures) { %>
+        <article>
+          <% event.pictures.forEach(function(map) { %>
             <a href="<%= map.image %>" target="_blank">
               <img src="<%= map.thumb %>" class="course-map">
             </a>
