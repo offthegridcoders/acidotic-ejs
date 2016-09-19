@@ -491,12 +491,12 @@ var Sponsors;
   });
 
   // FAT MOOSE FAT BIKE RACE
-  Router.get('/fatty-moose-fat-bike-race', function(req, res, next) {
-    var data = setSingleEventData('winter',
-      AllData, AllData.winter.fatBike,
-      meta.fatBike.title, meta.fatBike.description, req._parsedOriginalUrl.href);
-    return res.render('pages/single-event', data);
-  });
+  //Router.get('/fatty-moose-fat-bike-race', function(req, res, next) {
+  //  var data = setSingleEventData('winter',
+   //   AllData, AllData.winter.fatBike,
+   //   meta.fatBike.title, meta.fatBike.description, req._parsedOriginalUrl.href);
+  //  return res.render('pages/single-event', data);
+  //});
 
   // FROSTY CRANK FAT BIKE RACE
   Router.get('/fat-bike-frosty-crank', function(req, res, next) {
