@@ -97,6 +97,10 @@ var Sponsors;
 	   title: 'Kim Nedeau Interview',
 	   description: 'The first American woman finisher, she led her team to bronze medal'
     },
+    cranmoreHill: {
+	   title: 'Cranmore Mountain Race',
+	   description: 'Cranmore , Cranmore!'
+	},
     vulcansFury: {
       title: 'Vulcans Fury Trail Race - Fall Event',
       description: 'Your friends at aR have designed one of the most technical and scenic courses possible in a location that was once brimming with fire...yes...Pawtuck was once a volcanic site.'
@@ -538,6 +542,14 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
+  // CRANMORE HILL RACE
+  Router.get('/cranmore-mountain-race', function(req, res, next) {
+    var data = setSingleEventData('spring',
+      AllData, AllData.spring.cranmoreHill,
+       meta.cranmoreHill.title, meta.cranmoreHill.description, req._parsedOriginalUrl.href);
+    return res.render('pages/single-event', data);
+  });
+
   // LOON MOUNTAIN RACE
   Router.get('/loon-mountain-race', function(req, res, next) {
     var data = setSingleEventData('summer',
@@ -627,6 +639,10 @@ var Sponsors;
     res.redirect(301, 'http://www.acidoticracing.com/nh-snowshoe-championship');
   });
 
+  Router.get('/cranmore-mountain-race', function(req, res, next){
+    res.redirect(301, 'http://www.acidoticracing.com/cranmore-mountain-race');
+
+  });
   Router.get('/ralph-waldo', function(req, res, next){
     res.redirect(301, 'http://www.acidoticracing.com/ralph-waldo-emerson-trail-race');
   });
@@ -696,6 +712,9 @@ var Sponsors;
         break;
     case '25':
         res.redirect(301, 'http://www.acidoticracing.com/kim-nedeau-interview/');
+        break;
+    case '31':
+	    res.redirect(301, 'http://www.acidoticracing.com/cranmore-mountain-race/');
         break;
     default:
         console.log('Didnt find old event page so defaulted to homepage');
