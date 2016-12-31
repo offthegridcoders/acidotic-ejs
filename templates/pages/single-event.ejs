@@ -9,7 +9,7 @@
         <img src="assets/logo.png">
       </div>
       
-	<% if(event.logo == 'assets/logos/loonmountain.png') { %>
+	<% if(event.logo == 'assets/logos/loonmountain.png' || event.logo == 'assets/logos/cranmore.png') { %>
 	  <div class="logo-sponsor">
 		<h1>TITLE SPONSOR</h1>
 		<a href="http://www.newenglandcoastalrealty.com" target="_blank"><img src="assets/logos/kellerwilliams.png"></a>
@@ -141,6 +141,13 @@
         <h4>Video</h4>
         <iframe width="100%" height="350" src="<%= event.video %>" frameborder="0" allowfullscreen></iframe>
       </article>
+      <% }; %>
+      
+    <% if(event.video2) { %>
+    <article>
+      <h4>Video</h4>
+      <iframe width="100%" height="350" src="<%= event.video2 %>" frameborder="0" allowfullscreen></iframe>
+    </article>
       <% }; %>
       
       <% if(event.coursemaps) { %>
