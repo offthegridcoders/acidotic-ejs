@@ -99,7 +99,7 @@ var Sponsors;
     },
     cranmoreHill: {
 	   title: 'Cranmore Mountain Race',
-	   description: 'Cranmore , Cranmore!'
+	   description: 'USA and Collegiate Mountain Running Champs - June 3rd'
 	},
     vulcansFury: {
       title: 'Vulcans Fury Trail Race - Fall Event',
