@@ -810,6 +810,25 @@ footer {
     .suunto h3 {
       font-size: 16px; } }
 
+.demerbox {
+  background-image: url('../assets/events/demerbox.jpg'); }
+  .demerbox .event-info {
+    padding: 30px; }
+  .demerbox h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px; }
+    @media screen and (max-width: 950px) {
+      .demerbox h2 {
+        margin-top: 0; } }
+    @media screen and (max-width: 400px) {
+      .demerbox h2 {
+        font-size: 20px;
+        margin-top: 30px; } }
+  @media screen and (max-width: 400px) {
+    .demerbox h3 {
+      font-size: 16px; } }
+      
 .contact-event {
   background-image: url('../assets/events/contact_event.jpg'); }
 
