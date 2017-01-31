@@ -474,7 +474,7 @@ var Sponsors;
   // CONSULTING PAGE
   Router.get('/consulting', function(req, res, next) {
     return res.render('pages/consulting',
-      setRegPageData('winter', 'consulting', meta.community.title, meta.community.description, req._parsedOriginalUrl.href));
+      setRegPageData('winter', 'consulting', meta.consulting.title, meta.consulting.description, req._parsedOriginalUrl.href));
   });
 
   // CHARITY PAGE
