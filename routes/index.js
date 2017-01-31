@@ -41,6 +41,10 @@ var Sponsors;
       title: 'Community',
       description: 'acidotic Racing is a community of like minded multi-sport endurance athletes. We pride ourselves on being approachable and supportive of all persons, skills, and abilities.'
     },
+    consulting: {
+	  title: 'Consulting',
+	  description: 'We have deep knowledge of the racing landscape here in New England and we know what works and what doesn’t work. We don’t want to race direct or own your race. We are interested in helping you build it and race it ourselves. We have a passion for helping partners create disruptive events that encourage early sign-up, word-of-mouth buzz and consistent year-over-year growth. And our formulas works.'
+    },
     charity: {
       title: 'Charity',
       description: 'aR has made a commitment to support the charitable organizations that are dearest to our hearts. This is done through a variety of charitable giving outlets associated with our professional event services.'
@@ -467,7 +471,13 @@ var Sponsors;
       setRegPageData('winter', 'community', meta.community.title, meta.community.description, req._parsedOriginalUrl.href));
   });
 
-  // COMMUNITY PAGE
+  // CONSULTING PAGE
+  Router.get('/consulting', function(req, res, next) {
+    return res.render('pages/consulting',
+      setRegPageData('winter', 'consulting', meta.community.title, meta.community.description, req._parsedOriginalUrl.href));
+  });
+
+  // CHARITY PAGE
   Router.get('/charity', function(req, res, next) {
     return res.render('pages/charity',
       setRegPageData('fall', 'charity', meta.charity.title, meta.charity.description, req._parsedOriginalUrl.href));
