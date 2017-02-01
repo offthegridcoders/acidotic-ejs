@@ -832,6 +832,9 @@ footer {
 .contact-event {
   background-image: url('../assets/events/contact_event.jpg'); }
 
+.consulting-event {
+  background-image: url('../assets/events/consulting-event.jpg'); }
+
 .why-event {
   background-image: url('../assets/events/why-acidotic-01.jpg');
   background-position: 50% 0%;
