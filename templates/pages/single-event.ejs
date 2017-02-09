@@ -167,6 +167,11 @@
             <a href="<%= map.image %>" target="_blank">
               <img src="<%= map.thumb %>" class="course-map">
             </a>
+            
+            <% if(map.title) { %>
+	              	<p><%= map.title %></p> 
+          <% }; %>
+            
           <% }); %>
         </article>
       <% }; %>
