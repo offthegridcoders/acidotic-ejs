@@ -195,22 +195,41 @@
       <article class="event-links-footer">
         <ul>
           <% if(event.galleryUrl) { %>
-          <li>
+          <li style="vertical-align:top;">
             <p>Photo Gallery</p>
             <a href="<%= event.galleryUrl %>" target="_blank">
               <i class="fa fa-camera-retro"></i>
             </a>
           </li>
           <% } %>
-
-          <% if(event.galleryUrl) { %>
-          <li>
+          
+          <% if(event.photoJoeVigerUrl) { %>
+	    <li>
+	      <p>Joe Viger Photography Gallery</p>
+	      <a href="<%= event.photoJoeViger %>" target="_blank">
+		<img style="width:210px;height:62px;" src="assets/logos/joe-viger.jpg">
+	      </a>
+	    </li>
+          <% } %>
+          
+          <% if(event.photoScottMasonUrl) { %>
+	    <li>
+	      <p>Scott Mason Photography Gallery</p>
+	      <a href="<%= event.photoScottMasonUrl %>" target="_blank">
+		<img style="width:210px;height:62px;" src="assets/logos/scott-mason.jpg">
+	      </a>
+	    </li>
+          <% } %> 	       
+         
+          <% if(event.resultsUrl) { %>
+          <li style="vertical-align:top;">
             <p><%= event.resultsYear %> Results</p>
             <a href="<%= event.resultsUrl %>" target="_blank">
               <i class="fa fa-bar-chart"></i>
             </a>
           </li>
           <% } %>
+
         </ul>
       </article>
       <hr>
