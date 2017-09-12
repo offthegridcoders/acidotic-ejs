@@ -91,9 +91,9 @@
         <h4>details</h4>
         <% } %>
         
-	<% if(event.key == 'brettonWoods') { %>
+	<% if(event.key == 'brettonWoods' && event.importantdetail) { %>
 	  <div class="winter-advisory">
-	    <h5>THERE WILL BE THREE USATF-NE "MOUNTAIN GOAT" ELIGIBLE EVENTS HELD DURING THIS WEEKEND. BUT ONLY ONE WILL COUNT TOWARD YOUR 5 OF 7 QUEST.</h5>
+	    <h5><%= event.importantdetail %></h5>
 	    <p class="no-extra-padding"></p>
 	  </div>
         <% } %>
