@@ -594,14 +594,6 @@ var Sponsors;
     return res.render('pages/single-event', data);
   });
 
-   // PURITY SPRINGS 5K
-   Router.get('/purity-springs', function(req, res, next) {
-     var data = setSingleEventData('fall',
-       AllData, AllData.fall.puritySprings,
-       meta.puritySprings.title, meta.puritySprings.description, req._parsedOriginalUrl.href);
-     return res.render('pages/single-event', data);
-  });
-
   // KIM NEDEAU INTERVIEW
   Router.get('/kim-nedeau-interview', function(req, res, next) {
   var data = setSingleEventData('fall',
